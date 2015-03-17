@@ -13,6 +13,26 @@ Session One: Introductions
 
 `xkcd.com/353`_
 
+Jump right in
+-------------
+
+Go to the `Online Python Tutor<http://pythontutor.com>`_
+Type in `print("Hello world!")` and execute!
+
+Congratulations!
+
+You've written your first Python program.
+
+And now you can run, visualize, and understand any other
+Python code at your own speed, from any
+computer, from anywhere (in this lecture and on the internet)
+
+REPL = Read, Evaluate, Print Loop
+---------------------------------
+
+Open up your terminal and type "python".
+
+
 .. _xkcd.com/353: http://xkcd.com/353
 
 Introductions
@@ -20,35 +40,127 @@ Introductions
 
 .. rst-class:: center large
 
-In which we meet each-other
-
+Now let's back up and meet each other.
 
 Your instructor
 ---------------
 
 .. rst-class:: center large
 
-| Cris Ewing
-| (cris at crisewing dot com)
+| Paul Pham
+| @paulpham on Slack
+| (paul at codefellows dot com)
+
+Seattleite for 8 years.
+UW alum.
+Taught at The Evergreen State College in Olympia.
+I like startups and using technology to improve people's lives,
+especially through education.
 
 Your TAs
---------
+---------------
 
 .. rst-class:: center large
 
-| Nathan Hubbell
-| Josh Frailey
+| Ben Friedland
+| @ben_friedland
+
+How This Fits into CodeFellows
+----------------------------
+
+Prerequisites
+
+* Foundations I: Web Dev with HTML, CSS, Javascript
+* Unix & Git for Everyone
+
+This Class
+
+* Foundations II: Python
+
+Where to Go From Here
+
+* Python Development Accelerator
+
+Outline of this Class
+---------------------
+
+* Session 1: Dev Environment, Python Syntax
+* Session 2: Functions, Modules, Booleans
+* Session 3: Sequences, Iteration and String Formatting
+* Session 4: Dictionaries, Sets, Exceptions, and Files
+* Session 5: Arguments, Comprehensions, Lambdas and Functional Programming
+* Session 6: Intro to Object Oriented Programming
+* Session 7: Testing, More OO
+* Session 8: Optional Topics (Generators, Iterators, Decorators, and Context Managers)
+
+Based on a curriculum designed by
+
+| Cris Ewing and Chris Barker
+| (cris at crisewing dot com)
+
+Puzzle Given
+---------------
+
+Every session, you'll be given a puzzle in the form of
+a Python program to write.
+By the end of class, you'll know everything you need to solve the puzzle.
+
+Today's puzzle:
+
+Write a Python program that prints "Hello, World!" if you call it with
+no arguments, otherwise prints the correct translation of
+"Hello, World!" in whatever language is given as the first argument
+to the program.
+
+[demo]
+
+Class Meetings
+-------------
+
+* Twice a week for 4 weeks
+* 8 total class sessions
+* Mondays and Wednesdays, 7-9pm 
+
+Homework
+-------------
+
+* 2-4 homework tasks per class session.
+* Overall, about 25 homework tasks.
+* Worth 5 points each.
+
+Rubric:
+
+* 0 points not turned in
+* 1 points crashes, major syntax errors.
+* 2 points crashes, minor syntax errors.
+* 3 points runs, major logical errors
+* 4 points runs, with minor logical or style errors
+* 5 points, compiles and runs perfectly with good style.
+
+Grading Policy
+-------------
+
+In order to pass the class:
+
+* Attend at least 6 out of 8 classes.
+* Score 80% of the points on each assigned homework task.
+* You can resubmit to get 4/5 points.
+* Late homework will be accepted up to 1 week after the class has ended.
+
+Intense, Fast-paced
+---------------
+
+* Homework is assigned every class, due by the next class.
+* You can't afford to miss more than one or two classes.
+* It's easy to fall behind on the homework.
+* Like learning a foreign language by moving to another country for four weeks.
 
 Who are you?
 -------------
 
 .. rst-class:: center large
 
-  Tell us a tiny bit about yourself:
-
-* name
-* programming background
-* what do you hope to get from this class
+  Let's go around and introduce ourselves.
 
 
 Course Materials Online
@@ -62,18 +174,18 @@ GitHub
 There are two repositories in GitHub you will want to bookmark:
 
 Student Homework Repository:
-  https://github.com/codefellows/sea-c28-students
+  https://github.com/codefellows/sea-c34-python
 
   Fork this repository to your own github account and do homework there.
 
 Course Materials Repository:
-  https://github.com/cewing/codefellows_f2_python
+  https://github.com/ppham/codefellows_f2_python
 
   Contains lecture material sources, supplemental materials and homework
   assignments
 
   A rendered HTML copy of all these class materials may be found online at
-  http://codefellows.github.io/sea-c28-students
+  http://codefellows.github.io/sea-c34-python
 
 Canvas
 ------
@@ -81,7 +193,7 @@ Canvas
 We will be using Canvas to track your homework submission.  Grades will be
 entered here as well:
 
-https://canvas.instructure.com/courses/896777
+https://canvas.instructure.com/courses/919974
 
 
 Elsewhere
@@ -92,22 +204,38 @@ Class email list:
   announcements. Please make sure that you are receiving the messages sent to
   this list:
 
-  sea-c28@codefellows.com
+  sea-c34@codefellows.com
 
-Class `Gitter <https://gitter.im/codefellows/sea-c28-students>`_ Chatroom:
+Class `Slack <https://codefellows.slack.com>`_ Channel:
   The student repository README contains a link to the class chatroom. You can
-  use this to communicate with students and instructors:
+  sign into the `Codefellow Slack team <https://codefellows.slack.com>` website
+  or you can download the desktop client for your OS.
 
-  https://gitter.im/codefellows/sea-c28-students
+  Once you're signed in, join the `#sea-c34-python` channel.
+
+  This is the official communication medium for the class, and where announcements will be made.
 
 
-Introduction to This Class
+Introduction to Python
 ==========================
 
 .. rst-class:: center large
 
 Python Programming
 
+How I Learned Python, and Why I'm Glad I Did
+----------------------------
+
+All my friends were talking about it.
+
+I had a new project to do, and complete freedom to choose the technology.
+
+Python is now a standard tool for numerical and scientific computation.
+(e.g. Machine Learning)
+
+Current and future dream job:
+Industrial Light & Magic is hiring Python coders, presumably to work on the
+new Star Wars movies.
 
 What is Python?
 ---------------
@@ -222,7 +350,8 @@ Python 3.x ("py3k")
 
 .. nextslide::
 
-This class uses Python 2.7 not Python 3.x
+This class uses Python 2.7 but makes use of many
+important Python 3.x changes (backported)
 
 .. rst-class:: build
 
@@ -240,6 +369,20 @@ This class uses Python 2.7 not Python 3.x
   * http://python3porting.com (particulary the chapters on modern idioms and
     supporting Python 2 and 3)
   * http://python-future.org/compatible_idioms.html
+
+Other Reasons Why Python is Awesome
+-----------------------------------
+
+Keep your eye on the prize!
+
+* Built-in data types like lists, dictionaries, tuples that access simply by typing
+the right grouping symbols! `[] {} ()`
+* Its father, Guido van Rossum, still hearts it, actively guides its development,
+and tweets about how awesome it is.
+* It is named after Monty Python, but it also enables a lot of snake puns.
+* Short, succinct metaphors and a can-do attitude
+* Easy to experiment and play with. Open the interpreter, start messing around.
+Your computer is your own laboratory or viewport into exploring a virtual world.
 
 Introduction to Your Environment
 ================================
@@ -432,32 +575,6 @@ In addition, great features to add include:
     http://www.sublimetext.com/
 
 
-Why No IDE?
------------
-
-I am often asked this question.
-
-.. rst-class:: build
-.. container::
-
-    An IDE does not give you much that you can't get with a good editor plus a
-    good interpreter.
-
-    An IDE often weighs a great deal
-
-    Setting up IDEs to work with different projects can be challenging and
-    time-consuming.
-
-    Particularly when you are first learning, you don't want too much done for
-    you.
-
-.. nextslide::
-
-.. rst-class:: center large
-
-YAGNI
-
-
 Setting Up Your Environment
 ===========================
 
@@ -481,7 +598,7 @@ Step 1: Python 2.7
 
 .. rst-class:: large
 
-You have this already, RIGHT?
+You have this already, right?
 
 .. code-block:: bash
 
@@ -560,7 +677,7 @@ If you want to install it, here are some notes:
 Step 4: Clone Class Repository
 ------------------------------
 
-`gitHub <www.github.com>`_ is an industry-standard system for collaboration on
+`GitHub <www.github.com>`_ is an industry-standard system for collaboration on
 software projects -- particularly open source ones.
 
 We will use it this class to manage submitting and reviewing your work, etc.
@@ -571,7 +688,7 @@ Next, you'll make a copy of the class repository using ``git``.
 
 The canonical copy is in the CodeFellows organization on GitHub:
 
-https://github.com/codefellows/sea-c28-students
+https://github.com/codefellows/sea-c34-python
 
 Open that URL, and click on the *Fork* button at the top right corner.
 
@@ -586,7 +703,7 @@ At your command line, run the following commands:
 .. code-block:: bash
 
     $ cd your_working_directory_for_the_class
-    $ git clone https://github.com/<yourname>/sea-c28-students.git
+    $ git clone https://github.com/<yourname>/sea-c34-python.git
 
 (you can copy and paste that link from the gitHub page)
 
@@ -594,10 +711,22 @@ If you have an SSH key set up for gitHub, you'll want to do this instead:
 
 .. code-block:: bash
 
-    git@github.com:<yourname>/sea-c28-students.git
+    git@github.com:<yourname>/sea-c34-python.git
 
 **Remember**, <yourname> should be replaced by your github account name.
 
+Brief Aside
+-----------
+
+Remember our puzzle?
+Let's go into our recently cloned class repo and see some starter code.
+
+.. code-block:: bash
+    
+    cd examples/session01
+    python hello.py
+
+Now back to show!
 
 Step 5: Install Requirements
 ----------------------------
@@ -875,7 +1004,8 @@ Blocks of code are delimited by a colon and indentation:
     except:
         fix_the_problem()
 
-.. nextslide::
+Whitespace
+--------
 
 Python uses whitespace to delineate structure.
 
@@ -986,6 +1116,7 @@ An expression is made up of values and operators
 
 * Integer vs. float arithmetic
 
+  * `1 / 2` versus `1. / 2`
   * (Python 3 smooths this out)
   * Always use ``/`` when you want float results, ``//`` when you want floored (integer) results
 
@@ -1159,103 +1290,6 @@ Using this feature, we can swap values between two symbols in one statement:
 Multiple assignment and symbol swapping can be very useful in certain contexts
 
 
-Deleting
---------
-
-You can't actually delete anything in python...
-
-``del``  only unbinds a name.
-
-.. code-block:: ipython
-
-    In [56]: a = 5
-
-    In [57]: b = a
-
-    In [58]: del a
-
-    In [59]: a
-    ---------------------------------------------------------------------------
-    NameError                                 Traceback (most recent call last)
-    <ipython-input-59-60b725f10c9c> in <module>()
-    ----> 1 a
-
-    NameError: name 'a' is not defined
-
-.. nextslide::
-
-The object is still there...python will only delete it if there are no
-references to it.
-
-.. code-block:: ipython
-
-    In [15]: a = 5
-
-    In [16]: b = a
-
-    In [17]: del a
-
-    In [18]: a
-    ---------------------------------------------------------------------------
-    NameError                                 Traceback (most recent call last)
-    <ipython-input-18-60b725f10c9c> in <module>()
-    ----> 1 a
-
-    NameError: name 'a' is not defined
-
-    In [19]: b
-    Out[19]: 5
-
-
-Identity
---------
-
-Every value in Python is an object.
-
-Every object is unique and has a unique *identity*, which you can inspect with
-the ``id`` *builtin*:
-
-.. code-block:: ipython
-
-    In [68]: id(i)
-    Out[68]: 140553647890984
-
-    In [69]: id(j)
-    Out[69]: 140553647884864
-
-    In [70]: new_i = i
-
-    In [71]: id(new_i)
-    Out[71]: 140553647890984
-
-
-Testing Identity
-----------------
-
-You can find out if the values bound to two different symbols are the **same
-object** using the ``is`` operator:
-
-.. code-block:: ipython
-
-    In [72]: count = 23
-
-    In [73]: other_count = count
-
-    In [74]: count is other_count
-    Out[74]: True
-
-    In [75]: count = 42
-
-    In [76]: other_count is count
-    Out[76]: False
-
-.. ifslides::
-
-    .. rst-class:: centered
-
-        [demo]
-
-
 Equality
 --------
 
@@ -1370,22 +1404,6 @@ You define a ``string`` value by writing a *literal*:
 
 (what's the '``u``' about?)
 
-.. nextslide::
-
-.. code-block:: ipython
-
-    In [5]: u"""a multi-line
-       ...: string
-       ...: all in one
-       ...: """
-    Out[5]: u'a multi-line\nstring\nall in one\n'
-
-    In [6]: u"a string with an \n escaped character"
-    Out[6]: u'a string with an \n escaped character'
-
-    In [7]: r'a "raw" string, the \n comes through as a \n'
-    Out[7]: 'a "raw" string, the \\n comes through as a \\n'
-
 
 Keywords
 --------
@@ -1493,6 +1511,34 @@ There are several exceptions that you are likely to see a lot of:
 * ``AttributeError``: indicates that you have tried to access an attribute or
   method that an object does not have (this often means you have a different
   type of object than you expect)
+
+The ``if`` Statement
+---------------------
+
+In order to do anything interesting at all (including this week's homework), you need to be able to make a decision.
+
+.. nextslide::
+
+.. code-block:: python
+
+    In [12]: def test(a):
+       ....:     if a == 5:
+       ....:         print(u"that's the value I'm looking for!")
+       ....:     elif a == 7:
+       ....:         print(u"that's an OK number")
+       ....:     else:
+       ....:         print(u"that number won't do!")
+
+    In [13]: test(5)
+    that's the value I'm looking for!
+
+    In [14]: test(7)
+    that's an OK number
+
+    In [15]: test(14)
+    that number won't do!
+
+There is more to it than that, but this will get you started.
 
 
 Functions
@@ -1743,34 +1789,6 @@ When you call a function, you pass values to the function parameters as
 
 The values you pass in are *bound* to the symbols inside the function and used.
 
-The ``if`` Statement
----------------------
-
-In order to do anything interesting at all (including this week's homework), you need to be able to make a decision.
-
-.. nextslide::
-
-.. code-block:: python
-
-    In [12]: def test(a):
-       ....:     if a == 5:
-       ....:         print(u"that's the value I'm looking for!")
-       ....:     elif a == 7:
-       ....:         print(u"that's an OK number")
-       ....:     else:
-       ....:         print(u"that number won't do!")
-
-    In [13]: test(5)
-    that's the value I'm looking for!
-
-    In [14]: test(7)
-    that's an OK number
-
-    In [15]: test(14)
-    that number won't do!
-
-There is more to it than that, but this will get you started.
-
 
 Enough For Now
 --------------
@@ -1780,6 +1798,17 @@ That's it for our basic intro to Python
 Before next session, you'll use what you've learned here today to do some
 exercises in Python programming
 
+Puzzle Solved
+========
+
+Now it's time to solve our puzzle. Remember it?
+
+Write a Python program that prints "Hello, World!" if you call it with
+no arguments, otherwise prints the correct translation of
+"Hello, World!" in whatever language is given as the first argument
+to the program.
+
+Partner up and let's get to work!
 
 Homework
 ========

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Session One: Introductions &mdash; Code Fellows F2 Python, November-December 2014</title>
+    <title>Session One: Introductions &mdash; Code Fellows F2 Python, March-April 2015</title>
     
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Code Fellows F2 Python, November-December 2014" href="index.html" />
+    <link rel="top" title="Code Fellows F2 Python, March-April 2015" href="index.html" />
     <link rel="next" title="Session Two: Functions, Booleans and Modules" href="session02.html" />
     <link rel="prev" title="In This Course" href="index.html" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
@@ -72,81 +72,199 @@
 </div>
 <a class="reference internal image-reference" href="_images/python.png"><img alt="_images/python.png" class="align-center" src="_images/python.png" style="width: 38%;" /></a>
 <p class="credit"><a class="reference external" href="http://xkcd.com/353">xkcd.com/353</a></p>
+<div class="section" id="jump-right-in">
+<h2>Jump right in<a class="headerlink" href="#jump-right-in" title="Permalink to this headline">¶</a></h2>
+<p>Go to the <a href="#id3"><span class="problematic" id="id4">`Online Python Tutor&lt;http://pythontutor.com&gt;`_</span></a>
+Type in <cite>print(&#8220;Hello world!&#8221;)</cite> and execute!</p>
+<p>Congratulations!</p>
+<p>You&#8217;ve written your first Python program.</p>
+<p>And now you can run, visualize, and understand any other
+Python code at your own speed, from any
+computer, from anywhere (in this lecture and on the internet)</p>
+</div>
+<div class="section" id="repl-read-evaluate-print-loop">
+<h2>REPL = Read, Evaluate, Print Loop<a class="headerlink" href="#repl-read-evaluate-print-loop" title="Permalink to this headline">¶</a></h2>
+<p>Open up your terminal and type &#8220;python&#8221;.</p>
 <div class="section" id="introductions">
-<h2>Introductions<a class="headerlink" href="#introductions" title="Permalink to this headline">¶</a></h2>
-<p class="center large">In which we meet each-other</p>
+<h3>Introductions<a class="headerlink" href="#introductions" title="Permalink to this headline">¶</a></h3>
+<p class="center large">Now let&#8217;s back up and meet each other.</p>
+</div>
+</div>
 <div class="section" id="your-instructor">
-<h3>Your instructor<a class="headerlink" href="#your-instructor" title="Permalink to this headline">¶</a></h3>
+<h2>Your instructor<a class="headerlink" href="#your-instructor" title="Permalink to this headline">¶</a></h2>
 <div class="center large line-block">
-<div class="line">Cris Ewing</div>
+<div class="line">Paul Pham</div>
+<div class="line">&#64;paulpham on Slack</div>
+<div class="line">(paul at codefellows dot com)</div>
+</div>
+<p>Seattleite for 8 years.
+UW alum.
+Taught at The Evergreen State College in Olympia.
+I like startups and using technology to improve people&#8217;s lives,
+especially through education.</p>
+</div>
+<div class="section" id="your-tas">
+<h2>Your TAs<a class="headerlink" href="#your-tas" title="Permalink to this headline">¶</a></h2>
+<div class="center large line-block">
+<div class="line">Ben Friedland</div>
+<div class="line">&#64;ben_friedland</div>
+</div>
+</div>
+<div class="section" id="how-this-fits-into-codefellows">
+<h2>How This Fits into CodeFellows<a class="headerlink" href="#how-this-fits-into-codefellows" title="Permalink to this headline">¶</a></h2>
+<p>Prerequisites</p>
+<ul class="simple">
+<li>Foundations I: Web Dev with HTML, CSS, Javascript</li>
+<li>Unix &amp; Git for Everyone</li>
+</ul>
+<p>This Class</p>
+<ul class="simple">
+<li>Foundations II: Python</li>
+</ul>
+<p>Where to Go From Here</p>
+<ul class="simple">
+<li>Python Development Accelerator</li>
+</ul>
+</div>
+<div class="section" id="outline-of-this-class">
+<h2>Outline of this Class<a class="headerlink" href="#outline-of-this-class" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Session 1: Dev Environment, Python Syntax</li>
+<li>Session 2: Functions, Modules, Booleans</li>
+<li>Session 3: Sequences, Iteration and String Formatting</li>
+<li>Session 4: Dictionaries, Sets, Exceptions, and Files</li>
+<li>Session 5: Arguments, Comprehensions, Lambdas and Functional Programming</li>
+<li>Session 6: Intro to Object Oriented Programming</li>
+<li>Session 7: Testing, More OO</li>
+<li>Session 8: Optional Topics (Generators, Iterators, Decorators, and Context Managers)</li>
+</ul>
+<p>Based on a curriculum designed by</p>
+<div class="line-block">
+<div class="line">Cris Ewing and Chris Barker</div>
 <div class="line">(cris at crisewing dot com)</div>
 </div>
 </div>
-<div class="section" id="your-tas">
-<h3>Your TAs<a class="headerlink" href="#your-tas" title="Permalink to this headline">¶</a></h3>
-<div class="center large line-block">
-<div class="line">Nathan Hubbell</div>
-<div class="line">Josh Frailey</div>
+<div class="section" id="puzzle-given">
+<h2>Puzzle Given<a class="headerlink" href="#puzzle-given" title="Permalink to this headline">¶</a></h2>
+<p>Every session, you&#8217;ll be given a puzzle in the form of
+a Python program to write.
+By the end of class, you&#8217;ll know everything you need to solve the puzzle.</p>
+<p>Today&#8217;s puzzle:</p>
+<p>Write a Python program that prints &#8220;Hello, World!&#8221; if you call it with
+no arguments, otherwise prints the correct translation of
+&#8220;Hello, World!&#8221; in whatever language is given as the first argument
+to the program.</p>
+<p>[demo]</p>
 </div>
-</div>
-<div class="section" id="who-are-you">
-<h3>Who are you?<a class="headerlink" href="#who-are-you" title="Permalink to this headline">¶</a></h3>
-<p class="center large">Tell us a tiny bit about yourself:</p>
+<div class="section" id="class-meetings">
+<h2>Class Meetings<a class="headerlink" href="#class-meetings" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>name</li>
-<li>programming background</li>
-<li>what do you hope to get from this class</li>
+<li>Twice a week for 4 weeks</li>
+<li>8 total class sessions</li>
+<li>Mondays and Wednesdays, 7-9pm</li>
 </ul>
 </div>
+<div class="section" id="homework">
+<h2>Homework<a class="headerlink" href="#homework" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>2-4 homework tasks per class session.</li>
+<li>Overall, about 25 homework tasks.</li>
+<li>Worth 5 points each.</li>
+</ul>
+<p>Rubric:</p>
+<ul class="simple">
+<li>0 points not turned in</li>
+<li>1 points crashes, major syntax errors.</li>
+<li>2 points crashes, minor syntax errors.</li>
+<li>3 points runs, major logical errors</li>
+<li>4 points runs, with minor logical or style errors</li>
+<li>5 points, compiles and runs perfectly with good style.</li>
+</ul>
 </div>
+<div class="section" id="grading-policy">
+<h2>Grading Policy<a class="headerlink" href="#grading-policy" title="Permalink to this headline">¶</a></h2>
+<p>In order to pass the class:</p>
+<ul class="simple">
+<li>Attend at least 6 out of 8 classes.</li>
+<li>Score 80% of the points on each assigned homework task.</li>
+<li>You can resubmit to get 4/5 points.</li>
+<li>Late homework will be accepted up to 1 week after the class has ended.</li>
+</ul>
+</div>
+<div class="section" id="intense-fast-paced">
+<h2>Intense, Fast-paced<a class="headerlink" href="#intense-fast-paced" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Homework is assigned every class, due by the next class.</li>
+<li>You can&#8217;t afford to miss more than one or two classes.</li>
+<li>It&#8217;s easy to fall behind on the homework.</li>
+<li>Like learning a foreign language by moving to another country for four weeks.</li>
+</ul>
+</div>
+<div class="section" id="who-are-you">
+<h2>Who are you?<a class="headerlink" href="#who-are-you" title="Permalink to this headline">¶</a></h2>
+<p class="center large">Let&#8217;s go around and introduce ourselves.</p>
 <div class="section" id="course-materials-online">
-<h2>Course Materials Online<a class="headerlink" href="#course-materials-online" title="Permalink to this headline">¶</a></h2>
+<h3>Course Materials Online<a class="headerlink" href="#course-materials-online" title="Permalink to this headline">¶</a></h3>
 <p>Where to Find Your Stuff</p>
+</div>
+</div>
 <div class="section" id="github">
-<h3>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h3>
+<h2>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
 <p>There are two repositories in GitHub you will want to bookmark:</p>
 <dl class="docutils">
 <dt>Student Homework Repository:</dt>
-<dd><p class="first"><a class="reference external" href="https://github.com/codefellows/sea-c28-students">https://github.com/codefellows/sea-c28-students</a></p>
+<dd><p class="first"><a class="reference external" href="https://github.com/codefellows/sea-c34-python">https://github.com/codefellows/sea-c34-python</a></p>
 <p class="last">Fork this repository to your own github account and do homework there.</p>
 </dd>
 <dt>Course Materials Repository:</dt>
-<dd><p class="first"><a class="reference external" href="https://github.com/cewing/codefellows_f2_python">https://github.com/cewing/codefellows_f2_python</a></p>
+<dd><p class="first"><a class="reference external" href="https://github.com/ppham/codefellows_f2_python">https://github.com/ppham/codefellows_f2_python</a></p>
 <p>Contains lecture material sources, supplemental materials and homework
 assignments</p>
 <p class="last">A rendered HTML copy of all these class materials may be found online at
-<a class="reference external" href="http://codefellows.github.io/sea-c28-students">http://codefellows.github.io/sea-c28-students</a></p>
+<a class="reference external" href="http://codefellows.github.io/sea-c34-python">http://codefellows.github.io/sea-c34-python</a></p>
 </dd>
 </dl>
 </div>
 <div class="section" id="canvas">
-<h3>Canvas<a class="headerlink" href="#canvas" title="Permalink to this headline">¶</a></h3>
+<h2>Canvas<a class="headerlink" href="#canvas" title="Permalink to this headline">¶</a></h2>
 <p>We will be using Canvas to track your homework submission.  Grades will be
 entered here as well:</p>
-<p><a class="reference external" href="https://canvas.instructure.com/courses/896777">https://canvas.instructure.com/courses/896777</a></p>
+<p><a class="reference external" href="https://canvas.instructure.com/courses/919974">https://canvas.instructure.com/courses/919974</a></p>
 </div>
 <div class="section" id="elsewhere">
-<h3>Elsewhere<a class="headerlink" href="#elsewhere" title="Permalink to this headline">¶</a></h3>
+<h2>Elsewhere<a class="headerlink" href="#elsewhere" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
 <dt>Class email list:</dt>
 <dd><p class="first">Code Fellows provides an email list for us. We will use this list for
 announcements. Please make sure that you are receiving the messages sent to
 this list:</p>
-<p class="last"><a class="reference external" href="mailto:sea-c28&#37;&#52;&#48;codefellows&#46;com">sea-c28<span>&#64;</span>codefellows<span>&#46;</span>com</a></p>
+<p class="last"><a class="reference external" href="mailto:sea-c34&#37;&#52;&#48;codefellows&#46;com">sea-c34<span>&#64;</span>codefellows<span>&#46;</span>com</a></p>
 </dd>
-<dt>Class <a class="reference external" href="https://gitter.im/codefellows/sea-c28-students">Gitter</a> Chatroom:</dt>
+<dt>Class <a class="reference external" href="https://codefellows.slack.com">Slack</a> Channel:</dt>
 <dd><p class="first">The student repository README contains a link to the class chatroom. You can
-use this to communicate with students and instructors:</p>
-<p class="last"><a class="reference external" href="https://gitter.im/codefellows/sea-c28-students">https://gitter.im/codefellows/sea-c28-students</a></p>
+sign into the <cite>Codefellow Slack team &lt;https://codefellows.slack.com&gt;</cite> website
+or you can download the desktop client for your OS.</p>
+<p>Once you&#8217;re signed in, join the <cite>#sea-c34-python</cite> channel.</p>
+<p class="last">This is the official communication medium for the class, and where announcements will be made.</p>
 </dd>
 </dl>
-</div>
-</div>
-<div class="section" id="introduction-to-this-class">
-<h2>Introduction to This Class<a class="headerlink" href="#introduction-to-this-class" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="introduction-to-python">
+<h3>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Permalink to this headline">¶</a></h3>
 <p class="center large">Python Programming</p>
+</div>
+</div>
+<div class="section" id="how-i-learned-python-and-why-i-m-glad-i-did">
+<h2>How I Learned Python, and Why I&#8217;m Glad I Did<a class="headerlink" href="#how-i-learned-python-and-why-i-m-glad-i-did" title="Permalink to this headline">¶</a></h2>
+<p>All my friends were talking about it.</p>
+<p>I had a new project to do, and complete freedom to choose the technology.</p>
+<p>Python is now a standard tool for numerical and scientific computation.
+(e.g. Machine Learning)</p>
+<p>Current and future dream job:
+Industrial Light &amp; Magic is hiring Python coders, presumably to work on the
+new Star Wars movies.</p>
+</div>
 <div class="section" id="what-is-python">
-<h3>What is Python?<a class="headerlink" href="#what-is-python" title="Permalink to this headline">¶</a></h3>
+<h2>What is Python?<a class="headerlink" href="#what-is-python" title="Permalink to this headline">¶</a></h2>
 <ul class="build simple">
 <li>Dynamic</li>
 <li>Object oriented</li>
@@ -156,7 +274,7 @@ use this to communicate with students and instructors:</p>
 <p class="center large">But what does that mean?</p>
 </div>
 <div class="section" id="python-features">
-<h3>Python Features<a class="headerlink" href="#python-features" title="Permalink to this headline">¶</a></h3>
+<h2>Python Features<a class="headerlink" href="#python-features" title="Permalink to this headline">¶</a></h2>
 <p>Features:</p>
 <ul class="build simple">
 <li>Unlike C, C++, C#, Java ... More like Ruby, Lisp, Perl, Javascript
@@ -172,7 +290,7 @@ simpler</li>
 </ul>
 </div>
 <div class="section" id="what-s-a-dynamic-language">
-<h3>What&#8217;s a Dynamic language<a class="headerlink" href="#what-s-a-dynamic-language" title="Permalink to this headline">¶</a></h3>
+<h2>What&#8217;s a Dynamic language<a class="headerlink" href="#what-s-a-dynamic-language" title="Permalink to this headline">¶</a></h2>
 <p><strong>Dynamic typing</strong>.</p>
 <ul class="simple">
 <li>Type checking and dispatch happen at run-time</li>
@@ -204,12 +322,12 @@ simpler</li>
 </ul>
 </div>
 <div class="section" id="duck-typing">
-<h3>Duck Typing<a class="headerlink" href="#duck-typing" title="Permalink to this headline">¶</a></h3>
+<h2>Duck Typing<a class="headerlink" href="#duck-typing" title="Permalink to this headline">¶</a></h2>
 <p class="center large">&#8220;If it looks like a duck, and quacks like a duck &#8211; it&#8217;s probably a duck&#8221;</p>
 <p class="center large">If an object behaves as expected at run-time, it&#8217;s the right type.</p>
 </div>
 <div class="section" id="python-versions">
-<h3>Python Versions<a class="headerlink" href="#python-versions" title="Permalink to this headline">¶</a></h3>
+<h2>Python Versions<a class="headerlink" href="#python-versions" title="Permalink to this headline">¶</a></h2>
 <p>Python 2.x</p>
 <ul class="build simple">
 <li>&#8220;Classic&#8221; Python</li>
@@ -221,7 +339,8 @@ simpler</li>
 <li>Removed the &#8220;warts&#8221;</li>
 <li>Allowed to break code</li>
 </ul>
-<p>This class uses Python 2.7 not Python 3.x</p>
+<p>This class uses Python 2.7 but makes use of many
+important Python 3.x changes (backported)</p>
 <ul class="build simple">
 <li>Adoption of Python 3 is growing fast<ul>
 <li>A few key packages still not supported (<a class="reference external" href="https://python3wos.appspot.com/">https://python3wos.appspot.com/</a>)</li>
@@ -240,9 +359,21 @@ supporting Python 2 and 3)</li>
 </li>
 </ul>
 </div>
-</div>
+<div class="section" id="other-reasons-why-python-is-awesome">
+<h2>Other Reasons Why Python is Awesome<a class="headerlink" href="#other-reasons-why-python-is-awesome" title="Permalink to this headline">¶</a></h2>
+<p>Keep your eye on the prize!</p>
+<ul class="simple">
+<li>Built-in data types like lists, dictionaries, tuples that access simply by typing</li>
+</ul>
+<p>the right grouping symbols! <cite>[] {} ()</cite>
+* Its father, Guido van Rossum, still hearts it, actively guides its development,
+and tweets about how awesome it is.
+* It is named after Monty Python, but it also enables a lot of snake puns.
+* Short, succinct metaphors and a can-do attitude
+* Easy to experiment and play with. Open the interpreter, start messing around.
+Your computer is your own laboratory or viewport into exploring a virtual world.</p>
 <div class="section" id="introduction-to-your-environment">
-<h2>Introduction to Your Environment<a class="headerlink" href="#introduction-to-your-environment" title="Permalink to this headline">¶</a></h2>
+<h3>Introduction to Your Environment<a class="headerlink" href="#introduction-to-your-environment" title="Permalink to this headline">¶</a></h3>
 <div class="left container">
 <p>There are three basic elements to your environment when working with Python:</p>
 <ul class="build simple">
@@ -251,8 +382,10 @@ supporting Python 2 and 3)</li>
 <li>Your Editor</li>
 </ul>
 </div>
+</div>
+</div>
 <div class="section" id="your-command-line-cli">
-<h3>Your Command Line (cli)<a class="headerlink" href="#your-command-line-cli" title="Permalink to this headline">¶</a></h3>
+<h2>Your Command Line (cli)<a class="headerlink" href="#your-command-line-cli" title="Permalink to this headline">¶</a></h2>
 <p>Having some facility on the command line is important</p>
 <p>We won&#8217;t cover this in class, so if you are not comfortable, please bone up at
 home.</p>
@@ -266,7 +399,7 @@ to work.</p>
 <p>More on this later.</p>
 </div>
 <div class="section" id="your-interpreter">
-<h3>Your Interpreter<a class="headerlink" href="#your-interpreter" title="Permalink to this headline">¶</a></h3>
+<h2>Your Interpreter<a class="headerlink" href="#your-interpreter" title="Permalink to this headline">¶</a></h2>
 <p>Python comes with a built-in interpreter.</p>
 <p>You see it when you type <tt class="docutils literal"><span class="pre">python</span></tt> at the command line:</p>
 <div class="highlight-pycon"><div class="highlight"><pre><span class="go">$ python</span>
@@ -325,7 +458,7 @@ interpreters available to you.</p>
 <p>More on this soon.</p>
 </div>
 <div class="section" id="your-editor">
-<h3>Your Editor<a class="headerlink" href="#your-editor" title="Permalink to this headline">¶</a></h3>
+<h2>Your Editor<a class="headerlink" href="#your-editor" title="Permalink to this headline">¶</a></h2>
 <p>Typing code in an interpreter is great for exploring.</p>
 <p>But for anything &#8220;real&#8221;, you&#8217;ll want to save the work you are doing in a more permanent
 fashion.</p>
@@ -356,34 +489,20 @@ characters hidden behind the scenes.</p>
 <p>If not, I suggest <tt class="docutils literal"><span class="pre">Sublime</span> <span class="pre">Text</span></tt> (2 or 3):</p>
 <p><a class="reference external" href="http://www.sublimetext.com/">http://www.sublimetext.com/</a></p>
 </div>
-</div>
-<div class="section" id="why-no-ide">
-<h3>Why No IDE?<a class="headerlink" href="#why-no-ide" title="Permalink to this headline">¶</a></h3>
-<p>I am often asked this question.</p>
-<div class="build container">
-<p>An IDE does not give you much that you can&#8217;t get with a good editor plus a
-good interpreter.</p>
-<p>An IDE often weighs a great deal</p>
-<p>Setting up IDEs to work with different projects can be challenging and
-time-consuming.</p>
-<p>Particularly when you are first learning, you don&#8217;t want too much done for
-you.</p>
-</div>
-<p class="center large">YAGNI</p>
-</div>
-</div>
 <div class="section" id="setting-up-your-environment">
-<h2>Setting Up Your Environment<a class="headerlink" href="#setting-up-your-environment" title="Permalink to this headline">¶</a></h2>
+<h3>Setting Up Your Environment<a class="headerlink" href="#setting-up-your-environment" title="Permalink to this headline">¶</a></h3>
 <p class="centered large">Shared setup means reduced complications.</p>
+</div>
+</div>
 <div class="section" id="our-class-environment">
-<h3>Our Class Environment<a class="headerlink" href="#our-class-environment" title="Permalink to this headline">¶</a></h3>
+<h2>Our Class Environment<a class="headerlink" href="#our-class-environment" title="Permalink to this headline">¶</a></h2>
 <p>We are going to work from a common environment in this class.</p>
 <p>We will take the time here in class to get this going.</p>
 <p>This helps to ensure that you will be able to work.</p>
 </div>
 <div class="section" id="step-1-python-2-7">
-<h3>Step 1: Python 2.7<a class="headerlink" href="#step-1-python-2-7" title="Permalink to this headline">¶</a></h3>
-<p class="large">You have this already, RIGHT?</p>
+<h2>Step 1: Python 2.7<a class="headerlink" href="#step-1-python-2-7" title="Permalink to this headline">¶</a></h2>
+<p class="large">You have this already, right?</p>
 <div class="highlight-bash"><div class="highlight"><pre>$ python
 Python 2.7.5 (default, Aug 25 2013, 00:04:04)
 [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
@@ -400,7 +519,7 @@ $
 </ul>
 </div>
 <div class="section" id="step-2-pip">
-<h3>Step 2: Pip<a class="headerlink" href="#step-2-pip" title="Permalink to this headline">¶</a></h3>
+<h2>Step 2: Pip<a class="headerlink" href="#step-2-pip" title="Permalink to this headline">¶</a></h2>
 <p>Python comes with quite a bit (&#8220;batteries included&#8221;).</p>
 <p>Sometimes you need a bit more.</p>
 <p>Pip allows you to install Python packages to expand your system.</p>
@@ -424,7 +543,7 @@ index (PyPI):</p>
 <p><a class="reference external" href="https://pypi.python.org/pypi">https://pypi.python.org/pypi</a></p>
 </div>
 <div class="section" id="step-3-optional-virtualenv">
-<h3>Step 3: Optional &#8211; Virtualenv<a class="headerlink" href="#step-3-optional-virtualenv" title="Permalink to this headline">¶</a></h3>
+<h2>Step 3: Optional &#8211; Virtualenv<a class="headerlink" href="#step-3-optional-virtualenv" title="Permalink to this headline">¶</a></h2>
 <p>Python packages come in many versions.</p>
 <p>Often you need one version for one project, and a different one for another.</p>
 <p><a class="reference external" href="http://www.virtualenv.org/">Virtualenv</a> allows you to create isolated environments.</p>
@@ -435,31 +554,41 @@ projects, it can be a key tool.</p>
 <p><a class="reference external" href="./supplements/virtualenv.html">Intro to VirtualEnv</a></p>
 </div>
 <div class="section" id="step-4-clone-class-repository">
-<h3>Step 4: Clone Class Repository<a class="headerlink" href="#step-4-clone-class-repository" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="www.github.com">gitHub</a> is an industry-standard system for collaboration on
+<h2>Step 4: Clone Class Repository<a class="headerlink" href="#step-4-clone-class-repository" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="www.github.com">GitHub</a> is an industry-standard system for collaboration on
 software projects &#8211; particularly open source ones.</p>
 <p>We will use it this class to manage submitting and reviewing your work, etc.</p>
 <p><strong>Wait!</strong> Don&#8217;t have a gitHub account? Set one up now.</p>
 <p>Next, you&#8217;ll make a copy of the class repository using <tt class="docutils literal"><span class="pre">git</span></tt>.</p>
 <p>The canonical copy is in the CodeFellows organization on GitHub:</p>
-<p><a class="reference external" href="https://github.com/codefellows/sea-c28-students">https://github.com/codefellows/sea-c28-students</a></p>
+<p><a class="reference external" href="https://github.com/codefellows/sea-c34-python">https://github.com/codefellows/sea-c34-python</a></p>
 <p>Open that URL, and click on the <em>Fork</em> button at the top right corner.</p>
 <p>This will make a copy of this repository in <em>your</em> github account.</p>
 <p>From here, you&#8217;ll want to make a clone of your copy on your local machine.</p>
 <p>At your command line, run the following commands:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>your_working_directory_for_the_class
-<span class="nv">$ </span>git clone https://github.com/&lt;yourname&gt;/sea-c28-students.git
+<span class="nv">$ </span>git clone https://github.com/&lt;yourname&gt;/sea-c34-python.git
 </pre></div>
 </div>
 <p>(you can copy and paste that link from the gitHub page)</p>
 <p>If you have an SSH key set up for gitHub, you&#8217;ll want to do this instead:</p>
-<div class="highlight-bash"><div class="highlight"><pre>git@github.com:&lt;yourname&gt;/sea-c28-students.git
+<div class="highlight-bash"><div class="highlight"><pre>git@github.com:&lt;yourname&gt;/sea-c34-python.git
 </pre></div>
 </div>
 <p><strong>Remember</strong>, &lt;yourname&gt; should be replaced by your github account name.</p>
 </div>
+<div class="section" id="brief-aside">
+<h2>Brief Aside<a class="headerlink" href="#brief-aside" title="Permalink to this headline">¶</a></h2>
+<p>Remember our puzzle?
+Let&#8217;s go into our recently cloned class repo and see some starter code.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nb">cd </span>examples/session01
+python hello.py
+</pre></div>
+</div>
+<p>Now back to show!</p>
+</div>
 <div class="section" id="step-5-install-requirements">
-<h3>Step 5: Install Requirements<a class="headerlink" href="#step-5-install-requirements" title="Permalink to this headline">¶</a></h3>
+<h2>Step 5: Install Requirements<a class="headerlink" href="#step-5-install-requirements" title="Permalink to this headline">¶</a></h2>
 <p>As this is an intro class, we are going to use almost entirely features of standand library. But there are a couple things you may want:</p>
 <p><strong>iPython</strong></p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$pip</span> install ipython
@@ -469,12 +598,12 @@ software projects &#8211; particularly open source ones.</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install PdbSublimeTextSupport
 </pre></div>
 </div>
-</div>
-</div>
 <div class="section" id="introduction-to-ipython">
-<h2>Introduction to iPython<a class="headerlink" href="#introduction-to-ipython" title="Permalink to this headline">¶</a></h2>
+<h3>Introduction to iPython<a class="headerlink" href="#introduction-to-ipython" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
 <div class="section" id="ipython-overview">
-<h3>iPython Overview<a class="headerlink" href="#ipython-overview" title="Permalink to this headline">¶</a></h3>
+<h2>iPython Overview<a class="headerlink" href="#ipython-overview" title="Permalink to this headline">¶</a></h2>
 <p>You have now installed <a class="reference external" href="http://ipython.org">iPython</a>.</p>
 <p>iPython is an advanced Python interpreter that offers enhancements.</p>
 <p>You can read more about it in the <a class="reference external" href="http://ipython.org/ipython-doc/stable/index.html">official documentation</a>.</p>
@@ -482,7 +611,7 @@ software projects &#8211; particularly open source ones.</p>
 <p><a class="reference external" href="http://ipython.org/ipython-doc/stable/interactive/index.html">Using iPython for Interactive Work</a>.</p>
 </div>
 <div class="section" id="the-very-basics-of-ipython">
-<h3>The very basics of iPython<a class="headerlink" href="#the-very-basics-of-ipython" title="Permalink to this headline">¶</a></h3>
+<h2>The very basics of iPython<a class="headerlink" href="#the-very-basics-of-ipython" title="Permalink to this headline">¶</a></h2>
 <p>iPython can do a lot for you, but for starters, here are the key pieces you&#8217;ll
 want to know:</p>
 <p>Start it up</p>
@@ -536,7 +665,7 @@ object?   -&gt; Details about <span class="s1">&#39;object&#39;</span>, use <spa
 <p>That&#8217;s it &#8211; you can get a lot done with those.</p>
 </div>
 <div class="section" id="how-to-run-a-python-file">
-<h3>How to run a python file<a class="headerlink" href="#how-to-run-a-python-file" title="Permalink to this headline">¶</a></h3>
+<h2>How to run a python file<a class="headerlink" href="#how-to-run-a-python-file" title="Permalink to this headline">¶</a></h2>
 <p>A file with python code in it is a &#8216;module&#8217; or &#8216;script&#8217;</p>
 <p>(more on the distiction later on...)</p>
 <p>It should be named with the <tt class="docutils literal"><span class="pre">.py</span></tt> extension: <tt class="docutils literal"><span class="pre">some_name.py</span></tt></p>
@@ -553,16 +682,16 @@ object?   -&gt; Details about <span class="s1">&#39;object&#39;</span>, use <spa
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">run</span> <span class="n">the_file</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-</div>
-</div>
 <div class="section" id="basic-python-syntax">
-<h2>Basic Python Syntax<a class="headerlink" href="#basic-python-syntax" title="Permalink to this headline">¶</a></h2>
+<h3>Basic Python Syntax<a class="headerlink" href="#basic-python-syntax" title="Permalink to this headline">¶</a></h3>
 <div class="center mlarge line-block">
 <div class="line">Expressions, Statements,</div>
 <div class="line">Values, Types, and Symbols</div>
 </div>
+</div>
+</div>
 <div class="section" id="code-structure">
-<h3>Code structure<a class="headerlink" href="#code-structure" title="Permalink to this headline">¶</a></h3>
+<h2>Code structure<a class="headerlink" href="#code-structure" title="Permalink to this headline">¶</a></h2>
 <p>Each line is a piece of code.</p>
 <p>Comments:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [3]: </span><span class="c"># everything after a &#39;#&#39; is a comment</span>
@@ -588,7 +717,7 @@ object?   -&gt; Details about <span class="s1">&#39;object&#39;</span>, use <spa
 </div>
 </div>
 <div class="section" id="printing">
-<h3>Printing<a class="headerlink" href="#printing" title="Permalink to this headline">¶</a></h3>
+<h2>Printing<a class="headerlink" href="#printing" title="Permalink to this headline">¶</a></h2>
 <p>In Python 2.x, printing is a statement. In Python 3, it was changed to a
 function.</p>
 <div class="build container">
@@ -648,6 +777,9 @@ use this idiom in your code.</p>
     <span class="n">fix_the_problem</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="whitespace">
+<h2>Whitespace<a class="headerlink" href="#whitespace" title="Permalink to this headline">¶</a></h2>
 <p>Python uses whitespace to delineate structure.</p>
 <p>This means that in Python, whitespace is <strong>significant</strong>.</p>
 <p>(but <strong>ONLY</strong> for newlines and indentation)</p>
@@ -678,7 +810,7 @@ use this idiom in your code.</p>
 <p>ideally even when you hit the &lt;tab&gt; key</p>
 </div>
 <div class="section" id="values">
-<h3>Values<a class="headerlink" href="#values" title="Permalink to this headline">¶</a></h3>
+<h2>Values<a class="headerlink" href="#values" title="Permalink to this headline">¶</a></h2>
 <ul class="build simple">
 <li>Values are pieces of unnamed data: <tt class="docutils literal"><span class="pre">42,</span> <span class="pre">u'Hello,</span> <span class="pre">world',</span></tt></li>
 <li>In Python, all values are objects<ul>
@@ -692,7 +824,7 @@ use this idiom in your code.</p>
 </ul>
 </div>
 <div class="section" id="literals-for-the-basic-value-types">
-<h3>Literals for the Basic Value types:<a class="headerlink" href="#literals-for-the-basic-value-types" title="Permalink to this headline">¶</a></h3>
+<h2>Literals for the Basic Value types:<a class="headerlink" href="#literals-for-the-basic-value-types" title="Permalink to this headline">¶</a></h2>
 <dl class="build docutils">
 <dt>Numbers:</dt>
 <dd><ul class="first last simple">
@@ -717,7 +849,7 @@ use this idiom in your code.</p>
 <p>(There are intricacies to all of these that we&#8217;ll get into later)</p>
 </div>
 <div class="section" id="values-in-action">
-<h3>Values in Action<a class="headerlink" href="#values-in-action" title="Permalink to this headline">¶</a></h3>
+<h2>Values in Action<a class="headerlink" href="#values-in-action" title="Permalink to this headline">¶</a></h2>
 <p>An expression is made up of values and operators</p>
 <ul class="build simple">
 <li>An expression is evaluated to produce a new value:  <tt class="docutils literal"><span class="pre">2</span> <span class="pre">+</span> <span class="pre">2</span></tt><ul>
@@ -725,6 +857,7 @@ use this idiom in your code.</p>
 </ul>
 </li>
 <li>Integer vs. float arithmetic<ul>
+<li><cite>1 / 2</cite> versus <cite>1. / 2</cite></li>
 <li>(Python 3 smooths this out)</li>
 <li>Always use <tt class="docutils literal"><span class="pre">/</span></tt> when you want float results, <tt class="docutils literal"><span class="pre">//</span></tt> when you want floored (integer) results</li>
 </ul>
@@ -738,7 +871,7 @@ use this idiom in your code.</p>
 </ul>
 </div>
 <div class="section" id="symbols">
-<h3>Symbols<a class="headerlink" href="#symbols" title="Permalink to this headline">¶</a></h3>
+<h2>Symbols<a class="headerlink" href="#symbols" title="Permalink to this headline">¶</a></h2>
 <p>Symbols are how we give names to values (objects).</p>
 <ul class="build simple">
 <li>Symbols must begin with an underscore or letter</li>
@@ -757,7 +890,7 @@ use this idiom in your code.</p>
 </ul>
 </div>
 <div class="section" id="symbols-and-type">
-<h3>Symbols and Type<a class="headerlink" href="#symbols-and-type" title="Permalink to this headline">¶</a></h3>
+<h2>Symbols and Type<a class="headerlink" href="#symbols-and-type" title="Permalink to this headline">¶</a></h2>
 <p>Evaluating the type of a <em>symbol</em> will return the type of the <em>value</em> to which
 it is bound.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [19]: </span><span class="nb">type</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -781,7 +914,7 @@ it is bound.</p>
 </div>
 </div>
 <div class="section" id="assignment">
-<h3>Assignment<a class="headerlink" href="#assignment" title="Permalink to this headline">¶</a></h3>
+<h2>Assignment<a class="headerlink" href="#assignment" title="Permalink to this headline">¶</a></h2>
 <p>A <em>symbol</em> is <strong>bound</strong> to a <em>value</em> with the assignment operator: <tt class="docutils literal"><span class="pre">=</span></tt></p>
 <ul class="build simple">
 <li>This attaches a name to a value</li>
@@ -807,7 +940,7 @@ it is bound.</p>
 </div>
 </div>
 <div class="section" id="in-place-assignment">
-<h3>In-Place Assignment<a class="headerlink" href="#in-place-assignment" title="Permalink to this headline">¶</a></h3>
+<h2>In-Place Assignment<a class="headerlink" href="#in-place-assignment" title="Permalink to this headline">¶</a></h2>
 <p>You can also do &#8220;in-place&#8221; assignment with <tt class="docutils literal"><span class="pre">+=</span></tt>.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [32]: </span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 
@@ -829,7 +962,7 @@ it is bound.</p>
 <p>(not quite &#8211; really in-place assignment for mutables....)</p>
 </div>
 <div class="section" id="multiple-assignment">
-<h3>Multiple Assignment<a class="headerlink" href="#multiple-assignment" title="Permalink to this headline">¶</a></h3>
+<h2>Multiple Assignment<a class="headerlink" href="#multiple-assignment" title="Permalink to this headline">¶</a></h2>
 <p>You can assign multiple variables from multiple expressions in one statement</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [48]: </span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
 
@@ -847,7 +980,7 @@ it is bound.</p>
 <p>Python evaluates all the expressions on the right before doing any assignments</p>
 </div>
 <div class="section" id="nifty-python-trick">
-<h3>Nifty Python Trick<a class="headerlink" href="#nifty-python-trick" title="Permalink to this headline">¶</a></h3>
+<h2>Nifty Python Trick<a class="headerlink" href="#nifty-python-trick" title="Permalink to this headline">¶</a></h2>
 <p>Using this feature, we can swap values between two symbols in one statement:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [51]: </span><span class="n">i</span>
 <span class="gh">Out[51]: </span><span class="go">4</span>
@@ -866,84 +999,8 @@ it is bound.</p>
 </div>
 <p>Multiple assignment and symbol swapping can be very useful in certain contexts</p>
 </div>
-<div class="section" id="deleting">
-<h3>Deleting<a class="headerlink" href="#deleting" title="Permalink to this headline">¶</a></h3>
-<p>You can&#8217;t actually delete anything in python...</p>
-<p><tt class="docutils literal"><span class="pre">del</span></tt>  only unbinds a name.</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [56]: </span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="gp">In [57]: </span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
-
-<span class="gp">In [58]: </span><span class="k">del</span> <span class="n">a</span>
-
-<span class="gp">In [59]: </span><span class="n">a</span>
-<span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-59-60b725f10c9c&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">a</span>
-
-<span class="ne">NameError</span>: name &#39;a&#39; is not defined
-</pre></div>
-</div>
-<p>The object is still there...python will only delete it if there are no
-references to it.</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [15]: </span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="gp">In [16]: </span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
-
-<span class="gp">In [17]: </span><span class="k">del</span> <span class="n">a</span>
-
-<span class="gp">In [18]: </span><span class="n">a</span>
-<span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-18-60b725f10c9c&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">a</span>
-
-<span class="ne">NameError</span>: name &#39;a&#39; is not defined
-
-<span class="gp">In [19]: </span><span class="n">b</span>
-<span class="gh">Out[19]: </span><span class="go">5</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="identity">
-<h3>Identity<a class="headerlink" href="#identity" title="Permalink to this headline">¶</a></h3>
-<p>Every value in Python is an object.</p>
-<p>Every object is unique and has a unique <em>identity</em>, which you can inspect with
-the <tt class="docutils literal"><span class="pre">id</span></tt> <em>builtin</em>:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [68]: </span><span class="nb">id</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<span class="gh">Out[68]: </span><span class="go">140553647890984</span>
-
-<span class="gp">In [69]: </span><span class="nb">id</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-<span class="gh">Out[69]: </span><span class="go">140553647884864</span>
-
-<span class="gp">In [70]: </span><span class="n">new_i</span> <span class="o">=</span> <span class="n">i</span>
-
-<span class="gp">In [71]: </span><span class="nb">id</span><span class="p">(</span><span class="n">new_i</span><span class="p">)</span>
-<span class="gh">Out[71]: </span><span class="go">140553647890984</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="testing-identity">
-<h3>Testing Identity<a class="headerlink" href="#testing-identity" title="Permalink to this headline">¶</a></h3>
-<p>You can find out if the values bound to two different symbols are the <strong>same
-object</strong> using the <tt class="docutils literal"><span class="pre">is</span></tt> operator:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [72]: </span><span class="n">count</span> <span class="o">=</span> <span class="mi">23</span>
-
-<span class="gp">In [73]: </span><span class="n">other_count</span> <span class="o">=</span> <span class="n">count</span>
-
-<span class="gp">In [74]: </span><span class="n">count</span> <span class="ow">is</span> <span class="n">other_count</span>
-<span class="gh">Out[74]: </span><span class="go">True</span>
-
-<span class="gp">In [75]: </span><span class="n">count</span> <span class="o">=</span> <span class="mi">42</span>
-
-<span class="gp">In [76]: </span><span class="n">other_count</span> <span class="ow">is</span> <span class="n">count</span>
-<span class="gh">Out[76]: </span><span class="go">False</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="equality">
-<h3>Equality<a class="headerlink" href="#equality" title="Permalink to this headline">¶</a></h3>
+<h2>Equality<a class="headerlink" href="#equality" title="Permalink to this headline">¶</a></h2>
 <p>You can test for the equality of certain values with the <tt class="docutils literal"><span class="pre">==</span></tt> operator</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [77]: </span><span class="n">val1</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">30</span>
 
@@ -960,7 +1017,7 @@ object</strong> using the <tt class="docutils literal"><span class="pre">is</spa
 </div>
 </div>
 <div class="section" id="operator-precedence">
-<h3>Operator Precedence<a class="headerlink" href="#operator-precedence" title="Permalink to this headline">¶</a></h3>
+<h2>Operator Precedence<a class="headerlink" href="#operator-precedence" title="Permalink to this headline">¶</a></h2>
 <p>Operator Precedence determines what evaluates first:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="mi">4</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">!=</span> <span class="p">(</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span>
 </pre></div>
@@ -968,7 +1025,7 @@ object</strong> using the <tt class="docutils literal"><span class="pre">is</spa
 <p>To force statements to be evaluated out of order, use parentheses.</p>
 </div>
 <div class="section" id="python-operator-precedence">
-<h3>Python Operator Precedence<a class="headerlink" href="#python-operator-precedence" title="Permalink to this headline">¶</a></h3>
+<h2>Python Operator Precedence<a class="headerlink" href="#python-operator-precedence" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
 <dt>Parentheses and Literals:</dt>
 <dd><p class="first"><tt class="docutils literal"><span class="pre">(),</span> <span class="pre">[],</span> <span class="pre">{}</span></tt></p>
@@ -1011,7 +1068,7 @@ object</strong> using the <tt class="docutils literal"><span class="pre">is</spa
 </dl>
 </div>
 <div class="section" id="string-literals">
-<h3>String Literals<a class="headerlink" href="#string-literals" title="Permalink to this headline">¶</a></h3>
+<h2>String Literals<a class="headerlink" href="#string-literals" title="Permalink to this headline">¶</a></h2>
 <p>You define a <tt class="docutils literal"><span class="pre">string</span></tt> value by writing a <em>literal</em>:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="s">u&#39;a string&#39;</span>
 <span class="gh">Out[1]: </span><span class="go">u&#39;a string&#39;</span>
@@ -1027,22 +1084,9 @@ object</strong> using the <tt class="docutils literal"><span class="pre">is</spa
 </pre></div>
 </div>
 <p>(what&#8217;s the &#8216;<tt class="docutils literal"><span class="pre">u</span></tt>&#8216; about?)</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [5]: </span><span class="sd">u&quot;&quot;&quot;a multi-line</span>
-<span class="gp">   ...: </span><span class="sd">string</span>
-<span class="gp">   ...: </span><span class="sd">all in one</span>
-<span class="gp">   ...: </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="gh">Out[5]: </span><span class="go">u&#39;a multi-line\nstring\nall in one\n&#39;</span>
-
-<span class="gp">In [6]: </span><span class="s">u&quot;a string with an </span><span class="se">\n</span><span class="s"> escaped character&quot;</span>
-<span class="gh">Out[6]: </span><span class="go">u&#39;a string with an \n escaped character&#39;</span>
-
-<span class="gp">In [7]: </span><span class="s">r&#39;a &quot;raw&quot; string, the \n comes through as a \n&#39;</span>
-<span class="gh">Out[7]: </span><span class="go">&#39;a &quot;raw&quot; string, the \\n comes through as a \\n&#39;</span>
-</pre></div>
-</div>
 </div>
 <div class="section" id="keywords">
-<h3>Keywords<a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h3>
+<h2>Keywords<a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h2>
 <p>Python defines a number of <strong>keywords</strong></p>
 <p>These are language constructs.</p>
 <p>You <em>cannot</em> use these words as symbols.</p>
@@ -1075,7 +1119,7 @@ def       for       lambda    try
 </div>
 </div>
 <div class="section" id="builtins">
-<h3>__builtins__<a class="headerlink" href="#builtins" title="Permalink to this headline">¶</a></h3>
+<h2>__builtins__<a class="headerlink" href="#builtins" title="Permalink to this headline">¶</a></h2>
 <p>Python also has a number of pre-bound symbols, called <strong>builtins</strong></p>
 <p>Try this:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [6]: </span><span class="nb">dir</span><span class="p">(</span><span class="n">__builtins__</span><span class="p">)</span>
@@ -1110,7 +1154,7 @@ def       for       lambda    try
 <p>In general, this is a <strong>BAD IDEA</strong>.</p>
 </div>
 <div class="section" id="exceptions">
-<h3>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h3>
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
 <p>Notice that the first batch of <tt class="docutils literal"><span class="pre">__builtins__</span></tt> are all <em>Exceptions</em></p>
 <p>Exceptions are how Python tells you that something has gone wrong.</p>
 <p>There are several exceptions that you are likely to see a lot of:</p>
@@ -1125,8 +1169,31 @@ method that an object does not have (this often means you have a different
 type of object than you expect)</li>
 </ul>
 </div>
+<div class="section" id="the-if-statement">
+<h2>The <tt class="docutils literal"><span class="pre">if</span></tt> Statement<a class="headerlink" href="#the-if-statement" title="Permalink to this headline">¶</a></h2>
+<p>In order to do anything interesting at all (including this week&#8217;s homework), you need to be able to make a decision.</p>
+<div class="highlight-python"><div class="highlight"><pre>In [12]: def test(a):
+   ....:     if a == 5:
+   ....:         print(u&quot;that&#39;s the value I&#39;m looking for!&quot;)
+   ....:     elif a == 7:
+   ....:         print(u&quot;that&#39;s an OK number&quot;)
+   ....:     else:
+   ....:         print(u&quot;that number won&#39;t do!&quot;)
+
+In [13]: test(5)
+that&#39;s the value I&#39;m looking for!
+
+In [14]: test(7)
+that&#39;s an OK number
+
+In [15]: test(14)
+that number won&#39;t do!
+</pre></div>
+</div>
+<p>There is more to it than that, but this will get you started.</p>
+</div>
 <div class="section" id="functions">
-<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 <p>What is a function?</p>
 <p class="build">A function is a self-contained chunk of code</p>
 <p>You use them when you need the same code to run multiple times,
@@ -1146,7 +1213,7 @@ or in multiple parts of the program.</p>
 </div>
 </div>
 <div class="section" id="functions-def">
-<h3>Functions: <tt class="docutils literal"><span class="pre">def</span></tt><a class="headerlink" href="#functions-def" title="Permalink to this headline">¶</a></h3>
+<h2>Functions: <tt class="docutils literal"><span class="pre">def</span></tt><a class="headerlink" href="#functions-def" title="Permalink to this headline">¶</a></h2>
 <p><tt class="docutils literal"><span class="pre">def</span></tt>  is a <em>statement</em>:</p>
 <ul class="build simple">
 <li>it is executed</li>
@@ -1172,7 +1239,7 @@ or in multiple parts of the program.</p>
 </div>
 </div>
 <div class="section" id="calling-functions">
-<h3>Calling Functions<a class="headerlink" href="#calling-functions" title="Permalink to this headline">¶</a></h3>
+<h2>Calling Functions<a class="headerlink" href="#calling-functions" title="Permalink to this headline">¶</a></h2>
 <p>You <strong>call</strong> a function using the function call operator (parens):</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [2]: </span><span class="nb">type</span><span class="p">(</span><span class="n">simple</span><span class="p">)</span>
 <span class="gh">Out[2]: </span><span class="go">function</span>
@@ -1184,7 +1251,7 @@ or in multiple parts of the program.</p>
 </div>
 </div>
 <div class="section" id="functions-call-stack">
-<h3>Functions: Call Stack<a class="headerlink" href="#functions-call-stack" title="Permalink to this headline">¶</a></h3>
+<h2>Functions: Call Stack<a class="headerlink" href="#functions-call-stack" title="Permalink to this headline">¶</a></h2>
 <p>functions call functions &#8211; this makes an execution stack &#8211; that&#8217;s all a trace
 back is</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [5]: </span><span class="k">def</span> <span class="nf">exceptional</span><span class="p">():</span>
@@ -1203,7 +1270,7 @@ back is</p>
 <p>You&#8217;ve defined three functions, one of which will <em>call</em> the other two.</p>
 </div>
 <div class="section" id="functions-tracebacks">
-<h3>Functions: Tracebacks<a class="headerlink" href="#functions-tracebacks" title="Permalink to this headline">¶</a></h3>
+<h2>Functions: Tracebacks<a class="headerlink" href="#functions-tracebacks" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [8]: </span><span class="n">doer</span><span class="p">()</span>
 <span class="go">I am exceptional!</span>
 <span class="gt">---------------------------------------------------------------------------</span>
@@ -1228,7 +1295,7 @@ back is</p>
 </div>
 </div>
 <div class="section" id="functions-return">
-<h3>Functions: <tt class="docutils literal"><span class="pre">return</span></tt><a class="headerlink" href="#functions-return" title="Permalink to this headline">¶</a></h3>
+<h2>Functions: <tt class="docutils literal"><span class="pre">return</span></tt><a class="headerlink" href="#functions-return" title="Permalink to this headline">¶</a></h2>
 <p>Every function ends by returning a value</p>
 <p>This is actually the simplest possible function:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">fun</span><span class="p">():</span>
@@ -1279,7 +1346,7 @@ back is</p>
 </div>
 </div>
 <div class="section" id="functions-parameters">
-<h3>Functions: parameters<a class="headerlink" href="#functions-parameters" title="Permalink to this headline">¶</a></h3>
+<h2>Functions: parameters<a class="headerlink" href="#functions-parameters" title="Permalink to this headline">¶</a></h2>
 <p>In a <tt class="docutils literal"><span class="pre">def</span></tt> statement, the values written <em>inside</em> the parens are
 <strong>parameters</strong></p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [22]: </span><span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
@@ -1291,7 +1358,7 @@ back is</p>
 <p>x, y, z are <em>local</em> symbols &#8211; so is q</p>
 </div>
 <div class="section" id="functions-arguments">
-<h3>Functions: arguments<a class="headerlink" href="#functions-arguments" title="Permalink to this headline">¶</a></h3>
+<h2>Functions: arguments<a class="headerlink" href="#functions-arguments" title="Permalink to this headline">¶</a></h2>
 <p>When you call a function, you pass values to the function parameters as
 <strong>arguments</strong></p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [23]: </span><span class="n">fun</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -1300,41 +1367,27 @@ back is</p>
 </div>
 <p>The values you pass in are <em>bound</em> to the symbols inside the function and used.</p>
 </div>
-<div class="section" id="the-if-statement">
-<h3>The <tt class="docutils literal"><span class="pre">if</span></tt> Statement<a class="headerlink" href="#the-if-statement" title="Permalink to this headline">¶</a></h3>
-<p>In order to do anything interesting at all (including this week&#8217;s homework), you need to be able to make a decision.</p>
-<div class="highlight-python"><div class="highlight"><pre>In [12]: def test(a):
-   ....:     if a == 5:
-   ....:         print(u&quot;that&#39;s the value I&#39;m looking for!&quot;)
-   ....:     elif a == 7:
-   ....:         print(u&quot;that&#39;s an OK number&quot;)
-   ....:     else:
-   ....:         print(u&quot;that number won&#39;t do!&quot;)
-
-In [13]: test(5)
-that&#39;s the value I&#39;m looking for!
-
-In [14]: test(7)
-that&#39;s an OK number
-
-In [15]: test(14)
-that number won&#39;t do!
-</pre></div>
-</div>
-<p>There is more to it than that, but this will get you started.</p>
-</div>
 <div class="section" id="enough-for-now">
-<h3>Enough For Now<a class="headerlink" href="#enough-for-now" title="Permalink to this headline">¶</a></h3>
+<h2>Enough For Now<a class="headerlink" href="#enough-for-now" title="Permalink to this headline">¶</a></h2>
 <p>That&#8217;s it for our basic intro to Python</p>
 <p>Before next session, you&#8217;ll use what you&#8217;ve learned here today to do some
 exercises in Python programming</p>
+<div class="section" id="puzzle-solved">
+<h3>Puzzle Solved<a class="headerlink" href="#puzzle-solved" title="Permalink to this headline">¶</a></h3>
+<p>Now it&#8217;s time to solve our puzzle. Remember it?</p>
+<p>Write a Python program that prints &#8220;Hello, World!&#8221; if you call it with
+no arguments, otherwise prints the correct translation of
+&#8220;Hello, World!&#8221; in whatever language is given as the first argument
+to the program.</p>
+<p>Partner up and let&#8217;s get to work!</p>
 </div>
-</div>
-<div class="section" id="homework">
-<h2>Homework<a class="headerlink" href="#homework" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Homework<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p class="center large">Three Tasks by Wednesday</p>
+</div>
+</div>
 <div class="section" id="task-1">
-<h3>Task 1<a class="headerlink" href="#task-1" title="Permalink to this headline">¶</a></h3>
+<h2>Task 1<a class="headerlink" href="#task-1" title="Permalink to this headline">¶</a></h2>
 <p><strong>Tell Us About Yourself</strong></p>
 <p>This is a way for you to learn a bit about gitHub, and how you are going to
 submit most of your homework.</p>
@@ -1366,7 +1419,7 @@ repository.</li>
 the world.</p>
 </div>
 <div class="section" id="task-2">
-<h3>Task 2<a class="headerlink" href="#task-2" title="Permalink to this headline">¶</a></h3>
+<h2>Task 2<a class="headerlink" href="#task-2" title="Permalink to this headline">¶</a></h2>
 <p><strong>Set Up a Great Dev Environment</strong></p>
 <p>Make sure you have the basics of command line usage down:</p>
 <p>Work through the supplemental tutorials on setting up your
@@ -1383,7 +1436,7 @@ goals for your own editor.</p>
 <p>If none are available, please consider a change of editor.</p>
 </div>
 <div class="section" id="task-3">
-<h3>Task 3<a class="headerlink" href="#task-3" title="Permalink to this headline">¶</a></h3>
+<h2>Task 3<a class="headerlink" href="#task-3" title="Permalink to this headline">¶</a></h2>
 <p><strong>Explore Errors</strong></p>
 <ul>
 <li><p class="first">Create a new directory in your personal folder in the <tt class="docutils literal"><span class="pre">students</span></tt> folder of the class repository:</p>
@@ -1427,7 +1480,6 @@ your work.</li>
 </ul>
 </div>
 </div>
-</div>
 
 
           </div>
@@ -1438,51 +1490,65 @@ your work.</li>
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Session One: Introductions</a><ul>
-<li><a class="reference internal" href="#introductions">Introductions</a><ul>
+<li><a class="reference internal" href="#jump-right-in">Jump right in</a></li>
+<li><a class="reference internal" href="#repl-read-evaluate-print-loop">REPL = Read, Evaluate, Print Loop</a><ul>
+<li><a class="reference internal" href="#introductions">Introductions</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#your-instructor">Your instructor</a></li>
 <li><a class="reference internal" href="#your-tas">Your TAs</a></li>
-<li><a class="reference internal" href="#who-are-you">Who are you?</a></li>
+<li><a class="reference internal" href="#how-this-fits-into-codefellows">How This Fits into CodeFellows</a></li>
+<li><a class="reference internal" href="#outline-of-this-class">Outline of this Class</a></li>
+<li><a class="reference internal" href="#puzzle-given">Puzzle Given</a></li>
+<li><a class="reference internal" href="#class-meetings">Class Meetings</a></li>
+<li><a class="reference internal" href="#homework">Homework</a></li>
+<li><a class="reference internal" href="#grading-policy">Grading Policy</a></li>
+<li><a class="reference internal" href="#intense-fast-paced">Intense, Fast-paced</a></li>
+<li><a class="reference internal" href="#who-are-you">Who are you?</a><ul>
+<li><a class="reference internal" href="#course-materials-online">Course Materials Online</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#course-materials-online">Course Materials Online</a><ul>
 <li><a class="reference internal" href="#github">GitHub</a></li>
 <li><a class="reference internal" href="#canvas">Canvas</a></li>
-<li><a class="reference internal" href="#elsewhere">Elsewhere</a></li>
+<li><a class="reference internal" href="#elsewhere">Elsewhere</a><ul>
+<li><a class="reference internal" href="#introduction-to-python">Introduction to Python</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#introduction-to-this-class">Introduction to This Class</a><ul>
+<li><a class="reference internal" href="#how-i-learned-python-and-why-i-m-glad-i-did">How I Learned Python, and Why I&#8217;m Glad I Did</a></li>
 <li><a class="reference internal" href="#what-is-python">What is Python?</a></li>
 <li><a class="reference internal" href="#python-features">Python Features</a></li>
 <li><a class="reference internal" href="#what-s-a-dynamic-language">What&#8217;s a Dynamic language</a></li>
 <li><a class="reference internal" href="#duck-typing">Duck Typing</a></li>
 <li><a class="reference internal" href="#python-versions">Python Versions</a></li>
+<li><a class="reference internal" href="#other-reasons-why-python-is-awesome">Other Reasons Why Python is Awesome</a><ul>
+<li><a class="reference internal" href="#introduction-to-your-environment">Introduction to Your Environment</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#introduction-to-your-environment">Introduction to Your Environment</a><ul>
 <li><a class="reference internal" href="#your-command-line-cli">Your Command Line (cli)</a></li>
 <li><a class="reference internal" href="#your-interpreter">Your Interpreter</a></li>
-<li><a class="reference internal" href="#your-editor">Your Editor</a></li>
-<li><a class="reference internal" href="#why-no-ide">Why No IDE?</a></li>
+<li><a class="reference internal" href="#your-editor">Your Editor</a><ul>
+<li><a class="reference internal" href="#setting-up-your-environment">Setting Up Your Environment</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#setting-up-your-environment">Setting Up Your Environment</a><ul>
 <li><a class="reference internal" href="#our-class-environment">Our Class Environment</a></li>
 <li><a class="reference internal" href="#step-1-python-2-7">Step 1: Python 2.7</a></li>
 <li><a class="reference internal" href="#step-2-pip">Step 2: Pip</a></li>
 <li><a class="reference internal" href="#step-3-optional-virtualenv">Step 3: Optional &#8211; Virtualenv</a></li>
 <li><a class="reference internal" href="#step-4-clone-class-repository">Step 4: Clone Class Repository</a></li>
-<li><a class="reference internal" href="#step-5-install-requirements">Step 5: Install Requirements</a></li>
+<li><a class="reference internal" href="#brief-aside">Brief Aside</a></li>
+<li><a class="reference internal" href="#step-5-install-requirements">Step 5: Install Requirements</a><ul>
+<li><a class="reference internal" href="#introduction-to-ipython">Introduction to iPython</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#introduction-to-ipython">Introduction to iPython</a><ul>
 <li><a class="reference internal" href="#ipython-overview">iPython Overview</a></li>
 <li><a class="reference internal" href="#the-very-basics-of-ipython">The very basics of iPython</a></li>
-<li><a class="reference internal" href="#how-to-run-a-python-file">How to run a python file</a></li>
+<li><a class="reference internal" href="#how-to-run-a-python-file">How to run a python file</a><ul>
+<li><a class="reference internal" href="#basic-python-syntax">Basic Python Syntax</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#basic-python-syntax">Basic Python Syntax</a><ul>
 <li><a class="reference internal" href="#code-structure">Code structure</a></li>
 <li><a class="reference internal" href="#printing">Printing</a></li>
+<li><a class="reference internal" href="#whitespace">Whitespace</a></li>
 <li><a class="reference internal" href="#values">Values</a></li>
 <li><a class="reference internal" href="#literals-for-the-basic-value-types">Literals for the Basic Value types:</a></li>
 <li><a class="reference internal" href="#values-in-action">Values in Action</a></li>
@@ -1492,9 +1558,6 @@ your work.</li>
 <li><a class="reference internal" href="#in-place-assignment">In-Place Assignment</a></li>
 <li><a class="reference internal" href="#multiple-assignment">Multiple Assignment</a></li>
 <li><a class="reference internal" href="#nifty-python-trick">Nifty Python Trick</a></li>
-<li><a class="reference internal" href="#deleting">Deleting</a></li>
-<li><a class="reference internal" href="#identity">Identity</a></li>
-<li><a class="reference internal" href="#testing-identity">Testing Identity</a></li>
 <li><a class="reference internal" href="#equality">Equality</a></li>
 <li><a class="reference internal" href="#operator-precedence">Operator Precedence</a></li>
 <li><a class="reference internal" href="#python-operator-precedence">Python Operator Precedence</a></li>
@@ -1502,6 +1565,7 @@ your work.</li>
 <li><a class="reference internal" href="#keywords">Keywords</a></li>
 <li><a class="reference internal" href="#builtins">__builtins__</a></li>
 <li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#the-if-statement">The <tt class="docutils literal"><span class="pre">if</span></tt> Statement</a></li>
 <li><a class="reference internal" href="#functions">Functions</a></li>
 <li><a class="reference internal" href="#functions-def">Functions: <tt class="docutils literal"><span class="pre">def</span></tt></a></li>
 <li><a class="reference internal" href="#calling-functions">Calling Functions</a></li>
@@ -1510,16 +1574,14 @@ your work.</li>
 <li><a class="reference internal" href="#functions-return">Functions: <tt class="docutils literal"><span class="pre">return</span></tt></a></li>
 <li><a class="reference internal" href="#functions-parameters">Functions: parameters</a></li>
 <li><a class="reference internal" href="#functions-arguments">Functions: arguments</a></li>
-<li><a class="reference internal" href="#the-if-statement">The <tt class="docutils literal"><span class="pre">if</span></tt> Statement</a></li>
-<li><a class="reference internal" href="#enough-for-now">Enough For Now</a></li>
+<li><a class="reference internal" href="#enough-for-now">Enough For Now</a><ul>
+<li><a class="reference internal" href="#puzzle-solved">Puzzle Solved</a></li>
+<li><a class="reference internal" href="#id2">Homework</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#homework">Homework</a><ul>
 <li><a class="reference internal" href="#task-1">Task 1</a></li>
 <li><a class="reference internal" href="#task-2">Task 2</a></li>
 <li><a class="reference internal" href="#task-3">Task 3</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

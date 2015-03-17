@@ -7,6 +7,14 @@ resources to help a newcomer get to know Python. The following list represents
 the best-known and best-regarded of the breed. If you are itching for a bit
 more work on your Python chops, you should try these out.
 
+Visualizing Python Execution
+============================
+
+The `Online Python Tutor <http://www.pythontutor.com>`_ lets you enter Python code, run it and debug it step-by-step,
+and visualize the symbol table in each scope. An indispensable tool for beginners
+written by Philip Guo.
+
+
 Python Language Resources
 =========================
 
@@ -19,6 +27,8 @@ build your Python chops.
 
 For the beginner
 ----------------
+
+* `Interactive Python Textbook <http://interactivepython.org/runestone/default/user/login?_next=http://interactivepython.org/runestone/static/Python-F2/index.html>`_:
 
 * `The Python Tutorial <https://docs.python.org/2/tutorial/>`_: This is the
   official tutorial from the Python website. No more authoritative source is
