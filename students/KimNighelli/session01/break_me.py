@@ -13,13 +13,27 @@ def type_error(string, some_float):
 def name_error():
     return x
 
-#Syntax Error
+####Syntax Error######
 # A syntax error occurs when Python syntax is incorrect. The syntax
 # below is incorrect in the fmt block, there should not be three quotes.
-syntax_error("2015-03-16", "%Y-"%m-%d")
+
+#syntax_error("2015-03-16", "%Y-"%m-%d")
+
 
 #Error Received:
 #  File "break_me.py", line 19
 #    syntax_error("2015-03-16", "%Y-"%m-%d")
 #                                       ^
 #SyntaxError: invalid syntax
+
+####Attribute Error####
+# This arises when an attribute asignment fails. In this case, the
+# function is wrong. The module datetime has an attribute "strptime",
+# I spelled it incorrectly above. datetime.strpptime does not exist!
+
+attribute_error("2015-03-16", "%Y-%m-%d")
+
+#Error Received:
+#  File "break_me.py", line 8, in attribute_error
+#    return datetime.strpptime()
+#AttributeError: 'module' object has no attribute 'strpptime'
