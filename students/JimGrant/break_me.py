@@ -3,7 +3,7 @@ def show_name_error():
 
 
 def show_type_error():
-    print("Type error here")
+    error = 5 + "I can't be added to 5"
 
 
 def show_syntax_error():
