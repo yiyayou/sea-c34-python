@@ -16,7 +16,7 @@ Is not something particularly relevant for this class, but can be briefly summed
 
  [This is my music](https://www.google.com "QVALIA")
 
- [This is my codingStuff (new and perpetually under construction, imagine geocities-style construction worker gif)](https://www.michaelhazani.net "Michael Hazani's Homepage")
+ [This is my codingStuff (new and perpetually under construction, imagine geocities-style construction worker gif)](https://michaelhazani.net "Michael Hazani's Homepage")
 
 
 #####*sleep is important, kids*.
