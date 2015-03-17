@@ -14,9 +14,9 @@ Is not something particularly relevant for this class, but can be briefly summed
 --- | --- | ---
   |Makes **right** brain happy | Makes **left** brain happy | Both hemispheres can sleep at night
 
- [This is my music](https://www.google.com "QVALIA")
+ [This is my music](http://qvalia.co "QVALIA")
 
- [This is my codingStuff (new and perpetually under construction, imagine geocities-style construction worker gif)](https://michaelhazani.net "Michael Hazani's Homepage")
+ [This is my codingStuff (new and perpetually under construction, imagine geocities-style construction worker gif)](http://michaelhazani.net "Michael Hazani's Homepage")
 
 
 #####*sleep is important, kids*.
