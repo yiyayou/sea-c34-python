@@ -1,5 +1,5 @@
 def show_name_error():
-    print("Name error here")
+    print(i_do_not_exist)
 
 
 def show_type_error():
