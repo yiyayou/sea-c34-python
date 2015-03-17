@@ -4,6 +4,6 @@ I've been living in Seattle for a little over five years.  I'm an avid fan of sp
 
 ## My Wild Past Life!
 
-It's actually not that wild.  My training is as a professional french hornist and I spent a couple of years doing that before I decided that the literal 'starving' part of starving artist was not actually that great.  I'm sure that someday I'll have a midlife crisis where I grow out all my hair, lock myself in a practice room and start taking auditions agian* but in the meantime I'm here because I wanted to persue a lifelong interest in all things logical.
+It's actually not that wild.  My training is as a professional french hornist and I spent a couple of years doing that before I decided that the literal 'starving' part of starving artist was not actually that great.  I'm sure that someday I'll have a midlife crisis where I grow out all my hair, lock myself in a practice room and start taking auditions agian but in the meantime I'm here because I wanted to persue a lifelong interest in all things logical.
 
-*this is my joking font.  Since you don't know me I thought I'd let you know that I'm being wry here, not crazy.
+
