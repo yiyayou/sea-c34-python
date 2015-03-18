@@ -7,6 +7,6 @@ Hi, I am Yi. I am from Shenzhen, China. I came to the States 10 years ago. I got
 
 I work as a Network Operation Center Lead for INRIX. INRIX is a software company focus on Traffic/Location Data and services. I work with testers and I owe deployment validation at work. I really enjoy my work but I know it's time to find out my next career move.  I am not 100% sure if I want to be a software developer. I hope I will get my answer after this class.
 
-After work and class, I enjoy baby and cat videos ... I also like to travel, hike and camp.  You often can find me in a microbrew trying out new beers on the weekends.
+After work and class, I enjoy baby and cat videos ... I also like to travel, hike and camp.  You can often find me in a microbrew trying out new beers on the weekends.
 
 [Please add me on Linkedin.](www.linkedin.com/in/yigueit)
