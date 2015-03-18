@@ -1,6 +1,6 @@
 # Jeremy Schneider
 
- #History
+ # History
   <p> I grew up in Califorina close to San Francisco. I went UC Santa Cruz for college graduate with a BA in Economics. Five years ago I moved out to Seattle to start a new adventure in life. Since living I have worked as a banker and a fincial analysts.<p>
 
 ## Future Goals
