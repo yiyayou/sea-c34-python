@@ -26,14 +26,27 @@ def name_error():
 #                                       ^
 #SyntaxError: invalid syntax
 
+
 ####Attribute Error####
 # This arises when an attribute asignment fails. In this case, the
 # function is wrong. The module datetime has an attribute "strptime",
 # I spelled it incorrectly above. datetime.strpptime does not exist!
 
-attribute_error("2015-03-16", "%Y-%m-%d")
+#attribute_error("2015-03-16", "%Y-%m-%d")
 
 #Error Received:
 #  File "break_me.py", line 8, in attribute_error
 #    return datetime.strpptime()
 #AttributeError: 'module' object has no attribute 'strpptime'
+
+
+#### Type Error ####
+# If an operation is not supported on a variable's type, a type
+# error is raised, Below, I try to add a string and float.
+
+type_error("String!", 11.13)
+
+#Error Received:
+#File "break_me.py", line 11, in type_error
+#    return string + some_float
+#TypeError: cannot concatenate 'str' and 'float' objects
