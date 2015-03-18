@@ -8,7 +8,7 @@ def type_error_function():
 
 
 def syntax_error_function(s):
-    print("Karen")
+    print("Karen"
 
 
 def attribute_error_function():
