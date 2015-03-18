@@ -44,9 +44,20 @@ def name_error():
 # If an operation is not supported on a variable's type, a type
 # error is raised, Below, I try to add a string and float.
 
-type_error("String!", 11.13)
+#type_error("String!", 11.13)
 
 #Error Received:
 #File "break_me.py", line 11, in type_error
 #    return string + some_float
 #TypeError: cannot concatenate 'str' and 'float' objects
+
+
+### Name Error ###
+# Occurs when a variable cannot be found because it's not defined.
+# Below, I never defined x
+
+print name_error()
+
+# File "break_me.py", line 14, in name_error
+#    return x
+#NameError: global name 'x' is not defined
