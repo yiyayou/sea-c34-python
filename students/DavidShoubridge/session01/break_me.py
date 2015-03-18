@@ -14,6 +14,11 @@ def type_error(x, y):
     print x + y
 
 
+def attribute_error():
+    print(attribute_error.min)
+
+
 syntax-error(2, 2)
-nameError(name)
-typeError(x, y)
+name_error(name)
+type_error(x, y)
+attribute_error()
