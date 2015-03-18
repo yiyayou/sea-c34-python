@@ -7,7 +7,7 @@ def type_error_function():
     x()
 
 
-def syntax_error_function(s):
+def syntax_error_function():
     print("Karen"
 
 
