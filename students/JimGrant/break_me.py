@@ -7,11 +7,11 @@ def show_type_error():
 
 
 def show_syntax_error():
-    print("Syntax error here")
+    eval("text = 'hmm did I forget something?")
 
 
 def show_attribute_error():
-    print("Attr error here")
+    print("This is how you make a string uppercase, right?".UPPER())
 
 
 if __name__ == "__main__":
