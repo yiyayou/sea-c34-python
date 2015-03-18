@@ -9,4 +9,4 @@ I work as a Network Operation Center Lead for INRIX. INRIX is a software company
 
 After work and class, I enjoy baby and cat videos ... I also like to travel, hike and camp.  You can often find me in a microbrew trying out new beers on the weekends.
 
-[Please add me on Linkedin.](www.linkedin.com/in/yigueit)
+[Please add me on Linkedin.](http://www.linkedin.com/in/yigueit)
