@@ -7,34 +7,34 @@
         Return single integer value of Fibonacci sequence at index,
         determined by user input. """
 
-user = int(raw_input("nth number of Fib: "))
+fibUser = int(raw_input("nth number of Fib: "))
 
 
-def fib(user):
+def fib(fibUser):
     x, y, i = 0, 1, 1
-    while i < user:
+    while i < fibUser:
         x, y, i = x+y, x, i+1
     return x
 
-print fib(user)
+print fib(fibUser)
 
 
-""" Return the nth number of the Fibonacci sequence from user input.
+""" Return the nth number of the Lucas sequence from user input.
 
     Arg:
         user: Provide user input, Integer value, from the command line.
 
     Return:
-        Return single integer value of Fibonacci sequence at index,
+        Return single integer value of Lucas sequence at index,
         determined by user input. """
 
-user = int(raw_input("nth number of Fib: "))
+lucUser = int(raw_input("nth number of Luc: "))
 
 
-def fib(user):
-    x, y, i = 0, 1, 1
-    while i < user:
-        x, y, i = x+y, x, i+1
-    return x
+def lucas(lucUser):
+    first, second, count = 2, 1, 1
+    while count < lucUser:
+        first, second, count = second, first + second, count + 1
+    return first
 
-print fib(user)
+print lucas(lucUser)
