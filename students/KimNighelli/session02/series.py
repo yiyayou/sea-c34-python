@@ -82,9 +82,12 @@ if __name__ == "__main__":
         # (Obviously wrong!), an AssertionError was raised. 
 
 
+        #Testing the Lucas Equation
+        assert lucas(-14) == None
+        assert lucas(0) == 2
+        assert lucas(1) == 1
+        assert lucas(6) == 18
 
-
-
-
+        # All passed!
 
 
