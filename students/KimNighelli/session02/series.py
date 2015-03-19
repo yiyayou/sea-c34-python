@@ -104,7 +104,21 @@ if __name__ == "__main__":
         Pretty sure these can be done in a loop to save typing time
         '''
 
+        #Fib and Sum_Series
+        # y and z are still equal to 0 and 1, respectively in this case
+
         for n in range(11):
                 #0 - 10
-                print n
+                #print n
                 assert sum_series(n) == fibonacci(n)
+
+
+        # Lucas and Sum_Series
+        # y and z need to be set to 2 and 1, respectively
+        
+        for n in range(11):
+                #print n
+                assert sum_series(n,2,1) == lucas(n)
+
+
+        print "All tests passed!"
