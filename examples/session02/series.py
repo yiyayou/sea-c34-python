@@ -1,3 +1,5 @@
+
+
 def fibonacci(n):
     """Return (n)th value in a Fibonacci series"""
     if n == 0:
@@ -54,4 +56,7 @@ if __name__ == "__main__":
 # check lucas
 
     assert sum_series(8, 6, 3) == 87
-# check sum_series with arbitrary args 6 and 3:
+
+# check sum_series with arbitrary args 6 and 3
+"""note that n count starts from 0;
+could be compensated by "n-1" for added intuitiveness"""
