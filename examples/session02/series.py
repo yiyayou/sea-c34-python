@@ -32,10 +32,8 @@ def sum_series(n, o=0, p=1):
     """if no args are given series defaults to fibonacci"""
 
     if n == 0:
-        return 0
-    elif n == 1:
         return o
-    elif n == 2:
+    elif n == 1:
         return p
 
     else:
@@ -55,7 +53,7 @@ if __name__ == "__main__":
     assert lucas(5) == 11
     # check lucas
 
-    assert sum_series(8, 6, 3) == 87
+    assert sum_series(8, 6, 3) == 141
     # check sum_series with arbitrary args 6 and 3
 
 """note that n count starts from 0;
