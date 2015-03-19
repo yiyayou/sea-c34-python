@@ -37,4 +37,37 @@ def lucas(n):
                 return lucas(n-1) + lucas (n-2)
 
 
+# Sum Series
+# Need- One required (user) and two optional parameters
+# The required parameter will determine which element in the series to print. 
+# The two optional parameters will have default values of 0 and 1 and will 
+# determine the first two values for the series to be produced.
+### To deal with this, make two variables - y = 0, z = 1
+
+def series (n, y = 0, z = 1):
+        if n < 0:
+                return None
+        if n == 0:
+                return y #0!
+        elif n == 1:
+                return z #1!
+        else:
+                return series(n-1,y,z) + series(n-2,y,z)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print fibonacci(0)
