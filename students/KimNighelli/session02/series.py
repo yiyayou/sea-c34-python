@@ -90,4 +90,21 @@ if __name__ == "__main__":
 
         # All passed!
 
+        
+        #Testing the series
+        '''
+        If we call this function with no optional parameters (y and z are 0 and 1, respectively),
+        the fibonacci series should be produced. For example: 
+        sum_series(4) should be equal to fibonacci(4)
 
+        If we call the function with optional paramaters (in this case y and z are 2 and 1, respectively),
+        the lucas series should be produced. For example:
+        sum_series(4,2,1) should be equal to lucas(4)
+
+        Pretty sure these can be done in a loop to save typing time
+        '''
+
+        for n in range(11):
+                #0 - 10
+                print n
+                assert sum_series(n) == fibonacci(n)
