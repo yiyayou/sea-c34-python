@@ -48,13 +48,13 @@ def sum_series(n, o=0, p=1):
 if __name__ == "__main__":
 
     assert fibonacci(5) == 5
-    # check fibonacci
+    # check fibonacci for 6th value
 
     assert lucas(5) == 11
-    # check lucas
+    # check lucas for 6th value
 
     assert sum_series(8, 6, 3) == 141
-    # check sum_series with arbitrary args 6 and 3
+    # check sum_series for 9th value with arbitrary args 6 and 3
 
 """note that n count starts from 0;
 could be compensated by "n-1" for added intuitiveness"""
