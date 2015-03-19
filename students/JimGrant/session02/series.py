@@ -46,7 +46,7 @@ if __name__ == "__main__":
     # test a large-ish n for the correct number in the series
     assert fibonacci(10) == 34
     assert lucas(10) == 76
-    
+
     # test the default values act as a fibonacci series
     assert sum_series(10) == 34
 
