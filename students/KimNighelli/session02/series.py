@@ -44,7 +44,7 @@ def lucas(n):
 # determine the first two values for the series to be produced.
 ### To deal with this, make two variables - y = 0, z = 1
 
-def series (n, y = 0, z = 1):
+def sum_series (n, y = 0, z = 1):
         if n < 0:
                 return None
         if n == 0:
@@ -52,7 +52,7 @@ def series (n, y = 0, z = 1):
         elif n == 1:
                 return z #1!
         else:
-                return series(n-1,y,z) + series(n-2,y,z)
+                return sum_series(n-1,y,z) + sum_series(n-2,y,z)
 
 
 
