@@ -109,7 +109,6 @@ if __name__ == "__main__":
 
         for n in range(11):
                 #0 - 10
-                #print n
                 assert sum_series(n) == fibonacci(n)
 
 
@@ -117,7 +116,6 @@ if __name__ == "__main__":
         # y and z need to be set to 2 and 1, respectively
         
         for n in range(11):
-                #print n
                 assert sum_series(n,2,1) == lucas(n)
 
 
