@@ -62,6 +62,24 @@ def sum_series (n, y = 0, z = 1):
 
 
 
+'''
+Testing
+'''
+if __name__ == "__main__":
+
+        #After some testing- the assert command will not print out anything 
+        # if the assertion is true.
+
+        #Testing the Fibonacci Equation
+
+        assert fibonacci(-1) == None
+        assert fibonacci(0) == 0
+        assert fibonacci(1) == 1
+        assert fibonacci(5) == 5
+        assert fibonacci(10) == 55
+
+        # All of these passed. When I used assert fibonacci(1) = 4 as a test
+        # (Obviously wrong!), an AssertionError was raised. 
 
 
 
@@ -70,9 +88,3 @@ def sum_series (n, y = 0, z = 1):
 
 
 
-
-
-
-
-
-print fibonacci(0)
