@@ -1,15 +1,16 @@
 import sys
 
-error = 'name'
 
-if (error == 'name'):
-    x = 25 + a
+#def name():
+#    x = 25 + a
 
-elif(error == 'type'):
-    x = 25 + 'a'
+#def type():
+#    x = 25 + 'a'
 
-elif(error == 'attrib'):
-    attribute = -error
+#def attribute():
+#    attribute.taco
 
-#elif(error == 'syntax')
+def syntax():
+    error = 'syntax
 
+result = syntax()
