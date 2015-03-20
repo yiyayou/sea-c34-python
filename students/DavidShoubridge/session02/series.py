@@ -66,4 +66,6 @@ def sum_series(n, x=0, y=1):
             series.append(series[i] + series[i + 1])
         return series[len(series) - 1]
 
-print(sum_series(2, 4, 3))
+
+if __name__ == "__main__":
+    print(sum_series(2))
