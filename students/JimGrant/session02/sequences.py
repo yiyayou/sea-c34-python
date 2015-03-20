@@ -8,7 +8,7 @@ def question01():
     testlist = [1, 2, 3]
     upper_bound = len(testlist) - 1
     print("{} sliced from 0 to {} is: {}".format(testlist, upper_bound, testlist[0:upper_bound]))
-    print("However, {} sliced from {} to 0 is: {}\n".format(testlist, upper_bound, testlist[upper_bound:0]))
+    print("However, {} sliced from {} to 0 is: {}".format(testlist, upper_bound, testlist[upper_bound:0]))
 
 
 def question02():
@@ -23,7 +23,7 @@ def question02():
     except:
         error = sys.exc_info()
         print("Trying to get the {}th index of {} causes this exception:".format(testindex, testlist))
-        print("{}\n".format(error))
+        print(error)
 
 
 def question03():
@@ -43,5 +43,7 @@ def question03():
 
 if __name__ == "__main__":
     question01()
+    print("")
     question02()
+    print("")
     question03()
