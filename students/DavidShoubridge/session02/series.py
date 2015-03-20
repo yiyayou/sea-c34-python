@@ -1,19 +1,15 @@
-x = 0
-y = 1
-
-
 def fibonacci(n):
     """
-    Return the nth number in the Fibonacci Series.
+    Return the nth value in the Fibonacci Series.
 
     Arg:
-        n(int): Element within the Fibonacci series.
+        n(int): Element of the series whose value will print.
     Return:
         The value in the Fibonacci Series that corresponds to the value of n.
     """
-    if n == x:
+    if n == 0:
         return 0
-    elif n == y:
+    elif n == 1:
         return 1
     else:
         series = [0, 1]
@@ -21,21 +17,19 @@ def fibonacci(n):
             series.append(series[i] + series[i + 1])
         return series[len(series) - 1]
 
-print fibonacci(4)
-
 
 def lucas(n):
     """
-    Return the nth number in the Lucas Series.
+    Return the nth value in the Lucas Series.
 
     Arg:
-        n(int): Index within the Lucas series.
+        n(int): Element of the series whose value will print.
     Return:
         The value in the Lucas Series that corresponds to the value of n.
     """
-    if n == x:
+    if n == 2:
         return 2
-    elif n == y:
+    elif n == 1:
         return 1
     else:
         series = [2, 1]
@@ -43,25 +37,33 @@ def lucas(n):
             series.append(series[i] + series[i + 1])
         return series[len(series) - 1]
 
-print lucas(4)
-
 
 def sum_series(n, x=0, y=1):
     """
-    Return numbers from either Fibonacci Series or Lucas Series depending on \
-    arguments.
+    Return nth value from either Fibonacci Series or Lucas Series depending \
+    on arguments. If only given (n), will return Fibonacci series. If given \
+    (n, 2, 1) will return Lucas series. If given n with any other 2 numbers, \
+    it will create it's own series and return the nth value.
 
     Args:
-        n(int): Determines which element in the series to print.
-        x(int): Optional standard argument that will return numbers from \
-        Fibonacci Series if used.
-        y(int): Optional standard argument that will return numbers from the \
-        Fibonacci Series if used.
+        n(int): Determines which element of the series whose value will print.
+        x(int): Optional argument defaulted to 0, and will combine with y \
+        to create series of integers.
+        y(int): Optional argument defaulted to 1, and will combine with x \
+        to create a series of integers.
+    Return:
+        The nth value in either the Fibonacci series, the Lucas series, \
+        or another series based on the values given for x and y.
     """
 
-    if (x == 0) and (y == 1):
-        return fibonacci(n)
-    elif (x == 2) and (y == 1):
-        return lucas(n)
+    if n == 0:
+        return x
+    elif n == 1:
+        return y
+    else:
+        series = [x, y]
+        for i in range(n - 1):
+            series.append(series[i] + series[i + 1])
+        return series[len(series) - 1]
 
-print sum_series(5)
+print(sum_series(2, 4, 3))
