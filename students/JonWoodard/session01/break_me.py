@@ -7,5 +7,9 @@ she=[]    #type error resolved
 #setattr(she, 'turned_me_into_a_newt', True)    resolve attribute error
 #list object has no attribute 'turned_me_into_a_newt'
 var1='turned_me_into_a_newt'
-she.append var1
+she.append(var1)    #resolve syntax error
 print(she)
+if var1 in she:
+    print(whitch)
+else:
+    print('got better')
