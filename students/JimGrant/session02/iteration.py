@@ -25,7 +25,7 @@ def question02():
         idx_output.append(idx)
         num_output.append(num)
 
-    if idx_output == num_output:
+    if idx_output == num_output == expected_output:
         print("Yes, it does!")
     else:
         print("No! Not what I was expecting.")
