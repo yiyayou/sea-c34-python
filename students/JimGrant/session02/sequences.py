@@ -17,7 +17,7 @@ def question02():
 
     testlist = [1, 2, 3]
     testindex = 0.5
-    
+
     try:
         print("Python thinks the {}th index of {} is: {}".format(testindex, testlist, testlist[0.5]))
     except:
