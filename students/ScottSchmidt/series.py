@@ -46,8 +46,8 @@ def sum_series(nth, first=0, second=1):
 
         Return:
             Return single integer value of the sequence at index,
-            determined by user input, and use optional argument values for
-            first and second index values of series. """
+            determined by user input, and use optional argument values
+            for first and second index values of series. """
     count = 1
     while count < nth:
         first, second, count = second, first + second, count + 1
