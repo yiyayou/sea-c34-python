@@ -22,6 +22,8 @@ def wallet2(spent):
     money -= spent
     yield money
 # <generator object wallet2 at 0x10e335fa0>
+# Generators will not actually store the data, rather move through it to
+# find the final desired value.
 
 
 """What modules are available to help with iterations?"""
