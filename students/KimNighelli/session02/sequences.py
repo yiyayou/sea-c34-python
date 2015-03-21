@@ -10,9 +10,12 @@ operations in action.
 '''
 
 '''
+Can I print out a string that is gradually reduced on each side?
+
 In the function reduce_length, I go over two concepts- length and splicing.
 The function is meant to take a string and print out the string with 1 less, 
 then 2 less, etc. The length is to determine how many iterations one can do.
+
 '''
 def reduce_length(n):
     max_iteration = len(n)/2
@@ -38,6 +41,8 @@ e
 
 
 '''
+Can I specify what intervals I want to splice at?
+
 The function every_other simply prints out every other letter. This uses splicing
 but introduces the additional, optional argument of step
 '''
@@ -56,6 +61,8 @@ String with every other letter:  acegikmoqsuwy
     
 
 ''' 
+Could I use splicing to test if a string is a pallindrome?
+
 The function pallindrome tests to see if a string is a pallindrome- 
 It ask if a string is equal to the same string spliced backwards (the step
 of -1).
