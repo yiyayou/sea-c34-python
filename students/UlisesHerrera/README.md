@@ -6,4 +6,4 @@ a quarter of Computability and Language Theory, he got an intership with Profess
 
 #Hobbies outside Programming
 
-Ulises is passionate about Latin dancing, MMA, Powerlifting, and cookings delicious meals from scratch. Over the summer, he hopes to learn [![Zouk](http://img.youtube.com/vi/QI1MqWkYXUk&index=4&list=FLcPkIo34_rmV173sE1Z5TkA/0.jpg)](http://www.youtube.com/watch?v=QI1MqWkYXUk&index=4&list=FLcPkIo34_rmV173sE1Z5TkA)
+Ulises is passionate about Latin dancing, MMA, Powerlifting, and cookings delicious meals from scratch. Over the summer, he hopes to learn [![Zouk](http://img.youtube.com/vi/QI1MqWkYXUk/0.jpg)](http://www.youtube.com/watch?v=QI1MqWkYXUk)
