@@ -8,6 +8,13 @@ chars = string.maketrans(
 
 
 def rot13(user):
+    """Accept user input and translate each character to its respective
+    character at 13 characters away.
+
+        arg:
+            user: User input taken from command line prompt.
+        return:
+            message: Output encrypted message using ROT13 translation."""
     message = string.translate(user, chars)
     print(message)
 
