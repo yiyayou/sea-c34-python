@@ -1,13 +1,18 @@
-'''
-What I'm going to code:
-
-        reduce the some string from each side - good for now!
-        count the number of evens/odds in a list
-        list the numbers between -1
+############################################
+# This is for Task 5 - Sequences
+###########################################
 
 '''
 
+This program goes over a series of questions that I had on the subject of sequences. 
+I guess I didn't have too many question about the concepts- I more wanted to see the 
+operations in action. 
 '''
+
+'''
+In the function reduce_length, I go over two concepts- length and splicing.
+The function is meant to take a string and print out the string with 1 less, 
+then 2 less, etc. The length is to determine how many iterations one can do.
 '''
 def reduce_length(n):
     max_iteration = len(n)/2
@@ -16,39 +21,45 @@ def reduce_length(n):
     for i in range(1, max_iteration+1):
         print n[i:-i]
 
+# Tests
+'''
+reduce_length("adda") returned:
+dda
+dd
+
+reduce_length("tententen") returned
+tententen
+entente
+ntent
+ten
+e
+'''
+
+
+
+'''
+The function every_other simply prints out every other letter. This uses splicing
+but introduces the additional, optional argument of step
+'''
 def every_other(n):
 
-    print n
-    print n[::2]
+    print "Original string: ", n
+    print "String with every other letter: ", n[::2]
 
-every_other("abcdefghijklmnopqrstuvwxyz")
+# Test
+'''
+every_other("abcdefghijklmnopqrstuvwxyz") returned
 
-def count_even_odd(n):
-    count_even = 0
-    count_odd = 0
+Original string:  abcdefghijklmnopqrstuvwxyz
+String with every other letter:  acegikmoqsuwy
+'''
+    
 
-    print "Searching over list %s" % (n)
-
-    for element in n:
-        if element % 2 == 0:
-            print "%s is an even number. Adding to even count." % (element)
-            count_even += 1
-        else:
-            print "%s is an odd number. Adding to odd count." % (element)
-            count_odd += 1
-
-    print "The number of even variables in the list is %d" % (count_even)
-    print "The number of odd variables in the list is %d" % (count_odd)
-
-
-#reduce_length("adda")
-#reduce_length("tententen")
-#reduce_length("lkjfhfdjkghfbgfvjhgbvxjkdfhjgdfdkvicvyudfbjdbcvyadfk")
-
-#count_even_odd([6,5,2,5,7,8,9,4,3,2,2])
-#count_even_odd([0,0,0,0,0])
-#count_even_odd([-1,0,1,2])
-
+''' 
+The function pallindrome tests to see if a string is a pallindrome- 
+It ask if a string is equal to the same string spliced backwards (the step
+of -1).
+'''
 
 def pallindrome(x):
         if x == x[::-1]:
@@ -56,5 +67,11 @@ def pallindrome(x):
         else:
                print "%s is not a pallindrome" % (x)
 
-#pallindrome("abcba")
-#pallindrome("definitelyNot")
+#Test
+'''
+pallindrome("abcba") returns
+abcba is a pallindrome!
+
+pallindrome("definitelyNot") returns 
+definitelyNot is not a pallindrome
+'''
