@@ -27,7 +27,7 @@ def lucas(n):
     Return:
         The value in the Lucas Series that corresponds to the value of n.
     """
-    if n == 2:
+    if n == 0:
         return 2
     elif n == 1:
         return 1
@@ -66,4 +66,17 @@ def sum_series(n, x=0, y=1):
             series.append(series[i] + series[i + 1])
         return series[len(series) - 1]
 
-print(sum_series(2, 4, 3))
+
+if __name__ == "__main__":
+    assert(fibonacci(1)) == 1
+    assert(fibonacci(5)) == 5
+    assert(fibonacci(7)) == 13
+
+    assert(lucas(0)) == 2
+    assert(lucas(3)) == 4
+    assert(lucas(7)) == 29
+
+    assert(sum_series(2)) == 1
+    assert(sum_series(2, 2, 1)) == 3
+    assert(sum_series(2, 4, 3)) == 7
+    assert(sum_series(6, 2, 1)) == 18
