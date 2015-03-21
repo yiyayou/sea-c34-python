@@ -68,4 +68,4 @@ def sum_series(n, x=0, y=1):
 
 
 if __name__ == "__main__":
-    print(sum_series(2))
+    assert(sum_series(2)) == 1
