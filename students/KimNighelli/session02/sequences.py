@@ -9,6 +9,9 @@ I guess I didn't have too many question about the concepts- I more wanted to see
 operations in action. 
 '''
 
+
+
+
 '''
 Can I print out a string that is gradually reduced on each side?
 
@@ -40,6 +43,9 @@ e
 
 
 
+
+
+
 '''
 Can I specify what intervals I want to splice at?
 
@@ -59,6 +65,10 @@ Original string:  abcdefghijklmnopqrstuvwxyz
 String with every other letter:  acegikmoqsuwy
 '''
     
+
+
+
+
 
 ''' 
 Could I use splicing to test if a string is a pallindrome?

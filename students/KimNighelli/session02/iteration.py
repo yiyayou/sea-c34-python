@@ -6,6 +6,7 @@ The functions in this program go over loops. I tried in the first two to create
 images, then moved on to some fun with lists.
 '''
 
+
 '''
 Can I print out a right triange using a loop?
 
@@ -32,6 +33,7 @@ right_triangle(7) returns
 ******
 *******
 '''
+
 
 '''
 Can I make a more difficult equilateral triange? How does raw_input work?
@@ -61,6 +63,7 @@ equi_triangle() returns
  # # # # # #
 # # # # # # #
 '''
+
 
 '''
 Can you toggle a boolean in a loop?
