@@ -40,17 +40,17 @@ def sum_series(n, value1=0, value2=1):
 
 if __name__ == "__main__":
     # test that the internally supplied numbers in the series are returned properly
-    assert fibonacci(0) == 0
-    assert fibonacci(1) == 1
+    assert(fibonacci(0) == 0)
+    assert(fibonacci(1) == 1)
 
     # test a large-ish n for the correct number in the series
-    assert fibonacci(9) == 34
-    assert lucas(9) == 76
+    assert(fibonacci(9) == 34)
+    assert(lucas(9) == 76)
 
     # test the default values act as a fibonacci series
-    assert sum_series(9) == 34
+    assert (sum_series(9) == 34)
 
     # test a couple different series with large-ish n
-    assert sum_series(9, 2, 1) == 76
-    assert sum_series(9, 2, 4) == 178
+    assert (sum_series(9, 2, 1) == 76)
+    assert (sum_series(9, 2, 4) == 178)
     print("Tests completed successfully!")
