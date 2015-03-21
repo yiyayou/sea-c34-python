@@ -68,6 +68,24 @@ def sum_series(n, x=0, y=1):
 
 
 if __name__ == "__main__":
+    """
+        The first 3 assert statements test whether the fibonacci function \
+        will return the correct value that corresponds to the nth element \
+        in the Fibonacci series.
+
+        The second 3 assert statements test whether the lucas function \
+        will return the correct value that corresponds to the nth element \
+        in the Lucas series.
+
+        The last 4 assert statements test whether the sum_series function, \
+        given an argument n without any optional arguments, will return \
+        the correct value from the Fibonacci series. Otherwise, it tests \
+        whether given arguments n, x, and y the function will return \
+        the correct value from either the Lucas series or, if x and y \
+        are not 2, and 1, respectively, whether the function will return \
+        the correct value from a series of numbers beginning with x and y \
+        using the same logic as the Fibonacci and Lucas functions.
+    """
     assert(fibonacci(1)) == 1
     assert(fibonacci(5)) == 5
     assert(fibonacci(7)) == 13
@@ -76,7 +94,7 @@ if __name__ == "__main__":
     assert(lucas(3)) == 4
     assert(lucas(7)) == 29
 
-    assert(sum_series(2)) == 1
-    assert(sum_series(2, 2, 1)) == 3
-    assert(sum_series(2, 4, 3)) == 7
-    assert(sum_series(6, 2, 1)) == 18
+    assert(sum_series(2)) == 1  # Testing for return from Fibonacci series.
+    assert(sum_series(2, 2, 1)) == 3  # Testing for return from Lucas series.
+    assert(sum_series(2, 4, 3)) == 7  # Testing for return from x and y series.
+    assert(sum_series(6, 2, 1)) == 18  # Testing for return from Lucas series.
