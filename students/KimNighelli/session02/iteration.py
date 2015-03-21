@@ -6,35 +6,42 @@ What I'm going to code:
         is the word a pallendrome?
 '''
 
-"""
 def right_triangle(n):
         for i in range(1, n+1):
-                print "*"*i
+                print "*" * i
 
 
-right_triangle(7)
-right_triangle(45)
-"""
+#right_triangle(7)
+#right_triangle(45)
 
-"""
 def equi_triangle():
-        size = raw_input("What size would you like the equilateral triangle? Please enter an odd number. ")
-        print size
+        height = int(raw_input("What height would you like the equilateral triangle? "))
         character = raw_input("What character should we use to make the triangle? ")
+        #height = 4
+        #character = "*"
 
         space_char = " "
-
-        if size % 2 == 0:
-                print "The size is now %s, your input - 1. We need to have an odd number for this problem" % ((size)-1)
+        for i in range(height):
+            print (space_char * (height - i - 1)) + ((character + space_char) * (i+1))
+        
 
 equi_triangle()
-"""
 
-def pallindrome(x):
-        if x == x[::-1]:
-                print "%s is a pallindrome!" % (x)
-        else:
-               print "%s is not a pallindrome" % (x)
 
-pallindrome("abcba")
-pallindrome("definitelyNot")
+def numbers_between_neg1(orig_list):
+    between_list = []
+    flag = False
+
+    for i in orig_list:
+        print i
+        print flag
+        if i == -1 and flag == False:
+            flag = True
+        elif i == -1 and flag == True:
+            flag = False
+        elif flag == True:
+            between_list.append(i)
+
+    print between_list
+
+numbers_between_neg1([6,4,-1,3,6,7,2,-2,1,56,-1,45,3])
