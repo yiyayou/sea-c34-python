@@ -1,10 +1,7 @@
 #!/usr/bin/python
 
-'''This file outlines examples of four different error functions. Name, Type,
-Syntax, and Attribute.'''
-
-'''
-Their inputs are either an integer, str, or object.
+'''This file outlines examples of four different error functions. Name,
+Type, Syntax,and Attribute. Their inputs are either an integer, str, or object.
 The functions will produce errors instead of print statements'''
 
 
@@ -37,17 +34,13 @@ if __name__ == '__main__':
     # Test a name error
     NameE(5)
 
-
-# Test a Type error
+    # Test a Type error
     TypeE(b)
 
+    # Test a syntax error
+    SyntaxE(c)
 
-# Test a syntax error
-SyntaxE(c)
+    # Test Attribute Error
 
-
-# Test Attribute Error
-
-
-o = Zero_attributes()
-print o.an_attribute
+    o = Zero_attributes()
+    print o.an_attribute
