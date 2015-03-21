@@ -1,4 +1,15 @@
 def ack(m, n):
+    """Return whole integer values when arguments passed into Ackermann
+    function.
+        arg:
+            m: Integer value from 0 to 3 will return whole integers. Higher
+            values will return exponential values.
+            n: Integer value from 0 to 4 will return whole integers. Higher
+            values will return exponential values.
+        return: Will return produce whole integers given small argumental
+        integers. Larger values have exponential increases, and when run
+        will produce runtime recursion errors at command line. """
+
     if m < 0 or n < 0:
         return "Invalid argument, must be absolute integers."
     if m == 0:
