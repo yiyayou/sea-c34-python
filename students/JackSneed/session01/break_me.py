@@ -17,6 +17,6 @@ def errType():
 #errType()
 
 def errSyntax():
-	print('supercalafragalisticexpialadoshus!)
+	print('supercalafragalisticexpialadoshus)
 
 #errSyntax()
