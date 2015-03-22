@@ -3,7 +3,7 @@ def fibonacci(n):
     Calculates the nth value of the fibonacci series
 
     Args: 
-        n: the number of the series desired
+        int n: the number of the series desired
     Returns:
         nth value of the fibonacci series
 
@@ -17,10 +17,10 @@ def fibonacci(n):
 
 def lucas(n):
     """
-    Calculates the nth value of the lucas series
+    Calculates the asdfnth value of the lucas series
 
     Args: 
-        n: the number of the series desired
+        int  n: the number of the series desired
     Returns:
         nth value of the lucas series
 
@@ -37,19 +37,21 @@ def sum_series(n, first_value=0, second_value=1):
     Calculates the nth value of the summation series
 
     Args: 
-        n: the number of the series desired
-        first_value: The first value element for the given series defaulting to 0
-        second_value: The second element for the given series defaulting to 1
+        int n: the number of the series desired
+        int first_value: The first value element for the given series defaulting to 0
+        int second_value: The second element for the given series defaulting to 1
     Returns:
         nth value of the series startin with first_value and second_value
 
     """
-    if n <= 0:
+    if n == 0:
         return first_value
     elif n == 1:
         return second_value
     else: 
-        return sum_series(n  - 1) + sum_series(n - 2)
+        return sum_series(n  - 1, first_value, second_value) +\
+        sum_series(n - 2,first_value, second_value)
+
 
 # Test Code
 if __name__ == "__main__":
@@ -66,8 +68,9 @@ if __name__ == "__main__":
     for i in range (8):
         print (str(sum_series(i)) + ", "),
     print("...")
-    print("Testing Lucas Series using sum_series function")
+    print("Testing Lucas Series using sum_series option with 3 arguments")
     for i in range (8):
         print (str(sum_series(i, 2, 1)) + ", "),
     print("...")
+
 
