@@ -14,4 +14,20 @@ def fibonacci(n):
     return value
 
 
-fibonacci(7)
+def lucas(n):
+    """Return nth value of lucas numbers series."""
+    first, second = 2, 1
+    if n == 0:
+        value = first
+    elif n == 1:
+        value = second
+    else:
+        for x in range(2, n + 1):
+            value = first + second
+            first = second
+            second = value
+    print(value)
+    return value
+
+
+lucas(7)
