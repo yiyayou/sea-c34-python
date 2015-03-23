@@ -1,5 +1,5 @@
 def fibonacci(n):
-    """Return nth value of fibonacci series."""
+    """Calculate the nth value of fibonacci series."""
     first, second = 0, 1
     if n == 0:
         value = first
@@ -14,7 +14,7 @@ def fibonacci(n):
 
 
 def lucas(n):
-    """Return nth value of lucas numbers series."""
+    """Calculate the nth value of lucas numbers series."""
     first, second = 2, 1
     if n == 0:
         value = first
@@ -29,11 +29,14 @@ def lucas(n):
 
 
 def sum_series(n, first=0, second=1):
-    """Return nth value of sum series.
+    """Calculate the nth value of a sum series.
 
-    Optional arguments:
-    first -- the first value of the series
-    second -- the second value of the series
+    Optional args:
+        n: the number of the value to return.
+        first: the first value of the series.
+        second: the second value of the series.
+    Returns:
+        the nth value of the series.
     """
     if n == 0:
         value = first
