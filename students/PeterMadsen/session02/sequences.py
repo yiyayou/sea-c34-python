@@ -45,9 +45,10 @@ def question_three():
 
 # ******************* TEST CODE ************************ #
 if __name__ == '__main__':
-    print("Testing Question One: ")
+    print("Testing Question One: What happens when you copy a list and\
+    alter its copy?")
     print(question_one(["happy", "sad"], ["mad", "glad"]))
-    print("Testing Question Two: ")
-    print(question_two(("cows", "are", 4, "me"), 3, ["test"] ))
-    print ("Testing Question Three: ")
+    print("Testing Question Two: How can you insert a value in a tuple?")
+    print(question_two(("cows", "are", 4, "me"), 3, "test insertion"))
+    print ("Testing Question Three: Is list homgeneity enforced?")
     print(question_three())
