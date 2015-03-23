@@ -24,9 +24,23 @@ def question_two():
         else: 
             print(i), 
 
-#Question 3: 
+#Question 3:  What would Fizz Buzz look like in a while loop?
 def question_three():
-    pass
+    i = 1
+    while True:
+        if i == 101:
+            break
+        elif (i % 5 == 0) and (i % 3 == 0):
+            print ("FizzBuzz")
+        elif i % 5 == 0:
+            print("Fizz")
+        elif i % 3 == 0:
+            print ("Buzz")
+        else:
+            print (i)
+
+        i+= 1
+
 
 # ************* TEST CODE *******************#
 if __name__ == '__main__':
@@ -34,3 +48,5 @@ if __name__ == '__main__':
     question_one([True, False, True, 1, 0])
     print('\nQuestion 2: What does "continue" vs "break" look like in  a range of 10?')
     question_two()
+    print('Testion Question 3:  What would Fizz Buzz look like in a while loop?')
+    question_three()
