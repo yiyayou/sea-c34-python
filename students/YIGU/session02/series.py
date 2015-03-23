@@ -37,9 +37,9 @@ def sum_series(x,y=0,z=1):
 #Main
 if __name__ == "__main__":
 	#assert statment
-	assert sum_series(0)==0
+	assert sum_series(0)==0 #fibonacci
 	assert sum_series(1)==1
 	assert sum_series(5)==5
 	assert sum_series(6)==8
-	assert sum_series(0,2,1)==2
+	assert sum_series(0,2,1)==2 #lucas
 	assert sum_series(5,2,1)==11
