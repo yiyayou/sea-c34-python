@@ -29,10 +29,13 @@ def sum_series(x,y=0,z=1):
 	Calling this function with no optional parameters will produce numbers from the fibonacci series.
 	Calling it with the optional arguments 2 and 1 will produce values from the lucas numbers.
 	Other values for the optional parameters will produce other series."""
-    	if y==2 and z==1:
-    		return lucas(x)
-    	else:
-    		return fibonacci(x)
+	if x<0:
+		print "series should not be less than 0"
+		return None
+	elif y==2 and z==1:
+		return lucas(x)
+	else:
+		return fibonacci(x)
 
 #Main
 if __name__ == "__main__":
