@@ -18,7 +18,7 @@ def lucas(n):
         return lucas(n - 1) + lucas(n - 2)
 
 """Optional starting values function (sum_series)"""
-def sum_series(n=0, x=0, y=1):
+def sum_series(n, x=0, y=1):
     if n == 0:
         return x
     elif n == 1:
