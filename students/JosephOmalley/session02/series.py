@@ -26,6 +26,12 @@ def sum_series(n, x=0, y=1):
     else:
         return sum_series(n - 1, x, y) + sum_series(n - 2, x, y)
 
+"""Test assertions on functions"""
+if __name__ == "__main__":
+    assert fibonacci(6) == 8
+    assert lucas(6) == 18
+    assert sum_series(5, 6, 4) == 38
+
 
 
 
