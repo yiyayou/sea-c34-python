@@ -3,9 +3,9 @@ def fibonacci(n):
     Calculates the nth value of the fibonacci series
 
     Args: 
-        int n: the number of the series desired
+        n (int): the number of the series desired
     Returns:
-        nth value of the fibonacci series
+        nth value of the fibonacci series starting at 0th value
 
     """
     if n <= 0:
@@ -20,9 +20,9 @@ def lucas(n):
     Calculates the asdfnth value of the lucas series
 
     Args: 
-        int  n: the number of the series desired
+        n (int) : the number of the series desired
     Returns:
-        nth value of the lucas series
+        nth value of the lucas series starting at 0th value
 
     """
     if n <= 0:
@@ -37,11 +37,12 @@ def sum_series(n, first_value=0, second_value=1):
     Calculates the nth value of the summation series
 
     Args: 
-        int n: the number of the series desired
-        int first_value: The first value element for the given series defaulting to 0
-        int second_value: The second element for the given series defaulting to 1
+        n (int) : number of the series desired
+        first_value (int) : first value element for the given series defaulting to 0
+        second_value (int) : second element for the given series defaulting to 1
     Returns:
-        nth value of the series startin with first_value and second_value
+        nth value of the series startin with first_value and second_value 
+        starting at 0th value
 
     """
     if n == 0:
