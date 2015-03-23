@@ -1,10 +1,10 @@
 #Ulises' Session01, Task 3
 
 
-#NameError
-def myNameError():
+# NameError
+def my_name_error():
 	#	print x
-    pass
+	 pass
 
 #SyntaxError
 def mySyntaxError():
@@ -13,7 +13,7 @@ def mySyntaxError():
 	
 #TypeError
 def myTypeError():
-	#    '2' + 2
+    # '2' + 2
     pass
 
 #AttributeError
