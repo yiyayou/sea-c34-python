@@ -15,7 +15,7 @@ def question_two():
 def question_three():
     """This function Asks an essential Question"""
     print ('Will the {} method remain in use, or will'.format("classic")), 
-    print('.... the .%(method)s method take over the string formatting world?' % {u'method': u"format"})
+    print('.... ("drum beats") the .%(method)s method take over the string formatting world?' % {u'method': u"format"})
 
 # **************** TEST CODE ***************************#
 if __name__ == '__main__':
