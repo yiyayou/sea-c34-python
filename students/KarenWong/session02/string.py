@@ -1,20 +1,25 @@
-"""
-1. What's the ordinal values of my name: Karen?
+def ordinal_value():
+    """
+    1. What's the ordinal values of my name: Karen?
+    """
 
-"""
-
-for i in "Karen":
-    print(ord(i), end="")
+    for i in "Karen":
+        print(ord(i))
 
 
-"""
-2. How to create a greeting using the __format__() method?
+def greetings():
+    """
+    2. How to create a greeting using the __format__() method?
 
-"""
-
-name = input("What's your name")
-
-if name == "Karen":
+    """
+    name = "Peter"
     print("{}, you have a cool name".format(name))
-else:
-    print("{}, you have a awesome name".format(name))
+
+
+def string_split():
+    """
+    3. How to break up strings into a string arrany?
+    """
+
+    word = "I have school today"
+    word.split(" ")
