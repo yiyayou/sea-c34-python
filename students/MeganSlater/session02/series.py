@@ -46,7 +46,7 @@ def sum_series(n, first=0, second=1):
     return output
 
 if __name__ == "__main__":
-
-    assert fibonacci(7)
-    assert lucas(5)
-    assert sum_series(7)
+    """check to make sure  each function returns the correct answer"""
+    assert fibonacci(7) == 13
+    assert lucas(5) == 8
+    assert sum_series(7) == 13
