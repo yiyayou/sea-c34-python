@@ -26,6 +26,7 @@ def question_two():
 
 #Question 3:  What would Fizz Buzz look like in a while loop?
 def question_three():
+    """ Prints the Fizz Buzz Sequence  using a while loop"""
     i = 1
     while True:
         if i == 101:
