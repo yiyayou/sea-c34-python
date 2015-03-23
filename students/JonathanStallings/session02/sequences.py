@@ -1,5 +1,6 @@
 def update_list_in_tuple(method='extend', new=['new', 'values']):
-    """Check if tuple shows updated values of nested list.
+    """
+    Check if tuple shows updated values of nested list.
 
     Args:
         method: the method to change list values.
@@ -31,4 +32,6 @@ def update_list_in_tuple(method='extend', new=['new', 'values']):
     except:
         print(u"The new values did not update in the tuple.")
 
-update_list_in_tuple('replace')
+
+# update_list_in_tuple()
+# result: value reassignment is not updated in tuple; modification is.
