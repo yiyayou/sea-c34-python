@@ -14,9 +14,9 @@ def fibonacci(n):
     else:
         return (fibonacci(n - 1)) + (fibonacci(n - 2))
 
-# print fibonacci(0)
-# print fibonacci(1)
-# print fibonacci(4)
+print fibonacci(0)
+print fibonacci(1)
+print fibonacci(4)
 # print fibonacci(100) this hangs the computer up, though I can't tell if it's
 # an infinite loop or if the computer will calculate eventually.
 
@@ -27,7 +27,6 @@ def lucas(n):
     """
     num1 = 2
     num2 = 1
-    lucassum = num1 + num2
     if n == 0:
         return 2
     elif n == 1:
