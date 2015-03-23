@@ -16,6 +16,8 @@ def another_variable():
     another[3] = 200
     assert original[3] != another[3]
 
+
+def sublist_shallowcopy():
     """
 
     2. If I copy a list and change one of the elements of the sublist, does it
@@ -28,6 +30,8 @@ def another_variable():
     print (breakfast)
     print (breakfast_copy)
 
+
+def sublist_deepcopy():
     """
 
     3. If I copy a list and change one of the elements of the sublist, is there
