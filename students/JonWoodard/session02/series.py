@@ -13,7 +13,7 @@ def fibonacci(n):
         else:
             num_series.append(num_series[i-1]+num_series[i-2])
             i = i+1
-    print num_series[n]
+    return num_series[n-1]
 
 
 def lucas(n):
@@ -31,7 +31,7 @@ def lucas(n):
         else:
             num_series.append(num_series[i-1]+num_series[i-2])
             i = i+1
-    print num_series[n]
+    return num_series[n-1]
 
 
 def sum_series(n, val1=0, val2=1):
@@ -57,9 +57,10 @@ def sum_series(n, val1=0, val2=1):
 
 if __name__ == "__main__":
     # add assert statement to test performance with specific values
-    assert(sum_series(11, 0, 1)) == 89
-    assert(sum_series(9, 2, 1)) == 76
+    assert(sum_series(11, 0, 1)) == 55
+    # this is the 11th value in the fibonacci series
+    assert(sum_series(9, 2, 1)) == 47
+    # this is the 9th value in the lucas series
     assert(sum_series(9, 7, 3)) == "some other series"
-
-
-
+    # code seems to be performing as expected
+    # I am not getting any assertion errors
