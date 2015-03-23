@@ -62,6 +62,7 @@ else:
 # Section 4
 fruit2 = fruit
 print(fruit2)
+
 fruit3 = []
 
 for word in fruit2:
