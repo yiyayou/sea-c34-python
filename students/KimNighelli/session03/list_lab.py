@@ -71,23 +71,46 @@ for fruit in fruits_list_t2:
         fruits_list_t2.remove(fruit)
 
 print fruits_list_t2
- 
+
+
+# Again, using the list from series 1 (fruits_list)- make a copy
+fruits_list_t3 = fruits_list[:]
+print fruits_list_t3
+
+# Ask the user for input displaying a line like Do you like apples? for each fruit in the 
+# list (making the fruit all lowercase). For each no, delete that fruit from the list.
+# For any answer that is not yes or no, prompt the user to answer with one of those two values 
+# (a while loop is good heres). Then display.
+
+for fruit in fruits_list:
+    
+    user_input = raw_input("Do you like %s? (yes/no) " % (fruit.lower()))
+
+    while user_input.lower() != "yes" and user_input.lower() != "no":
+        print "Please enter a valid input of 'yes' or 'no'"
+        user_input = raw_input("Do you like %s? (yes/no) " % (fruit.lower()))
+
+    if user_input.lower() == "no":
+        fruits_list_t3.remove(fruit)
+        print "removed %s from list" % (fruit)
+
+print fruits_list_t3
+
+
+# Once more, using the list from series 1: Make a copy of the list and reverse 
+# the letters in each fruit in the copy. Delete the last item of the original list. 
+# Display the original list and the copy
+
+fruits_list_t4 = fruits_list[:]
+
+for fruit in fruits_list_t4:
+    fruit = fruit[::-1]
+
+print fruits_list_t4
 
 '''
 When the script is run, it should accomplish the following four series of actions:
 
-    Using the list created in series 1 above:
-
-    Ask the user for a fruit to delete and find it and delete it.
-    (Bonus: Multiply the list times two. Keep asking until a match is found. Once found, delete all occurrences.)
-    Again, using the list from series 1:
-
-    Ask the user for input displaying a line like Do you like apples?
-    for each fruit in the list (making the fruit all lowercase).
-    For each no, delete that fruit from the list.
-    For any answer that is not yes or no, prompt the user to answer with one of those two values (a while loop is good here):
-    Display the list.
-    Once more, using the list from series 1:
 
     Make a copy of the list and reverse the letters in each fruit in the copy.
     Delete the last item of the original list. Display the original list and the copy
