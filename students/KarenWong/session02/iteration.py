@@ -31,3 +31,15 @@ for food in food_names:
     output.append(''.join(food_list).capitalize())
 
 print(output)
+
+
+def pass_statement():
+    """
+    How do you write a command that does not execute?
+
+    """
+    for letter in "Monday":
+        if letter == "n":
+            pass
+            print "I don't want this block to execute"
+        print "I am the letter :", letter
