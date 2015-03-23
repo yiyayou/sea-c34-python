@@ -1,31 +1,53 @@
-#Question 1
-# What happens when you copy a list and alter its copy?
-def question_one():
+#Question: What happens when you copy a list and alter its copy?
+def question_one(test_list, values):
     """
-    Prints contents of two lists to explore the mutability of the list 
-    data type. This is accomplished by creating a list, copying it, 
-    and then altering the copy.
+    Returns a list  to verify the changes on mutable features
 
+    Args:
+        test_list (list) : a list to be copied
+        values (list) : values to be added to the list
+    Returns:
+        a list and its copy in a list. 
     """
     test_list = ["happy", "sad"]
     copy_list = test_list
-    copy_list.append("mad")
-    print ("The test list contains"),
-    print(test_list)
-    print("The copy list contains: "),
-    print(copy_list)
+    for value in values:
+        copy_list.append(value)
 
-#Question 2:
-#
-def question_two():
-    pass
-# Question 3:
-#
+    return [test_list, copy_list]
+
+#Question 2: How can you insert a value in a tuple?
+def question_two(test_tuple, index, feature):
+    """
+    Returns a tuple that has an element inserted at a given index
+
+    Args:
+        test_tupletuple (tuple) :  the tuple to be operated upon
+        feature (unknown) : a value to be insterted into a tuple
+        index (int) : the value at which the value should be inserted
+    Returns:
+        a tuple that is a copy of the argument tuple but with the addition 
+        of an inserted value at an index. 
+
+    """
+    copied_tuple_list = []
+    for value in test_tuple:
+        copied_tuple_list.append(value)
+
+    copied_tuple_list.insert(index, feature)
+
+    return (tuple(copied_tuple_list))
+
+# Question 3: Is list homgeneity enforced?
 def question_three():
-    pass
+    """Returns a list that has multiple different types in it"""
+    return ["cow", 1]
 
 # ******************* TEST CODE ************************ #
 if __name__ == '__main__':
-    question_one()
-    question_two()
-    question_three()
+    print("Testing Question One: ")
+    print(question_one(["happy", "sad"], ["mad", "glad"]))
+    print("Testing Question Two: ")
+    print(question_two(("cows", "are", 4, "me"), 3, ["test"] ))
+    print ("Testing Question Three: ")
+    print(question_three())
