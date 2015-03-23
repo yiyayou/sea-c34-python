@@ -101,17 +101,14 @@ print fruits_list_t3
 # the letters in each fruit in the copy. Delete the last item of the original list. 
 # Display the original list and the copy
 
-fruits_list_t4 = fruits_list[:]
+fruits_list_t4 = []
 
-for fruit in fruits_list_t4:
-    fruit = fruit[::-1]
+for fruit in fruits_list:
+    fruit = fruit[::-1].lower()
+    fruits_list_t4.append(fruit)
 
+fruits_list.pop()
+
+print fruits_list
 print fruits_list_t4
 
-'''
-When the script is run, it should accomplish the following four series of actions:
-
-
-    Make a copy of the list and reverse the letters in each fruit in the copy.
-    Delete the last item of the original list. Display the original list and the copy
-'''
