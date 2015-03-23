@@ -13,8 +13,8 @@ def shoppingList(groceries=[]):
     goshop = raw_input("Is this everything you need? (y/n) ").lower()
     if goshop == "n":
         addItem = raw_input("What else do you need? ")
-        groceries.append(addItem)
-        shoppingList(groceries)
+        groceries.append(addItem)  # add user input to the list of groceries
+        shoppingList(groceries)        # run function again to check groceries
     else:
         print "Great.  Let's go shopping."
 shoppingList()
@@ -24,8 +24,6 @@ shoppingList()
 
 def twitter(tweet):
     if len(tweet) > 140:
-        print True
         return True
     else:
-        print False
         return False
