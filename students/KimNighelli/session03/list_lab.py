@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 '''
+This is for Task 6 - List Lab
+
 This program highlights varies taks one can perform on a list, from appending,
 removing, iterating through, and doubling. 
 
