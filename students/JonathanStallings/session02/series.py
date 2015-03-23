@@ -10,7 +10,6 @@ def fibonacci(n):
             value = first + second
             first = second
             second = value
-    print(value)
     return value
 
 
@@ -26,19 +25,16 @@ def lucas(n):
             value = first + second
             first = second
             second = value
-    print(value)
     return value
 
 
 def sum_series(n, first=0, second=1):
     """Return nth value of sum series.
 
-    Arguments:
-    n -- the number in the series of the returned value
+    Optional arguments:
     first -- the first value of the series
     second -- the second value of the series
     """
-    first, second = first, second
     if n == 0:
         value = first
     elif n == 1:
@@ -48,8 +44,13 @@ def sum_series(n, first=0, second=1):
             value = first + second
             first = second
             second = value
-    print(value)
     return value
 
 
-sum_series(6, 2, 1)
+if __name__ == '__main__':
+    # Check that the fibonacci and sum_series functions
+    # give expected values.
+    assert fibonacci(5) == 5 and sum_series(5) == 5
+    # Check that the lucas and sum_series functions
+    # give expected values.
+    assert lucas(5) == 11 and sum_series(5, 2, 1) == 11
