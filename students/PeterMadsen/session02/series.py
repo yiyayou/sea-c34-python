@@ -53,12 +53,14 @@ def sum_series(n, first_value=0, second_value=1):
         sum_series(n - 2,first_value, second_value)
 
 
-# Test Code
+# ******************** Test Code ************************** #
 if __name__ == "__main__":
+    # Testing Fibonacci Series 
     print("Testing Fibonacci series")
     for i in range (8):
         print (str(fibonacci(i)) + ", "),
     print("...")
+    # Testing Lucas Series 
     print("Testing Lucas series")
     for i in range (8):
         print (str(lucas(i)) + ", "),
@@ -72,5 +74,3 @@ if __name__ == "__main__":
     for i in range (8):
         print (str(sum_series(i, 2, 1)) + ", "),
     print("...")
-
-
