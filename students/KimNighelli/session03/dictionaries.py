@@ -96,6 +96,7 @@ if __name__ == "__main__":
     times_tables()
 
 '''
+Output:
 The key-value pairs in the dictionary are (unsorted):
     House Number : 801
     Country : United States
