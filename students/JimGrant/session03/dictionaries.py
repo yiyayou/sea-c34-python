@@ -1,17 +1,63 @@
+from __future__ import print_function
+
+
 def question01():
-    pass
+    """Can I use zip to do more than 2 loops at once?"""
+
+    print("Question 1: Can I use zip to do more than 2 loops at once?")
+    list1 = [1, 2, 3]
+    list2 = [4, 5, 6]
+    list3 = [7, 8, 9]
+
+    for i, j, k in zip(list1, list2, list3):
+        print("{}, {}, {}".format(i, j, k))
 
 
 def question02():
-    pass
+    """Will setdefault() replace the value if the value is None?"""
+
+    print("Question 2: Will setdefault() replace the value if the value is None?")
+    d = {"key": None}
+    d.setdefault("key", "something")
+
+    if d["key"] == "something":
+        print("Yes, setdefault() treats a value of None as the value not existing.")
+    elif d["key"] == None:
+        print("No, a value of None is still a value, and setdefault respects that.")
+    else:
+        print("Something is really wrong with your assumptions about how this function works.")
 
 
 def question03():
-    pass
+    """What is the difference between set.difference() and set.symmetric_difference()?"""
+
+    print("Question 3: What is the difference between set.difference() and set.symmetric_difference()?")
+    s1 = {1, 2, 3, 4}
+    s2 = {3, 4, 5, 6}
+
+    print("difference returns: {}".format(s1.difference(s2)))
+    print("symmetric_difference returns: {}".format(s1.symmetric_difference(s2)))
 
 
 def question04():
-    pass
+    """How is a frozen set different from a tuple?"""
+
+    print("Question 4: How is a frozen set different from a tuple?")
+    a_frozen_set = frozenset((1, 2, 3))
+    a_tuple = (1, 2, 3)
+    fs_dir = dir(a_frozen_set)
+    tuple_dir = dir(a_tuple)
+
+    print("Frozen Sets have the following methods that tuples don't:")
+    for m in fs_dir:
+        if m not in tuple_dir:
+            print(m, end=" | ")
+
+    print("\n")
+    print("Tuples have the following methods that frozen sets don't:")
+    for m in tuple_dir:
+        if m not in fs_dir:
+            print(m, end=" | ")
 
 
 if __name__ == "__main__":
