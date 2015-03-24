@@ -12,6 +12,8 @@ def action_one ():
     print("You selsected the number %d which corresponds to  the fruit %s"\
      % (user_number, fruit_list[user_number - 1]))
     
+    # add fruit using +
+    fruit_list.insert(0, "Strawberries")
 def action_two():
     pass
 
