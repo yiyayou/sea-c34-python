@@ -3,6 +3,13 @@ When the script is run, it should accomplish the following four series of action
 
 Create a list that contains “Apples”, “Pears”, “Oranges” and “Peaches”.
 Display the list.
+"""
+def makefruitlist():
+    print list = ["Apples", "Pears", "Oranges", "Peaches"]
+
+makefruitlist()
+
+"""
 Ask the user for another fruit and add it to the end of the list.
 Display the list.
 Ask the user for a number and display the number back to the user and the fruit corresponding to that number (on a 1-is-first basis).
