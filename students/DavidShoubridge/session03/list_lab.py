@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 my_list = ["Apples", "Pears", "Oranges", "Peaches"]
-#my_list += ["Bananas"]
+my_list = ["Bananas"] + my_list
 print(my_list)
 
 
@@ -19,10 +19,6 @@ def user_input():
     number_input = int(number_input)
 
     print(my_list[(number_input - 1)])
-
-    #my_list += "Bananas"
-
-    #print my_list
 
     my_list.insert(0, "Pineapple")
 
@@ -76,11 +72,11 @@ user_preference()
 
 list_copy = my_list[:]
 
-
 def letter_swap():
     for fruit in list_copy:
         fruit = list(fruit)
-        fruit.reverse()
-    print(list_copy)
+        print(fruit)
+        reversed(fruit)
+    print(my_list[reversed(fruit)])
 letter_swap()
 
