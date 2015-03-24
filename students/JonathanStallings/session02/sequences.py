@@ -9,25 +9,25 @@ def update_list_in_tuple(method='extend', new=['new', 'values']):
         print out of test and result.
 
     """
-    myList = ['old', 'values']
-    myTuple = (0, 1, 2, myList)
-    msg = u"myList is {myList}, and myTuple is {myTuple}.\n" \
-        .format(myList=myList, myTuple=myTuple)
+    my_list = ['old', 'values']
+    my_tuple = (0, 1, 2, my_list)
+    msg = u"my_list is {my_list}, and my_tuple is {my_tuple}.\n" \
+        .format(my_list=my_list, my_tuple=my_tuple)
     if method == 'append':
-        myList.append(new)
+        my_list.append(new)
     elif method == 'extend':
-        myList.extend(new)
+        my_list.extend(new)
     elif method == 'replace':
-        myList = new
+        my_list = new
     else:
         print(u"Please use append, extend, or replace.")
         return
-    msg += u"myList has been updated to {myList}.\n".format(myList=myList)
-    msg += u"myList is now {myList}, and myTuple is {myTuple}.\n" \
-        .format(myList=myList, myTuple=myTuple)
+    msg += u"my_list has been updated to {my_list}.\n".format(my_list=my_list)
+    msg += u"my_list is now {my_list}, and my_tuple is {my_tuple}.\n" \
+        .format(my_list=my_list, my_tuple=my_tuple)
     print(msg)
     try:
-        assert(myList == myTuple[3])
+        assert(my_list == my_tuple[3])
         print(u"The new values were updated in the tuple.")
     except:
         print(u"The new values did not update in the tuple.")
