@@ -3,10 +3,12 @@ import os
 '''
 This is for Task 8 - Paths
 
-I had a few questions about paths.
+The following question came to me while reading the session04 lecture notes on files.
 
 1) Can I print out every file in my directory using the OS module and defining some path?
 '''
+
+# Question 1: Can I print out every file in my directory using the OS module and defining some path?
 
 def path_info(path):
 

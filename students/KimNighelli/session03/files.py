@@ -16,7 +16,7 @@ def read_and_print(file):
         if index % 2 == 0:
             print line.strip()
 
-# Can I open and write a new document where I print every letter of the 
+# Question2: Can I open and write a new document where I print every letter of the 
 # alphabet?
 
 import string
