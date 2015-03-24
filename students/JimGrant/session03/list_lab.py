@@ -2,18 +2,22 @@
 
 
 def print_series_header(series_num):
-    """Prints a header for each list lab series output, to aid in reading."""
+    """Print a header for each list lab series output, to aid in reading."""
+
     print(u"-------------------")
     print(u"List Lab - Series {}".format(series_num))
     print(u"-------------------")
 
 
 def print_fruitlist(series_num, step_num, fruitlist):
-    """Prints the current state of the fruit list as a formatted string with the series and step of the lab involved."""
+    """Print the current state of the fruit list as a formatted string with the series and step of the lab involved."""
+
     print(u"{}.{} - Current Fruit List: {}".format(series_num, step_num, fruitlist))
 
 
 def series1():
+    """Perform List Lab Series 1 operations."""
+
     print_series_header(1)
     fruitlist = [u"Apples", u"Pears", u"Oranges", u"Peaches"]
     print_fruitlist(1, 1, fruitlist)
@@ -40,14 +44,29 @@ def series1():
 
 
 def series2(fruitlist):
-    pass
+    """Perform List Lab Series 2 operations."""
+
+    print(print_series_header(2))
+    print_fruitlist(2, 1, fruitlist)
+    fruitlist.pop()
+    print_fruitlist(2, 2, fruitlist)
+    while True:
+        input_fruit = raw_input("2.3 - Enter a fruit to remove: ")
+        if input_fruit in fruitlist:
+            fruitlist.remove(input_fruit)
+            break
+    print_fruitlist(2, 4, fruitlist)
 
 
 def series3(fruitlist):
+    """Perform List Lab Series 3 operations."""
+    
     pass
 
 
 def series4(fruitlist):
+    """Perform List Lab Series 4 operations."""
+
     pass
 
 
