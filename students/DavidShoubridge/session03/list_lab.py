@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 my_list = ["Apples", "Pears", "Oranges", "Peaches"]
-
+#my_list += ["Bananas"]
 print(my_list)
 
 
@@ -20,9 +20,9 @@ def user_input():
 
     print(my_list[(number_input - 1)])
 
-    # my_list[0] = "Bananas"
+    #my_list += "Bananas"
 
-    # print my_list
+    #print my_list
 
     my_list.insert(0, "Pineapple")
 
@@ -51,3 +51,36 @@ def remove_fruit():
     print(my_list)
 
 remove_fruit()
+
+
+def user_preference():
+    my_tuple = tuple(my_list)
+    """while my_tuple[fruit] <= len(range(my_tuple) - 1):
+        user_preference = raw_input("Do you like %s :" % fruit)
+        if user_preference.lower() != "yes" or user_preference.lower() != "no":
+            my_tuple[fruit] = fruit
+            print("Only enter 'yes' or 'no':")
+        if user_preference.lower() == "no":
+            my_list.remove(fruit)"""
+    for fruit in my_tuple:
+        user_preference = raw_input("Do you like %s :" % fruit)
+        # while user_preference.lower() != "yes" or user_preference.lower() != "no":
+            # print("Only enter 'yes' or 'no':")
+            # break
+        if user_preference.lower() == "no":
+            my_list.remove(fruit)
+    print(my_list)
+
+user_preference()
+
+
+list_copy = my_list[:]
+
+
+def letter_swap():
+    for fruit in list_copy:
+        fruit = list(fruit)
+        fruit.reverse()
+    print(list_copy)
+letter_swap()
+
