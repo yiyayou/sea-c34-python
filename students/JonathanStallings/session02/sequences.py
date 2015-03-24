@@ -22,7 +22,7 @@ def update_list_in_tuple(method='extend', new=['new', 'values']):
     else:
         print(u"Please use append, extend, or replace.")
         return
-    msg += u"mList has been updated to {myList}.\n".format(myList=myList)
+    msg += u"myList has been updated to {myList}.\n".format(myList=myList)
     msg += u"myList is now {myList}, and myTuple is {myTuple}.\n" \
         .format(myList=myList, myTuple=myTuple)
     print(msg)
