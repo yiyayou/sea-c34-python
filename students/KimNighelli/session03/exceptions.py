@@ -1,7 +1,8 @@
 '''
 This is for Task 8 - Exceptions
 
-Below, I ask two questions relating to exceptions:
+Below, I ask two questions relating to exceptions that came up while
+reading through the session04 lecture notes:
 
 1) While in a loop, how to I bypass an element of a list that cannot have
 a particular operation performed on it?
@@ -30,11 +31,13 @@ def error_try(test_list):
 
 def bypass_keyindex(some_dict):
     
+    common_keys = ["Name", "Address", "Age", "Occupation", "Favorite Food"]
     # Key
-    try:
-        print some_dict["Address"]
-    except KeyError:
-        print "Key does not exist in this dictionary"
+    for i in common_keys:
+        try:
+            print "They value associated with the key %s is %s" % (i.lower(), some_dict[i])
+        except KeyError:
+            print "A key of %s does not exist in this dictionary" %(i)
 
 
         
@@ -48,6 +51,8 @@ if __name__ == "__main__":
 
     assert error_try(test_list) == ["PEN", "ALLIGATOR", "COMISSION", "BOSTON"]
 
+    print("\n")
+    
     # For Question 2
 
     test = {
@@ -68,6 +73,12 @@ Cannot perform .upper() on 43 due to an Attribute Error
 Cannot perform .upper() on 89 due to an Attribute Error
 Cannot perform .upper() on 76 due to an Attribute Error
 Cannot perform .upper() on 9 due to an Attribute Error
-Key does not exist in this dictionary
+
+
+They value associated with the key name is Kim
+A key of Address does not exist in this dictionary
+They value associated with the key age is 24
+They value associated with the key occupation is Meteorologist
+They value associated with the key favorite food is Enchiladas
 '''
 
