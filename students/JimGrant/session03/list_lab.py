@@ -60,14 +60,27 @@ def series2(fruitlist):
 
 def series3(fruitlist):
     """Perform List Lab Series 3 operations."""
-    
-    pass
+
+    print_series_header(3)
+    for fruit in fruitlist[:]:
+        answer = ""
+        while answer != "yes" and answer != "no":
+            answer = raw_input("3.1 - Do you like {}? (enter yes or no): ".format(fruit.lower()))
+
+        if answer == "no":
+            fruitlist.remove(fruit)
+
+    print_fruitlist(3, 2, fruitlist)
 
 
 def series4(fruitlist):
     """Perform List Lab Series 4 operations."""
 
-    pass
+    print_series_header(4)
+    reversed_list = [fruit[::-1] for fruit in fruitlist]
+    fruitlist.pop()
+    print("4.1 - Original List: {}".format(fruitlist))
+    print("4.2 - Reversed List: {}".format(reversed_list))
 
 
 if __name__ == "__main__":
