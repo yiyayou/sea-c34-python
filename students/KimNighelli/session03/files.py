@@ -1,6 +1,9 @@
 '''
 This is for Task 8 - Files
 
+The following are questions that I had when reading through the session04
+lecture notes on reading and writing files.
+
 1) Make a document. Read in the document. Then print every other line of the document.
 2) Open and write to a new document
 '''
