@@ -20,16 +20,34 @@ def user_input():
 
     print(my_list[(number_input - 1)])
 
+    # my_list[0] = "Bananas"
+
+    # print my_list
+
+    my_list.insert(0, "Pineapple")
+
+    print(my_list)
+
+    for fruit in my_list:
+        if fruit[0] == "P":
+            print fruit
+
 user_input()
-
-# my_list[0] = "Bananas"
-
-# print my_list
-
-my_list.insert(0, "Pineapple")
 
 print(my_list)
 
-for fruit in my_list:
-    if fruit[0] == "P":
-        print fruit
+del my_list[-1]
+
+print(my_list)
+
+
+def remove_fruit():
+    remove_input = raw_input("Which fruit would you like to remove?:")
+
+    for fruit in my_list:
+        if fruit.lower() == remove_input.lower():
+            my_list.remove(fruit)
+
+    print(my_list)
+
+remove_fruit()
