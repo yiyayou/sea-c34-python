@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """JosephO'Malley"""
 """Session 3 task6"""
 
