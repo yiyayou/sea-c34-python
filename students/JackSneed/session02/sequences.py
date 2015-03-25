@@ -24,8 +24,8 @@ def reduction():
     No one in corporate wants to take the full blame for the closures.
 
     Can we write a simple sequence function to determine which stores to close?
-
     """
+
     starbucks_per_city_gone = range(100)
     for i in starbucks_per_city_gone:
     # A step count of eleven should cut 17 out of 100
@@ -42,8 +42,8 @@ reduction()
 def find_that_word():
     """Can specific words be found in a one word string?"""
 
-    hidden_word = "jlijerfpojflmdewlmfoundmewepvakjmkf"
-    if "foundme" in hidden_word:
-        print("Found that word!!")
+    hidden_word = u"jlijerfpojflmdewlmfoundmewepvakjmkf"
+    if u"foundme" in hidden_word:
+        print(u"Found that word!!")
 
 find_that_word()

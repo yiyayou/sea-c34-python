@@ -2,7 +2,6 @@ def egg_overload():
     """They say never put too many eggs in one basket.
 
     Can we write a function to do just that?
-
     """
 
     basket_capacity = 40
@@ -11,7 +10,7 @@ def egg_overload():
     while eggs <= basket_capacity:
         eggs += 6
         if eggs >= basket_capacity:
-            print("The basket hath runneth over!")
+            print(u"The basket hath runneth over!")
 
 egg_overload()
 
@@ -23,7 +22,6 @@ def roots():
 
     The goals is to find the square root of 5 using a
     bisection search.
-
     """
 
     low = 0
