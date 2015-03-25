@@ -13,7 +13,7 @@ def action_one ():
     print("You selsected the number %d which corresponds to  the fruit %s"\
      % (user_number, fruit_list[user_number - 1]))
     
-    fruit_list  = ["Apriocts"] + fruit_list
+    fruit_list  = ["Apricots"] + fruit_list
     fruit_list.insert(0, "Strawberries")
 
     print("Here are the fruits that begin with 'P':")
@@ -40,15 +40,38 @@ def action_two(my_fruit_list):
             my_fruit_list.pop(my_fruit_list.index(remove_fruit))
 
     print(my_fruit_list)
+    return my_fruit_list
 
-def action_three():
-    pass
+def action_three(my_fruit_list):
+    index = 0
+   
+    while index < len(my_fruit_list):
+        answer = raw_input("Do you like %s  (yes/no): " %my_fruit_list[index].lower())
+       
+        while (answer != 'yes') & (answer != 'no'):
+            answer = raw_input("That is not a valid answer. Please enter 'yes' or 'no':")
+       
+        if answer == 'no':
+            my_fruit_list.pop(index)
 
-def action_four():
-    pass
+        index += 1
+    
+    print(my_fruit_list)
+
+def action_four(my_fruit_list):
+     copy_list = list(my_fruit_list)
+     for fruit in copy_list:
+        copy_list[copy_list.index(fruit)] = fruit[::-1]
+
+     my_fruit_list.pop()
+     print ("This is the original list: ")
+     print (my_fruit_list)
+     print ("This is the copy list: ")
+     print(copy_list)
 
 #********************* TEST CODE ************************#
 if __name__ == '__main__':
-   #this_list = action_one()
-   this_list = ['Strawberries', 'Apriocts', 'Apples', 'Pears', 'Oranges', 'Peaches', 'Cherries']
-   action_two(this_list)
+   this_list = tuple(action_one())
+   action_two(list(this_list))
+   action_three(list(this_list))
+   action_four(list(this_list))
