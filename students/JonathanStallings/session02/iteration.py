@@ -38,7 +38,7 @@ def continue_test():
 def index_test():
     """
     What happens if I add another symbol to the example construct
-     about adding an index to for loops from the session03 notes?
+    from the session03 notes about adding an index to for loops ?
     """
     try:
         for i, j, foo in enumerate(u'Python'):

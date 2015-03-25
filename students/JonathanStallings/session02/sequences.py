@@ -1,3 +1,6 @@
+from __future__ import print_function
+
+
 def slice_overkill():
     """What happens when you try to slice beyond range of a list?"""
     my_list = []
