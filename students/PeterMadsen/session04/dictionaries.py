@@ -25,10 +25,20 @@ def dictionary_destruction (dict):
 
 def why_set ():
     """ What are some usecases for a set?"""
-    pass
+    #A set could be used to validate a response
+    available_answers = set(["Send a Thank You", 'Create a Report'])
+    answer = raw_input("Please select an option 'Send a Thank You' or 'Create a Report':")
 
+    while answer not in available_answers:
+        answer = raw_input("That is not a vaild answer. Please try again: ")
+
+    print ("Ok lets %s." %answer)
+    
 def set_pop ():
-    """ Does set.pop only remove a random element? """
+    """
+     Does set.pop only remove a random element? or can you specify which
+     value can be popped
+    """
     test_set = set(['happy', 'sad', 'mad'])
     try:
         print(test_set.pop("happy"))
