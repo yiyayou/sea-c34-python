@@ -40,5 +40,10 @@ while choosing:
         else:
             choice = raw_input("That is not a correct response. 'Yes' or 'No'")
 print delete_list
+list_copy = [] 
+for copies in delete_list:
+    list_copy.insert(0, copies[::-1])
+print list_copy
+
 
 
