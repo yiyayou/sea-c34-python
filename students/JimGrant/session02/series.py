@@ -28,8 +28,8 @@ def sum_series(n, value1=0, value2=1):
     """Return the nth number in a recursive integer series.
     Args:
         n - positive int. The position in the series to return.
-        value1 - int (optional, default 0). The first number in the sequence to use.
-        value2 - int (optional, default 1). The second number in the sequence to use.
+        value1 - int (optional, default 0). The first number in the sequence.
+        value2 - int (optional, default 1). The second number in the sequence.
     """
 
     for i in range(n):
@@ -39,7 +39,7 @@ def sum_series(n, value1=0, value2=1):
 
 
 if __name__ == "__main__":
-    # test that the internally supplied numbers in the series are returned properly
+    # test that the supplied numbers in the series are returned properly
     assert(fibonacci(0) == 0)
     assert(fibonacci(1) == 1)
 
