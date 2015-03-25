@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-# series 1 (first four series of actions)
+# first series of actions
 fruit_list = ["Apples", "Pears", "Oranges", "Peaches"]
 print "\n"
 print fruit_list
@@ -10,11 +10,15 @@ while True:
     add_fruit = raw_input("Add another fruit to the list: ")
     add_fruit = add_fruit.capitalize()
     check_add_fruit = add_fruit in fruit_list
-    if check_add_fruit is True:
-        print("Sorry, %s is on the list already." % add_fruit)
-        print "\n"
+    is_fruit_valid = add_fruit.isalpha()
+    if is_fruit_valid is True:
+        if check_add_fruit is True:
+            print("Sorry, %s is on the list already." % add_fruit)
+            print "\n"
+        else:
+            break
     else:
-        break
+        print("%s? What's that? \n" % add_fruit)
 fruit_list.append(add_fruit)
 print fruit_list
 print "\n"
@@ -46,7 +50,7 @@ for fruit in fruit_list:
         print("%i) %s" % (counter, fruit))
 print "\n"
 
-# next four steps
+# second series of actions
 
 print fruit_list
 print "\n"
@@ -61,9 +65,11 @@ while True:
     else:
         fruit_list.remove(remove_fruit)
         break
+print "\n"
 print fruit_list
+print "\n"
 
-# next set of steps
+# third series of actions
 
 counter = 0
 while(counter < len(fruit_list)):
@@ -71,6 +77,7 @@ while(counter < len(fruit_list)):
     counter += 1
 
 print fruit_list
+print "\n"
 
 counter = 0
 list_len = len(fruit_list)
@@ -93,3 +100,18 @@ while True:
         break
 
 print fruit_list
+print "\n"
+
+# last series of actions
+
+fruit_list_copy = fruit_list[:]
+counter = 0
+while(counter < len(fruit_list_copy)):
+    fruit_list_copy[counter] = fruit_list_copy[counter][::-1]
+    counter += 1
+
+fruit_list.pop()
+print fruit_list
+print "\n"
+print fruit_list_copy
+print "\n"
