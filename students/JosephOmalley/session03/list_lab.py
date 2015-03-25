@@ -43,7 +43,7 @@ while choosing:
 print delete_list
 list_copy = [] 
 for copies in delete_list:
-    list_copy.insert(0, copies[::-1])
+    list_copy.append(copies[::-1])
 print list_copy
 
 
