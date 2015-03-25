@@ -2,13 +2,14 @@ from __future__ import print_function
 
 
 def question01():
-    """Can else and finally both get called in the same execution?"""
+    """Can else and finally both get called in the same run?"""
 
-    print("Question 1: Do else and finally both get called in the same execution?")
+    print("Question 1: Do else and finally both get called in the same run?")
+    text = ""
     try:
-        text = "This operation is just fine "
+        text += "This operation is just fine "
     except TypeError:
-        text += " except that all the laws of logic and reason have broken down "
+        text += " except that all laws of logic and reason have broken down "
     else:
         print("{}so the else block was executed".format(text), end=" ")
     finally:
@@ -17,9 +18,9 @@ def question01():
 
 
 def question02():
-    """Does anything after the raise statement get executed when handling an error?"""
+    """Does anything after raise get called during an error?"""
 
-    print("Question 2: Does anything after the raise statement get executed when handling an error?")
+    print("Question 2: Does anything after raise get called during an error?")
     try:
         nope = 1 / 0
         print(nope)

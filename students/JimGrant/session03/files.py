@@ -1,7 +1,7 @@
 def question01():
-    """What happens if you try opening a file in read mode that doesn't exist?"""
+    """What happens if you open a nonexistent file in r mode?"""
 
-    print("Question 1: What happens if you try opening a file in read mode that doesn't exist?")
+    print("Question 1: What happens if you open a nonexistent file in r mode?")
     try:
         f = open("i_do_not_exist.txt", "r")
     except IOError:
@@ -11,11 +11,14 @@ def question01():
 
 
 def question02():
-    """When opening a file in 'a' mode, does the pointer need to be reset after writing to read from the beginning?"""
+    """When opening a file in 'a' mode, does the pointer need to be reset
+    after writing to read from the beginning?
+    """
 
-    print("Question 2: If you open a file in 'a' mode, is it smart enough to always write at the very end?")
+    print("When opening a file in 'a' mode, does the pointer need to be reset"
+          " after writing to read from the beginning?")
     try:
-        # I have my .gitignore set up to ignore any files with the 'nogit' prefix
+        # I have my .gitignore set up to ignore any files with 'nogit' prefix
         f = open("nogit_task8output.txt", "a+")
     except IOError:
         print("An I/O error occurred")

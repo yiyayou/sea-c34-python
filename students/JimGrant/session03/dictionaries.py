@@ -16,27 +16,27 @@ def question01():
 def question02():
     """Will setdefault() replace the value if the value is None?"""
 
-    print("Question 2: Will setdefault() replace the value if the value is None?")
+    print("Question 2: Will setdefault() replace the value if it is None?")
     d = {"key": None}
     d.setdefault("key", "something")
 
     if d["key"] == "something":
-        print("Yes, setdefault() treats a value of None as the value not existing.")
+        print("Yes, setdefault() treats None as the value not existing.")
     elif d["key"] == None:
-        print("No, a value of None is still a value, and setdefault respects that.")
+        print("No, a value of None is a value, and setdefault respects that.")
     else:
-        print("Something is really wrong with your assumptions about how this function works.")
+        print("I must not understand how this function works.")
 
 
 def question03():
-    """What is the difference between set.difference() and set.symmetric_difference()?"""
+    """How are set.difference() and set.symmetric_difference() different?"""
 
-    print("Question 3: What is the difference between set.difference() and set.symmetric_difference()?")
+    print("How are set.difference() and set.symmetric_difference() different?")
     s1 = {1, 2, 3, 4}
     s2 = {3, 4, 5, 6}
 
-    print("difference returns: {}".format(s1.difference(s2)))
-    print("symmetric_difference returns: {}".format(s1.symmetric_difference(s2)))
+    print("difference: {}".format(s1.difference(s2)))
+    print("symmetric_difference: {}".format(s1.symmetric_difference(s2)))
 
 
 def question04():
