@@ -1,34 +1,111 @@
-"""
-When the script is run, it should accomplish the following four series of actions:
+# -*- coding: utf-8 -*-
 
-Create a list that contains “Apples”, “Pears”, “Oranges” and “Peaches”.
-Display the list.
-Ask the user for another fruit and add it to the end of the list.
-Display the list.
-Ask the user for a number and display the number back to the user and the fruit corresponding to that number (on a 1-is-first basis).
-Add another fruit to the beginning of the list using “+” and display the list.
-Add another fruit to the beginning of the list using insert() and display the list.
-Display all the fruits that begin with “P”, using a for loop.
-Using the list created in series 1 above:
 
-Display the list.
-Remove the last fruit from the list.
-Display the list.
-Ask the user for a fruit to delete and find it and delete it.
-(Bonus: Multiply the list times two. Keep asking until a match is found. Once found, delete all occurrences.)
-Again, using the list from series 1:
+def makelist():
+    list = ["Apples", "Pears", "Oranges", "Peaches"]
+    return list
 
-Ask the user for input displaying a line like “Do you like apples?”
-for each fruit in the list (making the fruit all lowercase).
-For each “no”, delete that fruit from the list.
-For any answer that is not “yes” or “no”, prompt the user to answer with one of those two values (a while loop is good here):
-Display the list.
-Once more, using the list from series 1:
 
-Make a copy of the list and reverse the letters in each fruit in the copy.
-Delete the last item of the original list. Display the original list and the copy.
-Commit and push to the task6 branch, then submit a pull request to the main class repo.
+def addfruit(newfruit, list):
+    list.append(newfruit)
+    return list
 
-Finally, submit your assignment in Canvas by giving the URL of the pull request.
 
-"""
+def indexfruit(list):
+    indexnum = (int(raw_input("What number do you want to look up?"))) - 1
+    while indexnum not in range(len(list)):
+        indexnum = (int(raw_input("Sorry, that number doesn't exist. \n Please choose a lower number. What number do you want to look up?"))) - 1
+    else:
+        return list[indexnum]
+
+
+def addfruitinsert(newfruit, list):
+    list.insert(0, newfruit)
+    return list
+
+
+def addfruitplus(newfruit, list):
+    newlist = [newfruit] + list
+    return newlist
+
+
+def findpfruits(list):
+    pfruits = []
+    for fruit in list:
+        if fruit[0] == "p" or fruit[0] == "P":
+            pfruits += [fruit]
+    return pfruits
+
+
+def badfruit(fruit, list):
+    while fruit in list:
+        list.remove(fruit)
+    return list
+
+
+def fixlist(list):
+    yeslist = []
+    nolist = []
+    masterlist = []
+    for fruit in list:
+        if fruit.lower() in yeslist:
+            masterlist.append(fruit.lower())
+        elif fruit.lower() in nolist:
+            pass
+        else:
+            ask = raw_input("Do you like " + str(fruit) + " ? Yes or No: ")
+            while ask.lower() not in ['yes', 'y', 'n', 'no']:
+                ask = raw_input("Sorry, I don't understand. Do you like " + str(fruit) + " ? Yes or No: ")
+            if ask.lower() == 'yes' or ask.lower() == 'y':
+                yeslist.append(fruit.lower())
+                masterlist.append(fruit.lower())
+            elif ask.lower() == 'no' or ask.lower() == 'n':
+                nolist.append(fruit.lower())
+    return masterlist
+
+
+def reverselistitems(list):
+    reverselist = []
+    for item in list:
+        reverselist.append(item[::-1])
+    return reverselist
+
+
+def runprogram(mylist):
+    # part 1
+    newfruit = raw_input("What fruit would you like to add to the list?")
+    addfruit(newfruit, mylist)
+    print mylist
+    numfruit = indexfruit(mylist)
+    print numfruit
+    newfruit = raw_input("What fruit would you like to add to the beginning of the list using the insert method?")
+    addfruitinsert(newfruit, mylist)
+    print mylist
+    newfruit = raw_input("What fruit would you like to add to the beginning of the list using the plus method?")
+    mylist = addfruitplus(newfruit, mylist)
+    print mylist
+    print "Here are all your fruits that begin with a 'p': "
+    print findpfruits(mylist)
+    # part 2
+    print "Let's delete the last item from your list. "
+    mylist.pop(-1)
+    print mylist
+    removefruit = raw_input("What fruit would you like to remove?")
+    longlist = mylist * 2
+    print "Oh no the list multipled!\n" + str(longlist)
+    badfruit(removefruit, longlist)
+    print "Whew, that's better.\n" + str(longlist)
+    # part3
+    fixedlist = fixlist(mylist)
+    print fixedlist
+    # part4
+    reverselist = reverselistitems(mylist)
+    print reverselist
+    mylist.pop(-1)
+    reverselist = reverselistitems(mylist)
+    print "Delete the last item of the original list."
+    print "Display the original list and the copy.\n" + str(mylist) + "\n" + str(reverselist)
+
+mylist = makelist()
+print mylist
+runprogram(mylist)
