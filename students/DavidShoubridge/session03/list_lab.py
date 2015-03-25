@@ -72,9 +72,10 @@ user_preference()
 
 list_copy = my_list[:]
 
+
 def letter_swap():
     for fruit in list_copy:
-        fruit = list(fruit)
+        fruit = str(fruit)
         print(fruit)
         reversed(fruit)
     print(my_list[reversed(fruit)])
