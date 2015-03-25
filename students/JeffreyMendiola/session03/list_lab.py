@@ -62,3 +62,34 @@ while True:
         fruit_list.remove(remove_fruit)
         break
 print fruit_list
+
+# next set of steps
+
+counter = 0
+while(counter < len(fruit_list)):
+    fruit_list[counter] = fruit_list[counter].lower()
+    counter += 1
+
+print fruit_list
+
+counter = 0
+list_len = len(fruit_list)
+while(counter < list_len):
+    user_resp = raw_input("Do you like %s? " % fruit_list[counter])
+    user_resp = user_resp.lower()
+    if user_resp == "no":
+        fruit_list[counter] = "remove"
+        counter += 1
+    elif user_resp == "yes":
+        counter += 1
+    else:
+        print "Oops! You must enter \"yes\" or \"no\"."
+
+while True:
+    check_remove = "remove" in fruit_list
+    if check_remove is True:
+        fruit_list.remove("remove")
+    else:
+        break
+
+print fruit_list
