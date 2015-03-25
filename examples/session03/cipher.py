@@ -1,16 +1,15 @@
 import random
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+alphabet = "abcdefghijklmnopqrstuvwxyz "
+cipher = "vyhlanigedkcw fsmprtouzbjxq"
 
 alphabet_list = [alphabet[i] for i in range(len(alphabet))]
-#alphabet_list = list(alphabet)
+# alphabet_list = list(alphabet)
 
-print(alphabet_list)
+message_text = "we should have an enchilada party"
+decode_text = raw_input("Enter your code: ")
 
-message_text = "what is a baggins"
-
-cipher_list = list(alphabet_list)
-random.shuffle(cipher_list)
+cipher_list = [cipher[i] for i in range(len(cipher))]
 
 cipher_text = ""
 
@@ -20,3 +19,12 @@ for x in message_text:
     cipher_text += cipher_char
 
 print cipher_text
+
+alphabet_text = ""
+
+for x in decode_text:
+    index = cipher_list.index(x)
+    decode_char = alphabet_list[index]
+    alphabet_text += decode_char
+
+print alphabet_text
