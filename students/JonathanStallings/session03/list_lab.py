@@ -51,18 +51,21 @@ def series_1():
 def series_2():
     """Second series"""
     fruits_2 = fruits[:]
+    response = ""
 
     print(u'\n\nSeries 2:\n\n')
     display(fruits_2)
     fruits_2.pop()
     display(fruits_2)
+    fruits_2.extend(fruits_2)
 
     msg = u'\nPlease enter a fruit to delete.\n\n>  '
-    response = raw_input(msg).title()
-    for fruit in fruits_2:
-        if fruit == response:
-            fruits_2.remove(fruit)
-            break
+    while response not in fruits_2:
+        display(fruits_2)
+        response = raw_input(msg).title()
+    while response in fruits_2:
+        fruits_2.remove(response)
+    display(fruits_2)
 
     return fruits_2
 
@@ -73,7 +76,7 @@ def series_3():
 
     print(u'\n\nSeries 3:\n\n')
     for fruit in fruits_3[:]:
-        msg = u'\nDo you like {fruit}? ([Y]es/[n]o):\n\n' \
+        msg = u'\nDo you like {fruit}? ([Y]es/[n]o):\n\n>  ' \
             .format(fruit=fruit.lower())
         while True:
             response = raw_input(msg).lower()
@@ -83,6 +86,8 @@ def series_3():
                 fruits_3.remove(fruit)
                 break
     display(fruits_3)
+
+    return fruits_3
 
 
 def series_4():
@@ -95,6 +100,8 @@ def series_4():
     fruits.pop()
     display(fruits)
     display(fruits_4)
+
+    return fruits_4
 
 
 if __name__ == '__main__':
