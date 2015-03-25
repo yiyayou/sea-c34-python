@@ -20,7 +20,7 @@ def loop_keys():
 
 
 def get_value():
-    """How to get to values in the dictionary?"""
+    """How to get the values in the dictionary?"""
     my_info = {"name": "Karen", "state": "washington"}
     for value in my_info.values():
         print(value)
