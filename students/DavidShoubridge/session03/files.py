@@ -13,3 +13,8 @@ def new_open():
         file.write("Appended to!!!!!")
 
 new_open()  # Not working yet.
+
+
+def create_with_path():
+    """ Can I create a new file using an absolute path?
+    """

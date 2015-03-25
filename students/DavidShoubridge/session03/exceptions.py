@@ -18,7 +18,8 @@ string_error(user_input)
 
 
 def file_opener():
-    """ Can I write an exeption statement that works? I don't understand how to use them yet.
+    """ Can I write an exeption statement that works? I don't understand how \
+    to use them yet.
     """
     try:
         d = open("gone.txt")
