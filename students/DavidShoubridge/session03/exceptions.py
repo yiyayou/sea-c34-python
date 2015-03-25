@@ -15,3 +15,13 @@ def string_error(n):
         print("Input must be a string, sorreeeeeee")
 
 string_error(user_input)
+
+
+def file_opener():
+    """ Can I write an exeption statement that works? I don't understand how to use them yet.
+    """
+    try:
+        d = open("gone.txt")
+        process(d)
+    except IOError:
+        print("Couldn't open gone.text")
