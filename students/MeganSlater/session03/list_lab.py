@@ -7,43 +7,49 @@ userfruit = raw_input("What is another fruit? ")
 fruits.append(userfruit)
 print(fruits)
 usernumber = int(raw_input("Give a number between 1 and 4 "))
+print(usernumber)
 print(fruits[usernumber - 1])
 fruits = ["Grapes"] + fruits
 print(fruits)
-fruits.insert(0, "Tomato")
+fruits.insert(0, "Tomatos")
 print(fruits)
 for fruit in fruits:
     if fruit[0] == "P":
         print fruit
+seriesonefruit = fruits[:]
 
 # section 2
-print(fruits)
-fruits.pop()
-print(fruits)
+sectiontwofruits = seriesonefruit[:]
+print(sectiontwofruits)
+sectiontwofruits.pop()
+print(sectiontwofruits)
 deletefruit = raw_input("Which fruit do you want to delete? ")
-for fruit in fruits:
+for fruit in sectiontwofruits:
     if fruit == deletefruit:
-        fruits.remove(fruit)
+        sectiontwofruits.remove(fruit)
 
 # section 3
 count = 0
 userlike = ""
+sectionthreefruits = seriesonefruit[:]
+for fruit in sectionthreefruits:
+    fruit = fruit.lower()
 
 
 def goodfruits(fruit):
     userlike = raw_input("Do you like " + fruit + "? (yes/no) ").lower()
     if userlike == "no":
-        fruits.remove(fruit)
+        sectionthreefruits.remove(fruit)
     elif userlike != 'no' and userlike != 'yes':
         print("That was not yes or no.  Try again.")
         goodfruits(fruit)
-for fruit in fruits:
+for fruit in sectionthreefruits:
         goodfruits(fruit)
-print(fruits)
+print(sectionthreefruits)
 
 # section 4
-fruits = ['Apples', 'Pears', 'Oranges', 'Peaches']
-backwardsfruits = fruits[:]
+sectionfourfruits = seriesonefruit[:]
+backwardsfruits = sectionfourfruits[:]
 bfruit = ""
 count = 0
 for fruit in backwardsfruits:
@@ -52,6 +58,6 @@ for fruit in backwardsfruits:
     backwardsfruits[count] = bfruit
     bfruit = ""
     count += 1
-fruits.pop()
-print(fruits)
+sectionfourfruits.pop()
+print(sectionfourfruits)
 print(backwardsfruits)
