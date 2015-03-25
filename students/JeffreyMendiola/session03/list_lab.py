@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+# series 1 (first four series of actions)
 fruit_list = ["Apples", "Pears", "Oranges", "Peaches"]
 print "\n"
 print fruit_list
@@ -44,3 +45,20 @@ for fruit in fruit_list:
         counter += 1
         print("%i) %s" % (counter, fruit))
 print "\n"
+
+# next four steps
+
+print fruit_list
+print "\n"
+fruit_list.pop()
+print fruit_list
+while True:
+    remove_fruit = raw_input("Which fruit would you like to have removed?: ")
+    remove_fruit = remove_fruit.capitalize()
+    check_fruit = remove_fruit in fruit_list
+    if check_fruit is False:
+        print("Sorry, %s is not on the list. \n" % remove_fruit)
+    else:
+        fruit_list.remove(remove_fruit)
+        break
+print fruit_list
