@@ -1,6 +1,9 @@
 from __future__ import print_function
 
 
+fruits = []
+
+
 def display(l):
     """
     Display a list as a formatted string.
@@ -12,9 +15,13 @@ def display(l):
     print('\n' + list_str)
 
 
-if __name__ == '__main__':
+def series_1():
+    """First series"""
+    global fruits
     fruits = ["Apples", "Pears", "Oranges", "Peaches"]
     msg = ""
+
+    print(u'\n\nSeries 1:\n\n')
     display(fruits)
 
     msg = u'\nPlease enter an additional type of fruit.\n\n>  '
@@ -38,17 +45,34 @@ if __name__ == '__main__':
             p_fruits.append(fruit)
     display(p_fruits)
 
-    display(fruits)
-    fruits.pop()
-    display(fruits)
+    return fruits
+
+
+def series_2():
+    """Second series"""
+    fruits_2 = fruits[:]
+
+    print(u'\n\nSeries 2:\n\n')
+    display(fruits_2)
+    fruits_2.pop()
+    display(fruits_2)
 
     msg = u'\nPlease enter a fruit to delete.\n\n>  '
     response = raw_input(msg).title()
-    for fruit in fruits:
+    for fruit in fruits_2:
         if fruit == response:
-            fruits.remove(fruit)
+            fruits_2.remove(fruit)
+            break
 
-    for fruit in fruits[:]:
+    return fruits_2
+
+
+def series_3():
+    """Third Series"""
+    fruits_3 = fruits[:]
+
+    print(u'\n\nSeries 3:\n\n')
+    for fruit in fruits_3[:]:
         msg = u'\nDo you like {fruit}? ([Y]es/[n]o):\n\n' \
             .format(fruit=fruit.lower())
         while True:
@@ -56,8 +80,25 @@ if __name__ == '__main__':
             if response == 'yes' or response == 'y':
                 break
             elif response == 'no' or response == 'n':
-                fruits.remove(fruit)
+                fruits_3.remove(fruit)
                 break
+    display(fruits_3)
+
+
+def series_4():
+    """Fourth Series"""
+    fruits_4 = []
+
+    print(u'\n\nSeries 4:\n\n')
+    for fruit in fruits[:]:
+        fruits_4.append(fruit[::-1])
+    fruits.pop()
     display(fruits)
+    display(fruits_4)
 
 
+if __name__ == '__main__':
+    series_1()
+    series_2()
+    series_3()
+    series_4()
