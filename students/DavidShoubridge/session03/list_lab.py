@@ -59,14 +59,14 @@ def user_preference():
         if user_preference.lower() == "no":
             my_list.remove(fruit)"""
     for fruit in my_tuple:
-        user_preference = raw_input("Do you like %s :" % fruit)
+        user_preference = raw_input("Do you like %s :" % fruit.lower())
         # while user_preference.lower() != "yes" or user_preference.lower() != "no":
             # print("Only enter 'yes' or 'no':")
             # continue
         #else:
             #break
-        if user_preference.lower() != "yes" or user_preference.lower() != "no":
-            print("Only enter 'yes' or 'no'. We will assume you meant to say 'yes'.")
+        # if user_preference.lower() != "yes" or user_preference.lower() != "no":
+            # print("Only enter 'yes' or 'no'. We will assume you meant to say 'yes'.")
         if user_preference.lower() == "no":
             my_list.remove(fruit)
     print(my_list)
