@@ -55,7 +55,14 @@ def series3(s1_dict):
 
 def series4():
     print_series_header(4)
-    pass
+    s2 = set(range(0, 21)[::2])
+    s3 = set(range(0, 21)[::3])
+    s4 = set(range(0, 21)[::4])
+    print_series_step(4, 1, "s2: {}".format(s2))
+    print_series_step(4, 2, "s3: {}".format(s3))
+    print_series_step(4, 3, "s4: {}".format(s4))
+    print_series_step(4, 4, "s3 is a subset of s2: {}".format(s3.issubset(s2)))
+    print_series_step(4, 5, "s4 is a subset of s2: {}".format(s4.issubset(s2)))
 
 
 def series5():
