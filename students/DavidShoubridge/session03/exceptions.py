@@ -1,5 +1,7 @@
-user_input = raw_input("Enter a number: ")
-user_input = int(user_input)
+user_input = input("Enter a string: ")
+"""
+Have not been able to make the exceptions occur
+"""
 
 
 def string_error(n):
@@ -10,7 +12,7 @@ def string_error(n):
     Return: An error if given a number
     """
     try:
-        n == str(n)
+        n == str
     except TypeError:
         print("Input must be a string, sorreeeeeee")
 
@@ -22,7 +24,8 @@ def file_opener():
     to use them yet.
     """
     try:
-        d = open("gone.txt")
-        process(d)
+        open("gone.txt", "wb")
     except IOError:
         print("Couldn't open gone.text")
+
+file_opener()
