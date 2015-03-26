@@ -19,9 +19,22 @@ def print_series_step(series_num, step_num, output):
 
 def series1():
     print_series_header(1)
-    the_dict = {}
-    print_series_step(1, 1, the_dict)
-    return the_dict
+    d = {"name": "Chris", "city": "Seattle", "cake": "Chocolate"}
+    print_series_step(1, 1, "Current Dict: {}".format(d))
+    d.pop("cake")
+    print_series_step(1, 2, "Current Dict: {}".format(d))
+    d["fruit"] = "Mango"
+    print_series_step(1, 3, "Current Dict: {}".format(d))
+    keys = d.keys()
+    print_series_step(1, 4, "Keys: {}".format(keys))
+    values = d.values()
+    print_series_step(1, 5, "Values: {}".format(values))
+    has_cake_key = "cake" in keys
+    print_series_step(1, 6, "Has Cake Key: {}".format(has_cake_key))
+    has_mango_val = "Mango" in values
+    print_series_step(1, 7, "Has Mango Value: {}".format(has_mango_val))
+
+    return d
 
 
 def series2():
