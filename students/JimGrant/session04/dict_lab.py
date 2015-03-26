@@ -67,7 +67,11 @@ def series4():
 
 def series5():
     print_series_header(5)
-    pass
+    s = set("Python")
+    s.add("i")
+    fs = frozenset("marathon")
+    print_series_step(5, 1, "Union: {}".format(s.union(fs)))
+    print_series_step(5, 2, "Intersection: {}".format(s.intersection(fs)))
 
 
 if __name__ == "__main__":
