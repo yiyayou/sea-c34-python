@@ -39,7 +39,9 @@ def series1():
 
 def series2():
     print_series_header(2)
-    pass
+    r = range(0, 16)
+    d = dict(zip(r, [hex(i) for i in r]))
+    print_series_step(2, 1, "Int To Hex: {}".format(d))
 
 
 def series3(s1_dict):
