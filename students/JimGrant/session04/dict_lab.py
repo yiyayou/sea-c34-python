@@ -46,7 +46,11 @@ def series2():
 
 def series3(s1_dict):
     print_series_header(3)
-    pass
+    d = {}
+    for a, b in s1_dict.items():
+        d[a] = b.count("a")
+    print_series_step(3, 1, "Original Dict: {}".format(s1_dict))
+    print_series_step(3, 2, "'a' Count of Dict Values: {}".format(d))
 
 
 def series4():
