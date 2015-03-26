@@ -30,25 +30,25 @@ for fruit in sectiontwofruits:  # checks every fruit against user input
 
 # section 3
 count = 0
-userlike = ""
 sectionthreefruits = seriesonefruit[:]  # create a copy for this section
 for fruit in sectionthreefruits:  # move every item in this list to lowercase
     fruit = fruit.lower()
-unlikedfruits = []
 
 # recursive function checks for valid user input
 
 
-def goodfruits(fruit):
-    userlike = raw_input("Do you like " + fruit + "? (yes/no) ").lower()
-    if userlike == "no":
-        unlikedfruits = unlikedfruits + [fruit]
-    elif userlike != 'no' and userlike != 'yes':
-        print("That was not yes or no.  Try again.")
-        goodfruits(fruit)
-for fruit in sectionthreefruits:
-        goodfruits(fruit)
-print(unlikedfruits.difference(sectionthreefruits))
+def goodfruits():
+    likedfruits = []
+    for fruit in sectionthreefruits:
+        userlike = ""
+        while userlike != 'no' and userlike != 'yes':
+            userlike = raw_input("Do you like " + fruit + "? (yes/no) ").lower()
+            if userlike == "yes":
+                likedfruits = likedfruits + [fruit]
+            elif userlike != 'no' and userlike != 'yes':
+                print("That was not yes or no.  Try again.")
+    print likedfruits
+goodfruits()
 
 # section 4
 sectionfourfruits = seriesonefruit[:]
