@@ -62,7 +62,11 @@ def user_preference():
         user_preference = raw_input("Do you like %s :" % fruit)
         # while user_preference.lower() != "yes" or user_preference.lower() != "no":
             # print("Only enter 'yes' or 'no':")
-            # break
+            # continue
+        #else:
+            #break
+        if user_preference.lower() != "yes" or user_preference.lower() != "no":
+            print("Only enter 'yes' or 'no'. We will assume you meant to say 'yes'.")
         if user_preference.lower() == "no":
             my_list.remove(fruit)
     print(my_list)
@@ -73,11 +77,16 @@ user_preference()
 list_copy = my_list[:]
 
 
-def letter_swap():
-    for fruit in list_copy:
-        fruit = str(fruit)
-        print(fruit)
-        reversed(fruit)
-    print(my_list[reversed(fruit)])
-letter_swap()
+def reverse_letter(copy):
+    swapped = ""
+    for fruit in reversed(copy):
+        swapped += fruit[::-1] + " "
+    print(swapped)
 
+reverse_letter(list_copy)
+
+del(my_list[-1])
+
+print(my_list)
+
+print(list_copy)
