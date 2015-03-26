@@ -1,22 +1,21 @@
-user_input = input("Enter a string: ")
 """
-Have not been able to make the exceptions occur
+Have not been able to make the exceptions occur for second file_opener()
 """
 
 
-def string_error(n):
-    """ Can I return an error if the value given to me is a number but I want \
-    a string?
+def string_error():
+    """ What happens if I try to divide a string?
 
     Arg(n): User Input.
-    Return: An error if given a number
+    Return: An error.
     """
+    user_input = raw_input("Enter a number")
     try:
-        n == str
+        user_input / 2
     except TypeError:
         print("Input must be a string, sorreeeeeee")
 
-string_error(user_input)
+string_error()
 
 
 def file_opener():
