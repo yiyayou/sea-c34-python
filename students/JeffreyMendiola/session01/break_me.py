@@ -1,12 +1,10 @@
-""" Example: NameError
-"""
-name_error(1, 2)
-
+# Example: NameError
 def name_error(x, y):
-    return x + y
+    return x + z
 
-""" Example: TypeError
-"""
+print name_error(1, 2)
+
+# Example: TypeError
 
 def type_error(x, y):
     total = x + y
@@ -15,8 +13,8 @@ def type_error(x, y):
 type_error(1, "Joe")
 
 
-""" Example: SyntaxError
-"""
+# Example: SyntaxError
+
 
 def synatx_error(value):
     if value > 0:
@@ -26,8 +24,8 @@ def synatx_error(value):
 
 synatx_error(12)
 
-""" Example: AttributeError
-"""
+# Example: AttributeError
+
 person = "Joe"
 
 
