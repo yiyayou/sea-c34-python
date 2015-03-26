@@ -60,5 +60,5 @@ def using_except():
 if __name__ == '__main__':
     print("Answering question one: ")
     finally_vs_else()
-    print("Answering question two: ")
+    print("Ansewering question two: ")
     using_except()
