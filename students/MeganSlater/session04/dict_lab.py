@@ -26,3 +26,13 @@ print numberdict
 a_dict = {}
 for key, value in dict.iteritems():
     a_dict.update({key: value.count('a')})
+
+# part 4
+s2 = set(filter(lambda x: x % 2 == 0, range(21)))
+s3 = set(filter(lambda x: x % 3 == 0, range(21)))
+s4 = set(filter(lambda x: x % 4 == 0, range(21)))
+print s2
+print s3
+print s4
+print s3.issubset(s2)
+print s4.issubset(s2)
