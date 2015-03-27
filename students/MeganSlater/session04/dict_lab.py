@@ -36,3 +36,10 @@ print s3
 print s4
 print s3.issubset(s2)
 print s4.issubset(s2)
+
+# part5
+python = set(['P', 'y', 't', 'h', 'o', 'n'])
+python.add('i')
+marathon = frozenset(['m', 'a', 'r', 'a', 't', 'h', 'o', 'n'])
+print python.union(marathon)
+print python.intersection(marathon)
