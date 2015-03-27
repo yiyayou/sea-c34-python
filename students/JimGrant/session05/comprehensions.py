@@ -16,6 +16,7 @@ def question02():
 
 def question03():
     """Can I use a dict as a sequence for a comprehension?"""
+    print("Can I use a dict as a sequence for a comprehension?")
     l = [a for a in {'a': 1, 'b': 2}]
     print(l)
     print("Answer: Yes, but it will give the keys, not the vals.")
