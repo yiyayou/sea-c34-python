@@ -21,3 +21,8 @@ hex = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1A", "1B", "1C", "1D"
 for i, j in zip(nums, hex):
     numberdict.update({i: j})
 print numberdict
+
+# part 3
+a_dict = {}
+for key, value in dict.iteritems():
+    a_dict.update({key: value.count('a')})
