@@ -41,7 +41,15 @@ print(c)
 
 
 def divisible_set(r, div):
-    """Return set of numbers evenly divisble by given number in given range."""
+    """
+    Return set of numbers evenly divisble by given number in given range.
+
+    Args:
+        r: range of numbers
+        div: divisor
+
+    Returns: set of divisible numbers in range
+    """
     set_list = []
     for x in range(r + 1):
         if not x % div:
