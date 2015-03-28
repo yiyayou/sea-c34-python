@@ -6,10 +6,10 @@ def safe_input(x):
         return raw_input(x)
     except (EOFError, KeyboardInterrupt):
         pass
-
+running = True
 
 # define a function that will either send a thank you or create a report
-def thankyous():
+while running is True:
     """ask user whether to send thank you or create report.  Take action based
     on input
     """
@@ -29,26 +29,31 @@ def thankyous():
         """If the user enters an unknown name we add that name to the dictionary
             and return to the beginning.
         """
-        for name, donation in donors.iteritems():
-            if donorname != name:
+        newdonor = 'yes'
+        count = 0
+        while newdonor == 'yes':
+            for name, donation in donors.iteritems():
+                if donorname == name:
+                    amount = ""
+                    while amount.isdigit() == False:
+                        amount = safe_input("How much did they donate?")
+                        donors[name] = donation + [amount]
+                    count += 1
+            if count == 0:
                 donors[donorname] = []
-                thankyous()
-                """If the donor name is in the dictionary we prompt the user for
-                a donated amount and enter it into the dictionary"""
-            else:
                 amount = ""
-# keep asking the user about how much was donated until they enter a number
                 while amount.isdigit() == False:
-                    amount = safe_input("How much did they donate? ")
-                    donors[name] = donation + [amount]
-                break
+                    amount = safe_input("How much did they donate?")
+                    donors[donorname] = donation + [amount]
+                newdonor = 'no'
+            else:
+                newdonor = 'no'
 
         """Once an amount has been added the user will receive a print
         out of an email for every donor and return to the beginning.
         """
         for name, donation in donors.iteritems():
             print("Thank you " + name + ".")
-        thankyous()
 """
 # If the user wants a report at the beginning we give them one
     elif userprompt == "Create a Report":
