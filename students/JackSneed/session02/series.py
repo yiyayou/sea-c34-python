@@ -16,13 +16,12 @@ def lucas(n):
 
     return val1
 
-def sum_series(n):
+def sum_series(n, val1=0, val2=1):
     """Return the nth value for sum_series.
-
     Use optional parameters to produce other series.
     """
 
-    val1, val2 = 3, 5
+
     for i in range(n):
         val1, val2 = val2, val1 + val2
 
@@ -33,4 +32,4 @@ def sum_series(n):
 if __name__ == '__main__':
     assert fabonacci(3) == 2
     assert lucas(3) == 4
-    assert sum_series(3) == 13
+    assert sum_series(3, 2, 3) == 8
