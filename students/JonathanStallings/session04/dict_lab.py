@@ -45,7 +45,7 @@ def divisible_set(r, div):
     Return set of numbers evenly divisble by given number in given range.
 
     Args:
-        r: range of numbers
+        r: range of numbers from zero to natural counting end of range
         div: divisor
 
     Returns: set of divisible numbers in range
@@ -68,3 +68,8 @@ print(s3.issubset(s2))
 print(s4.issubset(s2))
 
 # Section 5
+s_py = set(list('Python'))
+s_py.add('i')
+s_ma = frozenset(list('marathon'))
+print(s_py.union(s_ma))
+print(s_py.intersection(s_ma))
