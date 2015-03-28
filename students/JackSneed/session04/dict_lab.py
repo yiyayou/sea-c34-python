@@ -1,5 +1,14 @@
-def series01():
-
+def problem1():
+    """Create a dictionary containing “name”, “city”, and “cake”
+    for “Chris” from “Seattle” who likes “Chocolate”.
+    Display the dictionary.
+    Delete the entry for “cake”.
+    Display the dictionary.
+    Display the dictionary keys.
+    Display the dictionary values.
+    Display whether or not “cake” is a key in the dictionary (i.e. False) (now).
+    Display whether or not “Mango” is a value in the dictionary.
+    """
 
     lab = {"name": "Chris", "city": "Seattle", "cake": "Chocolate"}
     print(lab)
@@ -17,7 +26,7 @@ series01()
 
 
 
-def series02():
+def problem2():
     """Using the dict constructor and zip, build a dictionary of numbers
     from zero to fifteen and the hexadecimal equivalent.
     """
@@ -29,7 +38,7 @@ def series02():
 series02()
 
 
-def series03():
+def problem3():
     """Using the dictionary from item 1: Make a dictionary using the same
     keys but with the number of ‘a’s in each value.
     """
@@ -44,13 +53,14 @@ series03()
 
 
 
-def serieso4():
+def problem4():
     """Create sets s2, s3 and s4 that contain numbers from zero through twenty,
     divisible 2, 3 and 4.
     Display the sets.
     Display if s3 is a subset of s2 (False)
     and if s4 is a subset of s2 (True).
     """
+
     s2 = set(range(0, 21)[::2])
     s3 = set(range(0, 21)[::3])
     s4 = set(range(0, 21)[::4])
