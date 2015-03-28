@@ -24,7 +24,7 @@ def lucas(n):
 
 
 def sum_series(x, y=0, z=1):
-		"""sum_series has three parameteres x,y,z. x is the required parameter
+    """sum_series has three parameteres x,y,z. x is the required parameter
 will determine which element in the series to print.
 y and z are the optional parameters will have default values of 0 and 1
 and will determine the first two values for the series to be produced.
@@ -32,25 +32,25 @@ Calling this function with no optional parameters will produce numbers
 from the fibonacci series. Calling it with the optional arguments 2 and
 1 will produce values from the lucas numbers. Other values for the
 optional parameters will produce other series."""
-		if x < 0:
-				print "series should not be less than 0"
-		    return None
-		elif y == 2 and z == 1:
-		    return lucas(x)
-		else:
-		    return fibonacci_for_sum_sum_series(x, y, z)
+    if x < 0:
+        print "series should not be less than 0"
+        return None
+    elif y == 2 and z == 1:
+        return lucas(x)
+    else:
+        return fibonacci_for_sum_sum_series(x, y, z)
 
 
 def fibonacci_for_sum_sum_series(x, y, z):
-	"""This is Fibonacci_for_sum_sum_series fuction. The function return the nth
+    """This is Fibonacci_for_sum_sum_series fuction. The function return the nth
 value in the fibonacci series but user can change 0th & 1th fibonacci series
 value"""
-	if x == 0:
-	    return y
-	elif x == 1:
-	    return z
-	else:
-	    return fibonacci(n-1)+fibonacci(n-2)
+    if x == 0:
+        return y
+    elif x == 1:
+        return z
+    else:
+        return fibonacci(x-1)+fibonacci(x-2)
 
 # Main
 if __name__ == "__main__":
