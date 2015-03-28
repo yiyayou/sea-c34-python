@@ -13,7 +13,7 @@ def series01():
     value = lab.values()
     print("Mango" in value)
 
-series01() = s01
+series01()
 
 
 
@@ -35,10 +35,9 @@ def series03():
     """
 
     new_lab = {}
-    value = lab.values()
     lab = {"name": "Chris", "city": "Seattle", "cake": "Chocolate"}
-    for i, a in lab.items():
-        new_lab.update({key: value.count('a')})
+    for a, number in lab.items():
+        new_lab[a] = number.count("a")
         print(new_lab)
 
 series03()
