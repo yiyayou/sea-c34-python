@@ -44,4 +44,24 @@ series03()
 
 
 
+def serieso4():
+    """Create sets s2, s3 and s4 that contain numbers from zero through twenty,
+    divisible 2, 3 and 4.
+    Display the sets.
+    Display if s3 is a subset of s2 (False)
+    and if s4 is a subset of s2 (True).
+    """
+    s2 = set(range(0, 21)[::2])
+    s3 = set(range(0, 21)[::3])
+    s4 = set(range(0, 21)[::4])
+    print(s2)
+    print(s3)
+    print(s4)
+    print(s3.issubset(s2))
+    print(s4.issubset(s2))
+
+serieso4()
+
+
+
 
