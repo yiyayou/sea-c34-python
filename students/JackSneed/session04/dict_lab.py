@@ -13,7 +13,7 @@ def series01():
     value = lab.values()
     print("Mango" in value)
 
-series01()
+series01() = s01
 
 
 
@@ -23,8 +23,26 @@ def series02():
     """
 
     numbers = range(0, 16)
-    for hexadecimal in numbers:
-        result = dict(zip(numbers, [hex(hexadecimal)]))
-        print(result)
+    result = dict(zip(numbers, [hex(hexadecimal)] for hexadecimal in numbers))
+    print(result)
 
 series02()
+
+
+def series03():
+    """Using the dictionary from item 1: Make a dictionary using the same
+    keys but with the number of ‘a’s in each value.
+    """
+
+    new_lab = {}
+    value = lab.values()
+    lab = {"name": "Chris", "city": "Seattle", "cake": "Chocolate"}
+    for i, a in lab.items():
+        new_lab.update({key: value.count('a')})
+        print(new_lab)
+
+series03()
+
+
+
+
