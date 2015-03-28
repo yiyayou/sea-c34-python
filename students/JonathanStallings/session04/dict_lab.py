@@ -23,14 +23,13 @@ print("Mango" in a.values())
 # Section 2
 key_num = []
 val_hex = []
-b = {}
+# b = {}
 
 for x in range(16):
     key_num.append(x)
     val_hex.append(hex(x))
 
-for key, val in zip(key_num, val_hex):
-    b[key] = val
+b = dict([(k, v) for k, v in zip(key_num, val_hex)])
 
 print(b)
 
@@ -59,3 +58,5 @@ print(s4)
 
 print(s3.issubset(s2))
 print(s4.issubset(s2))
+
+# Section 5
