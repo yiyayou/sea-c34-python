@@ -22,7 +22,7 @@ def problem1():
     value = lab.values()
     print("Mango" in value)
 
-series01()
+problem1()
 
 
 
@@ -35,7 +35,7 @@ def problem2():
     result = dict(zip(numbers, [hex(hexadecimal) for hexadecimal in numbers]))
     print(result)
 
-series02()
+problem2()
 
 
 def problem3():
@@ -49,7 +49,7 @@ def problem3():
         new_lab[a] = number.count("a")
         print(new_lab)
 
-series03()
+problem3()
 
 
 
@@ -70,7 +70,7 @@ def problem4():
     print(s3.issubset(s2))
     print(s4.issubset(s2))
 
-serieso4()
+problem4()
 
 
 
