@@ -1,10 +1,10 @@
-donors = {"Megan Slater": []}
+donors = {}
 
 
 def safe_input(x):
     try:
         return raw_input(x)
-    except (EOFError, KeyboardInterrupt):
+    except (EOFError, KeyboardInterrupt, TypeError, AttributeError):
         pass
 running = True
 
@@ -36,15 +36,15 @@ while running is True:
                 if donorname == name:
                     amount = ""
                     while amount.isdigit() == False:
-                        amount = safe_input("How much did they donate?")
+                        amount = safe_input("How much did they donate? ")
                         donors[name] = donation + [amount]
                     count += 1
             if count == 0:
                 donors[donorname] = []
                 amount = ""
                 while amount.isdigit() == False:
-                    amount = safe_input("How much did they donate?")
-                    donors[donorname] = donation + [amount]
+                    amount = safe_input("How much did they donate? ")
+                    donors[donorname] = [amount]
                 newdonor = 'no'
             else:
                 newdonor = 'no'
@@ -54,34 +54,30 @@ while running is True:
         """
         for name, donation in donors.iteritems():
             print("Thank you " + name + ".")
-"""
+
 # If the user wants a report at the beginning we give them one
-    elif userprompt == "Create a Report":
+    elif userprompt == "create a report":
         totaldonated = []
-        total = 0
 # add up the total donations for each donor and put it in a list
-        for name, donation in donors:
+        for donation in donors.itervalues():
+            total = 0
             for i in donation:
-                total += i
+                total += int(i)
             totaldonated.append(total)
 # sort that list highest to lowest
         totaldonated.sort()
-        donortotal = 0
+        totaldonated.reverse()
 # match the list against dictionary entries and print them higest to lowest
         for total in totaldonated:
-            for name, donation in donors:
+            for name, donation in donors.iteritems():
+                donortotal = 0
                 for i in donation:
-                    donortotal += i
+                    donortotal += int(i)
                 if donortotal == total:
-                    print(name, /tab total, /tab length(donations), /tab total/length(donations))
-# return to the beginning
-        thankyous()
-# The user can exit this function from the beginning prompt by typing quit
-    elif userprompt == "quit":
-        exit()
+                    if len(donors[name]) == 0:
+                        print(name + " did not donate any money.")
+                    else:
+                        print(name + ' donated\t $' + str(total) + ' \t ' + str(len(donors[name])) + ' times\tfor an average of $' + str(total / len(donors[name])))
 # If the user enters something unexpected they are asked to try again.
     else:
         print("I'm sorry, I don't understand.  Try again. ")
-        thankyous()
-"""
-thankyous()
