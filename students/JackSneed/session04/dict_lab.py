@@ -23,7 +23,7 @@ def series02():
     """
 
     numbers = range(0, 16)
-    result = dict(zip(numbers, [hex(hexadecimal)] for hexadecimal in numbers))
+    result = dict(zip(numbers, [hex(hexadecimal) for hexadecimal in numbers]))
     print(result)
 
 series02()
