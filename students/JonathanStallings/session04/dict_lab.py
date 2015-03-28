@@ -35,11 +35,27 @@ for key, val in zip(key_num, val_hex):
 print(b)
 
 # Section 3
-# c = a.copy()
-# print(c)
-# c = dict((k, v) for k, v in a.items())
-# print(c)
-# c = dict((k, v) for k in a.keys() for v in a.values())
-# print(c)
 c = {k: v.count('a') for k, v in a.items()}
 print(c)
+
+# Section 4
+
+
+def divisible_set(r, div):
+    """Return set of numbers evenly divisble by given number in given range."""
+    set_list = []
+    for x in range(r + 1):
+        if not x % div:
+            set_list.append(x)
+    return set(set_list)
+
+
+s2 = divisible_set(20, 2)
+s3 = divisible_set(20, 3)
+s4 = divisible_set(20, 4)
+print(s2)
+print(s3)
+print(s4)
+
+print(s3.issubset(s2))
+print(s4.issubset(s2))
