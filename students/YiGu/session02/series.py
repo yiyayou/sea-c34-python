@@ -38,19 +38,19 @@ optional parameters will produce other series."""
     elif y == 2 and z == 1:
         return lucas(x)
     else:
-        return fibonacci_for_sum_sum_series(x, y, z)
+        return fibonacci_sum_series(x, y, z)
 
 
-def fibonacci_for_sum_sum_series(x, y, z):
-    """This is Fibonacci_for_sum_sum_series fuction. The function return the nth
-value in the fibonacci series but user can change 0th & 1th fibonacci series
+def fibonacci_sum_series(x, y, z):
+    """This is fibonacci_for_sum_series fuction. The function return the nth
+value in the fibonacci series but user can change 0th & 1st fibonacci series
 value"""
     if x == 0:
         return y
     elif x == 1:
         return z
     else:
-        return fibonacci(x-1)+fibonacci(x-2)
+        return fibonacci_sum_series(x-1, y, z)+fibonacci_sum_series(x-2, y, z)
 
 # Main
 if __name__ == "__main__":
@@ -66,4 +66,4 @@ if __name__ == "__main__":
     assert sum_series(0, 2, 1) == 2
     # lucas
     assert sum_series(5, 2, 1) == 11
-    sum_series(5, 3, 4)
+    assert sum_series(5, 3, 4) == 29
