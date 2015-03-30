@@ -1,4 +1,4 @@
-# 1
+# Step 1
 
 people = {
     "name": "Chris",
@@ -42,7 +42,7 @@ print("Is \"%s\" a value in the dictionary?: " % desired_value)
 print desired_value in people.values()
 
 
-# 2
+# Step 2
 
 # Using the dict constructor and zip, build a dictionary of numbers from zero
 # to fifteen and the hexadecimal equivalent (string is fine)
@@ -58,10 +58,18 @@ for i in range(total_numbers + 1):
 nums_dict = dict(zip(nums_list, hexadec_list))
 
 """
-# Method 2:
+# Here's a more efficient way to create the dictionary without zip
 nums_dict = {}
 for i in range(16):
     nums_dict[i] = hex(i)
 
 print nums_dict
 """
+
+# Step 3
+
+# Using the dictionary from item 1: Make a dictionary using the same keys but
+# with the number of ‘a’s in each value.
+
+for key in people:
+    people[key] = people[key].count('a')
