@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
 
 
 def makelist():
@@ -14,7 +14,9 @@ def addfruit(newfruit, list):
 def indexfruit(list):
     indexnum = (int(raw_input("What number do you want to look up?"))) - 1
     while indexnum not in range(len(list)):
-        indexnum = (int(raw_input("Sorry, that number doesn't exist. \n Please choose a lower number. What number do you want to look up?"))) - 1
+        indexnum = (int(raw_input("Sorry, that number doesn't exist.\n" +
+        "Please choose a lower number. What number" +
+        " do you want to look up?"))) - 1
     else:
         return list[indexnum]
 
@@ -55,7 +57,8 @@ def fixlist(list):
         else:
             ask = raw_input("Do you like " + str(fruit) + " ? Yes or No: ")
             while ask.lower() not in ['yes', 'y', 'n', 'no']:
-                ask = raw_input("Sorry, I don't understand. Do you like " + str(fruit) + " ? Yes or No: ")
+                ask = raw_input("Sorry, I don't understand. Do you like " +
+                    str(fruit) + " ? Yes or No: ")
             if ask.lower() == 'yes' or ask.lower() == 'y':
                 yeslist.append(fruit.lower())
                 masterlist.append(fruit.lower())
@@ -73,15 +76,17 @@ def reverselistitems(list):
 
 def runprogram(mylist):
     # part 1
-    newfruit = raw_input("What fruit would you like to add to the list?")
+    newfruit = raw_input("What fruit would you like to add to the list?" )
     addfruit(newfruit, mylist)
     print mylist
     numfruit = indexfruit(mylist)
     print numfruit
-    newfruit = raw_input("What fruit would you like to add to the beginning of the list using the insert method?")
+    newfruit = raw_input("What fruit would you like to add" +
+        "to the beginning of the list using the insert method?")
     addfruitinsert(newfruit, mylist)
     print mylist
-    newfruit = raw_input("What fruit would you like to add to the beginning of the list using the plus method?")
+    newfruit = raw_input("What fruit would you like to add" +
+        "to the beginning of the list using the plus method?")
     mylist = addfruitplus(newfruit, mylist)
     print mylist
     print "Here are all your fruits that begin with a 'p': "
@@ -104,7 +109,7 @@ def runprogram(mylist):
     mylist.pop(-1)
     reverselist = reverselistitems(mylist)
     print "Delete the last item of the original list."
-    print "Display the original list and the copy.\n" + str(mylist) + "\n" + str(reverselist)
+    print "Original list & copy.\n" + str(mylist) + "\n" + str(reverselist)
 
 mylist = makelist()
 print mylist
