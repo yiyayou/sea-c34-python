@@ -41,11 +41,21 @@ def list_comp_sets(dirty_set):
 
 # Question 3: How does one use a dictionary comprehension?
 
-
+def list_comp_dicts():
+    '''
+    Goes through a range and creates a new dictionary
+    of the odd values
+    '''
+    odds = {i: "odd_number" for i in range(31) if i % 2 != 0}
+    return odds
 
 if __name__ == "__main__":
 
     print list_comp_for_loop()
 
-    bad_set = ("Henry", "Potato", "164beacon", "57!!73", "Yay")
-    print list_comp_sets(bad_set)
+    BAD_SET = ("Henry", "Potato", "164beacon", "57!!73", "Yay")
+    print list_comp_sets(BAD_SET)
+
+    print list_comp_dicts()
+
+
