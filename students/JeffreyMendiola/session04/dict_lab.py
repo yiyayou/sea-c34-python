@@ -73,3 +73,40 @@ print nums_dict
 
 for key in people:
     people[key] = people[key].count('a')
+
+# Step 4
+
+# Create sets s2, s3 and s4 that contain numbers from zero through twenty
+# s2 is numbers divisible by 2
+# s3 is numbers divisible by 3
+# s4 is numbers divisible by 4
+
+s2 = []
+s3 = []
+s4 = []
+total_numbers = 20
+for i in range(total_numbers + 1):
+    if i % 2 == 0:
+        s2.append(i)
+    if i % 3 == 0:
+        s3.append(i)
+    if i % 4 == 0:
+        s4.append(i)
+
+s2 = set(s2)
+s3 = set(s3)
+s4 = set(s4)
+
+print s2
+print s3
+print s4
+
+# Display if s3 is a subset of s2 (False)
+print "\n"
+print "Is s3 is a subset of s2? :"
+print s3.issubset(s2)
+
+# Display if s4 is a subset of s2 (True)
+print "\n"
+print "Is s4 is a subset of s2? :"
+print s4.issubset(s2)
