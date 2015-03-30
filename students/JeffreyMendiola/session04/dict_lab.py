@@ -110,3 +110,20 @@ print s3.issubset(s2)
 print "\n"
 print "Is s4 is a subset of s2? :"
 print s4.issubset(s2)
+
+# Step 5
+
+# Create a set with the letters in ‘Python’ and add ‘i’ to the set.
+python_set = set(['P', 'y', 't', 'h', 'o', 'n'])
+python_set.add('i')
+
+# Create a frozenset with the letters in ‘marathon’
+marathon_set = frozenset(['m', 'a', 'r', 'a', 't', 'h', 'o', 'n'])
+
+# Display the union and intersection of the two sets.
+print "\n"
+print "The union of the two sets:"
+print python_set.union(marathon_set)
+print "\n"
+print "The intersection of the two sets:"
+print python_set.intersection(marathon_set)
