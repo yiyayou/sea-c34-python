@@ -25,5 +25,5 @@ def readlines():
     line = f.readlines()
     print line
     f.close()
-# f.readline printed the first line of the line, while f.readlines turned
+# f.readline printed the first line of the file, while f.readlines turned
 # the lines of the file to an array of python objects.
