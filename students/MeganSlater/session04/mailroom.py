@@ -82,11 +82,14 @@ def thankyous():
                         if len(donors[name]) == 0:
                             print(name + " did not donate any money.")
                         else:
-                            print("name: " + name + '\ttotal: $' + str(total)
-                                + '\tnumber of donations: ' + str(len(donors[name]))
-                                + ' \t average donation: $'
-                                + str(total / len(donors[name]))
-                                )
+                            print('name: {name}\ttotal: ${total}\t '
+                                    'donations: {donations}\t avg '
+                                    'donation: '
+                                    '$ {average}').format(
+                                        name=name,
+                                        total=str(total),
+                                        donations=str(len(donors[name])),
+                                        average=str(total / len(donors[name])))
             thankyous()
     # If the user enters something unexpected they are asked to try again.
         else:
