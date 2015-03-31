@@ -57,7 +57,9 @@ def thankyous():
             out of an email for every donor and return to the beginning.
             """
             for name, donation in donors.iteritems():
-                print("Thank you " + name + " for donating $" + donation[-1] + " to our cause.  We couldn't do it without your support!")
+                print('Thank you ' + name + ' for donating $' +
+                        donation[-1] + ' to our cause.  We could not do it '
+                        'without your support!')
             thankyous()
 
     # If the user wants a report at the beginning we give them one
