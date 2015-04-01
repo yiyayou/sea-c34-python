@@ -17,7 +17,8 @@ numberdict = {}
 nums = []
 for i in range(1, 16):
         nums.append(i)
-hex = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1A", "1B", "1C", "1D", "1E"]
+hex = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1A", "1B", "1C",
+            "1D", "1E"]
 # combine lists nums and hex to create key value pairs in numberdict
 for i, j in zip(nums, hex):
     numberdict.update({i: j})
