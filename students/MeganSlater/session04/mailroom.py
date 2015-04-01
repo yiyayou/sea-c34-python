@@ -58,8 +58,8 @@ def thankyous():
             """
             for name, donation in donors.iteritems():
                 print('Thank you ' + name + ' for donating $' +
-                        donation[-1] + ' to our cause.  We could not do it '
-                        'without your support!')
+                      donation[-1] + ' to our cause.  We could not do it '
+                      'without your support!')
             thankyous()
 
     # If the user wants a report at the beginning we give them one
@@ -85,9 +85,9 @@ def thankyous():
                             print(name + " did not donate any money.")
                         else:
                             print('name: {name}\ttotal: ${total}\t '
-                                    'donations: {donations}\t avg '
-                                    'donation: '
-                                    '$ {average}').format(
+                                  'donations: {donations}\t avg '
+                                  'donation: '
+                                  '$ {average}').format(
                                         name=name,
                                         total=str(total),
                                         donations=str(len(donors[name])),
