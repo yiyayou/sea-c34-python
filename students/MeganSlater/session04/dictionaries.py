@@ -28,11 +28,11 @@ def unfreeze():
 def set_operations():
     newset = set("Cheese is Awesome!")
     other = set("Cheese")
-    print newset.isdisjoint(other)  # check if two sets have no elements in common
-    print newset.issubset(other)  # check if one set is subset of the other
+    print newset.isdisjoint(other)  # sets have no elements in common
+    print newset.issubset(other)  # one set is subset of the other
     print newset.union(other)  # puts the sets together
-    print newset.intersection(other)  # returns all values the sets have in common
-    print newset.difference(other)  # returns values the sets do not have in common
+    print newset.intersection(other)  # values the sets have in common
+    print newset.difference(other)  # values the sets do not have in common
     print newset.symmetric_difference(other)  # returns values only one set
 
 """Can I change a set into a list?"""
