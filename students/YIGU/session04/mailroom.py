@@ -79,9 +79,9 @@ if __name__ == '__main__':
          enter 2 to create a report; EXIT to exit the progarm-->')
         if main_prompt.upper == u'EXIT':
             break
-        elif main_prompt == 1:
+        elif main_prompt == '1':
             send_thank_you_letters()
-        elif main_prompt == 2:
+        elif main_prompt == '2':
             create_report()
         else:
             print "I don't know what is %s. Please try again.\n" % main_prompt
