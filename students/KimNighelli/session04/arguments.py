@@ -14,6 +14,7 @@ import copy
 # Question 1: To better understand how to use keyword arguments,
 # can I calculate the area of a triangle using keyword arguments?
 
+
 def area_triange(base=0, height=0):
     '''
     Calculate the area of a triange where A = 1/2 * b * h
@@ -27,13 +28,14 @@ def area_triange(base=0, height=0):
 # Question 2: To betterunderstand how to use .format(), can I create a
 # string that holds various weather data using keyword arguments?
 
+
 def format_method(**kwargs):
     '''
     Create a weather descriptor string using keyword arguments
     '''
 
     print "The weather on {day} will be {descriptor} with a " \
-            "high temperature of {temperature}".format(**kwargs)
+          "high temperature of {temperature}".format(**kwargs)
 
 
 # Question 3: What is the difference between a shallow and deep copy?
@@ -57,7 +59,6 @@ def copy_types(list_a):
     # Although I tried to append 'London' to the
     # original list, the city was appended to both.
 
-
     # Deep copy
     list_c = copy.deepcopy(list_a)
     list_a[0].append('peach')
@@ -69,12 +70,12 @@ def copy_types(list_a):
     # to the original list.
 
 if __name__ == "__main__":
-    MEASUREMENTS = {"base":3, "height":4}
+    MEASUREMENTS = {"base": 3, "height": 4}
     area_triange(**MEASUREMENTS)
 
-    WEATHER = {"day":"Tuesday", "descriptor":"rainy", "temperature":61}
+    WEATHER = {"day": "Tuesday", "descriptor": "rainy", "temperature": 61}
     format_method(**WEATHER)
 
-    LIST_A = [['apple', 'banana', 'mango'], [9, 8, 7, 6], ['Seattle', 'Boston', 'Stockholm']]
+    LIST_A = [['apple', 'banana', 'mango'], [9, 8, 7, 6],
+              ['Seattle', 'Boston', 'Stockholm']]
     copy_types(LIST_A)
-

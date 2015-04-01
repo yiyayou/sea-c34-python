@@ -20,6 +20,7 @@ to try to add a conditional!
 # Question 1: What does a for loop look like in list
 # comprehension form?
 
+
 def list_comp_for_loop():
     '''
     Creates a new list of x*3 for x <= 10
@@ -41,6 +42,7 @@ def list_comp_sets(dirty_set):
 
 # Question 3: How does one use a dictionary comprehension?
 
+
 def list_comp_dicts():
     '''
     Goes through a range and creates a new dictionary
@@ -57,4 +59,3 @@ if __name__ == "__main__":
     print list_comp_sets(BAD_SET)
 
     print list_comp_dicts()
-

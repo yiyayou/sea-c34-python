@@ -14,15 +14,16 @@ that says "[bad-builtin] Used builtin function 'filter'" and
 once that says "[bad-builtin] Used builtin function 'map'".
 According to pylint documentation, these arise when:
 
-Used when a black listed builtin function is used (see the bad-function option).
-Usual black listed functions are the ones like map, or filter , where Python
-offers now some cleaner alternative like list comprehension.
+Used when a black listed builtin function is used (see the bad-function
+option). Usual black listed functions are the ones like map, or filter ,
+where Python offers now some cleaner alternative like list comprehension.
 
 I wanted to see how they work, but will use list comprehensions for them
 in the future!
 '''
 
 # Question 1: How does a lambda even function work?
+
 
 def lambda_squared():
     '''
@@ -38,6 +39,7 @@ def lambda_squared():
 # a map? Given a list, return each element in the list times 5
 # if the element is not divisible by 3 and the original values
 # if it is divisible by three
+
 
 def maps_and_lambdas(a_list):
     '''
@@ -59,7 +61,6 @@ def alpha_lambda(a_list):
     return filter(lambda x: x.isalnum(), a_list)
 
 
-
 if __name__ == "__main__":
 
     lambda_squared()
@@ -69,4 +70,3 @@ if __name__ == "__main__":
 
     TEST_LIST_2 = ["Book", "67@@kdhgfkj", "1234", "&&3ihappy!", "801dexter"]
     print alpha_lambda(TEST_LIST_2)
-
