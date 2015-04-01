@@ -20,21 +20,31 @@ def safe_input(note):
         return i
 
 
+def is_number(n):
+    try:
+        float(n)
+    except (ValueError):
+        return False
+    else:
+        return float(n)
+
+
 def send_thank_you_letters():
     """This function let you input donation amonut to donor history and \
     format a thank you letter with donor's name and donation amount."""
     while True:
-        styl_prompt = safe_input(u"Please enter donor's Full Name to enter \
-        donation amount and print thank you letter; enter LIST to list out \
-        all donors in donor hisotry; enter RETURN to return to the original \
-        prompt-->")
-        if styl_prompt.upper == u'RETURN':
+        styl_prompt = safe_input(
+            u"\nEnter donor's Full Name for donation;\n"
+            "Enter LIST to list out all donors;\n"
+            "enter RETURN to return to the original prompt-->")
+        if styl_prompt == u'RETURN':
             break
-        elif styl_prompt.upper == u'LIST':
+        elif styl_prompt == u'LIST':
             print donor_his.keys()
-        elif styl_prompt.upper not in donor_his:
-            print u'Adding %s to donor list\n' % styl_prompt.upper
-            donor_his[styl_prompt.upper] = []
+        elif styl_prompt not in donor_his:
+            print u'Adding %s to donor list\n' % styl_prompt
+            donor_his[styl_prompt] = []
+            add_donation(styl_prompt)
         else:
             add_donation(styl_prompt)
 
@@ -44,26 +54,28 @@ def add_donation(styl_prompt):
     donor_his. Function ask for donors_amount; make sure input is \
     int/float"""
     while True:
-        add_d_prompt = safe_input(u"Please enter donation amount; enter \
-        RETURN to return to upper level-->")
+        add_d_prompt = safe_input(
+            u"\nPlease enter donation amount;\n"
+            "Enter RETURN to return to upper level-->")
         if add_d_prompt == u'RETURN':
             break
-        elif add_d_prompt is not (int, float):
-            print "I don't know what is %s. Please enter a number.\n"\
-             % add_d_prompt
-        elif add_d_prompt <= 0:
+        elif is_number(add_d_prompt) is False:
+            print "I don't know what is %s.\n"
+            "Please enter a number.\n" % add_d_prompt
+        elif is_number(add_d_prompt) <= 0:
             print "Donation should be greater than 0. Please try again.\n"
         else:
             # store donation data in donor history
             donor_his[styl_prompt].append(add_d_prompt)
-            print_thank_you_letter()
+            print donor_his # TODO
+            print_thank_you_letter(styl_prompt)
             break
 
 
 def print_thank_you_letter(styl_prompt):
     """This function print thank you letters"""
-    "Dear {name},\n Thank you for your generous donation of {amonut}.\n\
-     MR".format(**{'name': styl_prompt, 'amonut': donor_his[-1]})
+    "Dear {name},\n Thank you for your generous donation of {amonut}.\n"
+    "MR".format(**{'name': styl_prompt, 'amonut': donor_his[-1]})
 
 
 def create_report():
@@ -75,9 +87,11 @@ def create_report():
 if __name__ == '__main__':
     """This function work as the main startup menu"""
     while True:
-        main_prompt = safe_input(u'Please enter 1 to send a thank you email;\
-         enter 2 to create a report; EXIT to exit the progarm-->')
-        if main_prompt.upper == u'EXIT':
+        main_prompt = safe_input(
+            u"\nWelcome! Enter 1 to send thank you emails\n"
+            "Enter 2 to create a report; \n"
+            "Enter EXIT to exit the progarm-->")
+        if main_prompt == u'EXIT':
             break
         elif main_prompt == '1':
             send_thank_you_letters()
