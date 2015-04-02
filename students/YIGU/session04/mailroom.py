@@ -7,6 +7,7 @@ from collections import OrderedDict
 
 # donner data
 donor_his = {}
+cr = {}
 
 
 def safe_input(note):
@@ -81,8 +82,12 @@ def add_donation(styl_prompt):
 def create_report():
     """This function create report out of donor hisotry and sort by\
      total of donation amount"""
-    print OrderedDict(sorted(donor_his.items(), key=lambda x: sum(x[1]), reverse=True))
-
+    cr = OrderedDict(sorted(donor_his.items(), key=lambda x: sum(x[1]), reverse=True))
+    for i in cr:
+        print "\nDonor name: %s," % i
+        print " Total donation: %s," % reduce(lambda x, y: x + y, cr[i])
+        print " Number of donation: %s," % len(cr[i])
+        print " Average donation %s\n" % (reduce(lambda x, y: x + y, cr[i])/len(cr[i]))
 
 if __name__ == '__main__':
     """This function work as the main startup menu"""
