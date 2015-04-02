@@ -49,6 +49,12 @@ def send_thank_you_letters():
             add_donation(styl_prompt)
 
 
+def print_thank_you_letter(styl_prompt):
+    """This function print thank you letters"""
+    "Dear {name},\n Thank you for your generous donation of {amonut}.\n"
+    "MR".format(**{'name': styl_prompt, 'amonut': donor_his[styl_prompt][-1]})
+
+
 def add_donation(styl_prompt):
     """This function is use by send_thank_you_letters to add donation to \
     donor_his. Function ask for donors_amount; make sure input is \
@@ -60,28 +66,22 @@ def add_donation(styl_prompt):
         if add_d_prompt == u'RETURN':
             break
         elif is_number(add_d_prompt) is False:
-            print "I don't know what is %s.\n"
-            "Please enter a number.\n" % add_d_prompt
+            print "I don't know what is %s.\n" % add_d_prompt
+            print "Please enter a number.\n"
         elif is_number(add_d_prompt) <= 0:
             print "Donation should be greater than 0. Please try again.\n"
         else:
             # store donation data in donor history
+            add_d_prompt = float(add_d_prompt)
             donor_his[styl_prompt].append(add_d_prompt)
-            print donor_his # TODO
             print_thank_you_letter(styl_prompt)
             break
-
-
-def print_thank_you_letter(styl_prompt):
-    """This function print thank you letters"""
-    "Dear {name},\n Thank you for your generous donation of {amonut}.\n"
-    "MR".format(**{'name': styl_prompt, 'amonut': donor_his[-1]})
 
 
 def create_report():
     """This function create report out of donor hisotry and sort by\
      total of donation amount"""
-    print OrderedDict(sorted(donor_his.items(), key=lambda t: t[1][1])[::-1])
+    print OrderedDict(sorted(donor_his.items(), key=lambda x: sum(x[1]), reverse=True))
 
 
 if __name__ == '__main__':
