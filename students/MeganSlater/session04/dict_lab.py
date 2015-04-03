@@ -1,34 +1,33 @@
 # part 1
-dict = {"name": "Chris", "city": "Seattle", "cake": "Chocolate"}
-print dict
-del dict["cake"]                        # remove cake from dictionary
-print dict
-dict.update({"fruit": "Mango"})  # add mango to dictionary
-print dict
-print dict.keys()                           # print all dictionary keys
-print dict.values()                        # print all dictionary values
-print 'cake' in dict                        # true if cake is key in dictionary
-for key, value in dict.iteritems():  # true if Mango is value in dictionary
+d = {"name": "Chris", "city": "Seattle", "cake": "Chocolate"}
+print d
+del d["cake"]                        # remove cake from dictionary
+print d
+d.update({"fruit": "Mango"})  # add mango to dictionary
+print d
+print d.keys()                           # print all dictionary keys
+print d.values()                        # print all dictionary values
+print 'cake' in d                        # true if cake is key in dictionary
+for key, value in d.iteritems():  # true if Mango is value in dictionary
     if value == "Mango":
         print True
 
 # part 2
-numberdict = {}
+numberd = {}
 nums = []
-for i in range(1, 16):
+for i in range(16):
         nums.append(i)
-hex = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1A", "1B", "1C",
-            "1D", "1E"]
+hex = map(lambda x: hex(x), range(10))
 # combine lists nums and hex to create key value pairs in numberdict
 for i, j in zip(nums, hex):
-    numberdict.update({i: j})
-print numberdict
+    numberd.update({i: j})
+print numberd
 
 # part 3
 # makes new dict with the numbers of 'a' in value as the new value
-a_dict = {}
-for key, value in dict.iteritems():
-    a_dict.update({key: value.count('a')})
+a_d = {}
+for key, value in d.iteritems():
+    a_d.update({key: value.count('a')})
 
 # part 4
 s2 = set(filter(lambda x: x % 2 == 0, range(21)))
