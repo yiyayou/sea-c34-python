@@ -1,20 +1,21 @@
 # Can I have a class inside a class?
 
 
-class mother(object):
-    def __init__(self):
-        self.age = 30
-
-    class child(object):
+def q():
+    class mother(object):
         def __init__(self):
-            self.age2 = 1
+            self.age = 30
 
-m = mother()
-print m.age  # Answer: 30
+        class child(object):
+            def __init__(self):
+                self.age2 = 1
 
-print m.child.age2  # Answer: error
+    m = mother()
+    print m.age  # Answer: 30
 
-x = m.child()
-print x.age2  # Answer: 1
+    print m.child.age2  # Answer: error
 
-# Answer: Yes
+    x = m.child()
+    print x.age2  # Answer: 1
+
+    # Answer: Yes
