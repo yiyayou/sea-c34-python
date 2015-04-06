@@ -1,3 +1,4 @@
+# coding=utf-8
 # 1
 # Create a dict
 dict1 = {"name": "Chris", "city": "Seattle", "cake": "Chocolate"}
