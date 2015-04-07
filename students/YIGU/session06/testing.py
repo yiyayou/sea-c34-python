@@ -10,7 +10,6 @@ def q():
         # in test_my_mod.py
         import unittest
 
-
         class MyFuncTestCase(unittest.TestCase):
             def test_my_func(self):
                 test_vals = (2, 3)
