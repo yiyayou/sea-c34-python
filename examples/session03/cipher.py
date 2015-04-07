@@ -7,13 +7,17 @@ alphabet_list = [alphabet[i] for i in range(len(alphabet))]
 
 #print(alphabet_list)
 
-message_text = "hello"
+message_text = "what is a baggins"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 cipher_list =['v', 'y', 'h', 'l', 'a', 'n', 'i', 'g', 'e', 'd', 'k', 'c', 'w', ' ', 'f', 's', 'm', 'p', 'r', 't', 'o', 'u', 'z', 'b', 'j', 'x', 'q']
 =======
 cipher_list = ['v', 'y', 'h', 'l', 'a', 'n', 'i', 'g', 'e', 'd', 'k', 'c', 'w', ' ', 'f', 's', 'm', 'p', 'r', 't', 'o', 'u', 'z', 'b', 'j', 'x', 'q']
 >>>>>>> 6d22b5c1ca727e30378ed07ffb7a9fc067aa46d3
+=======
+cipher_list = ['v', 'y', 'h', 'l', 'a', 'n', 'i', 'g', 'e', 'd', 'k', 'c', 'w', ' ', 'f', 's', 'm', 'p', 'r', 't', 'o', 'u', 'z', 'b', 'j', 'x', 'q']
+>>>>>>> b528877d4e7b243ad946ce00d0e4656803043c95
 
 cipher_text = ""
 
@@ -24,7 +28,10 @@ for x in message_text:
 
 print cipher_text
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b528877d4e7b243ad946ce00d0e4656803043c95
 
 new_cipher_text = "eqzergqtgvtqeqgvlqrfwaqa hgecvlvrqpeigtq fz"
 decrypt_text = ""
@@ -47,4 +54,7 @@ print decrypt_text
 
 
 
+<<<<<<< HEAD
 >>>>>>> 6d22b5c1ca727e30378ed07ffb7a9fc067aa46d3
+=======
+>>>>>>> b528877d4e7b243ad946ce00d0e4656803043c95
