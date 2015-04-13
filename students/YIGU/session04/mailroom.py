@@ -52,8 +52,8 @@ def send_thank_you_letters():
 
 def print_thank_you_letter(styl_prompt):
     """This function print thank you letters"""
-    "Dear {name},\n Thank you for your generous donation of {amonut}.\n"
-    "MR".format(**{'name': styl_prompt, 'amonut': donor_his[styl_prompt][-1]})
+    l = "\nDear {name},\nThank you for your generous donation of {amonut}"
+    print l.format(**{'name': styl_prompt, 'amonut': donor_his[styl_prompt][-1]})
 
 
 def add_donation(styl_prompt):
