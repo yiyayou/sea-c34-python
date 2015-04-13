@@ -30,5 +30,7 @@ def list_functions(n):
 
 
 functions = list_functions(5)
-for i in functions:
-    print i(2)
+
+assert functions[0](2) == 2
+assert functions[1](2) == 3
+assert functions[2](2) == 4
