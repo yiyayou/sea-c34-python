@@ -41,17 +41,24 @@ for key in dict1:
 
 # 4
 # sets contain numbers from zero through twenty, divisible 2, 3 and 4
-s2 = ([])
-s3 = ([])
-s4 = ([])
+s2 = set()
+s3 = set()
+s4 = set()
 
 for i in range(21):
     if i % 2 == 0:
-        s2.append(i)
+        s2.add(i)
     if i % 3 == 0:
-        s3.append(i)
+        s3.add(i)
     if i % 4 == 0:
-        s4.append(i)
+        s4.add(i)
+
+print s2
+print s3
+print s4
+
+print s3.issubset(s2)
+print s4.issubset(s2)
 
 # 5
 
