@@ -16,10 +16,13 @@ class Element(object):
 
     def append(self, string):
         """Append string to content."""
+        self.content = self.content + string
     pass
 
     def render(self, file_out, ind=""):
         """Render the tag and strings in content."""
+        file_out.write("\n"+ind + "<%s>%s</%s>" % (
+            self.tag, self.content, self.tag))
     pass
 
 
@@ -33,3 +36,6 @@ class Body(Element):
     """Body tag."""
 
     tag = u"body"
+
+    def append(self, string):
+        return Element.append(self, string)
