@@ -11,7 +11,7 @@ cr = {}
 
 
 def safe_input(note):
-    """This function catch excepitions from raw_input function and return\
+    """This function catch excepitions from raw_input function and return
      None"""
     try:
         i = raw_input(note)
@@ -31,7 +31,7 @@ def is_number(n):
 
 
 def send_thank_you_letters():
-    """This function let you input donation amonut to donor history and \
+    """This function let you input donation amonut to donor history and
     format a thank you letter with donor's name and donation amount."""
     while True:
         styl_prompt = safe_input(
@@ -50,15 +50,15 @@ def send_thank_you_letters():
             add_donation(styl_prompt)
 
 
-def print_thank_you_letter(styl_prompt):
+def print_thank_you_letter(styl_p):
     """This function print thank you letters"""
     l = "\nDear {name},\nThank you for your generous donation of {amonut}"
-    print l.format(**{'name': styl_prompt, 'amonut': donor_his[styl_prompt][-1]})
+    print l.format(**{'name': styl_p, 'amonut': donor_his[styl_p][-1]})
 
 
 def add_donation(styl_prompt):
-    """This function is use by send_thank_you_letters to add donation to \
-    donor_his. Function ask for donors_amount; make sure input is \
+    """This function is use by send_thank_you_letters to add donation to
+    donor_his. Function ask for donors_amount; make sure input is
     int/float"""
     while True:
         add_d_prompt = safe_input(
@@ -80,14 +80,16 @@ def add_donation(styl_prompt):
 
 
 def create_report():
-    """This function create report out of donor hisotry and sort by\
+    """This function create report out of donor hisotry and sort by
      total of donation amount"""
-    cr = OrderedDict(sorted(donor_his.items(), key=lambda x: sum(x[1]), reverse=True))
+    cr = OrderedDict(
+        sorted(donor_his.items(), key=lambda x: sum(x[1]), reverse=True))
     for i in cr:
         print "\nDonor name: %s," % i
         print "Total donation: %s," % reduce(lambda x, y: x + y, cr[i])
         print "Number of donation: %s," % len(cr[i])
-        print "Average donation %s\n" % (reduce(lambda x, y: x + y, cr[i])/len(cr[i]))
+        print "Average donation %s\n" % (
+            reduce(lambda x, y: x + y, cr[i])/len(cr[i]))
 
 if __name__ == '__main__':
     """This function work as the main startup menu"""
