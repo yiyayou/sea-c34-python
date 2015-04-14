@@ -7,23 +7,29 @@ Python class example.
 
 
 class Element(object):
-    """An HTML element."""
-    tag = u"html"
+    """Components of a webpage"""
+    tag = u""
     indent = u"    "
+    content = ""
 
     def __init__(self, content=None):
         self.content = self.indent + str(self.content) if content else ""
 
     def append(self, string):
         """Append string to content."""
-        self.content = self.content + string
-    pass
+        self.content += (
+            u"{indent}{str}\n".format(indent=self.indent, str=str(string))
+        )
 
     def render(self, file_out, ind=""):
         """Render the tag and strings in content."""
-        file_out.write("\n"+ind + "<%s>%s</%s>" % (
-            self.tag, self.content, self.tag))
-    pass
+        output = (
+            u"{indent}<{tag}>\n"
+            "{indent}{content}"
+            "{indent}</{tag}>"
+            .format(indent=ind, tag=self.tag, content=self.content)
+        )
+        file_out.write(output)
 
 
 class Html(Element):
@@ -31,11 +37,26 @@ class Html(Element):
 
     tag = u"html"
 
+    def render(self, file_out, ind=""):
+        file_out.write("<!DOCTYPE html>\n")
+        Element.render(self, file_out, ind)
+
 
 class Body(Element):
-    """Body tag."""
-
     tag = u"body"
 
-    def append(self, string):
-        return Element.append(self, string)
+
+class P(Element):
+    tag = u"p"
+
+"""
+class Head(Element):
+    tag = u"head"
+
+class Ul(Element):
+    tag = u"ul"
+
+
+class Li(Element):
+    tag = u"li"
+"""
