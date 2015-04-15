@@ -1,98 +1,217 @@
 #!/usr/bin/env python
+
 """
-simple_classes.py
-
-demonstrating the basics of a class
+a simple script can run and test your html rendering classes.
+Uncomment the steps as you add to your rendering.
 """
-import math
+import codecs
+import cStringIO
 
 
-# create a point class
-class Point(object):
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+# importing the html_rendering code with a short name for easy typing.
+import html_render as hr
 
-# create an instance of that class
-p = Point(3, 4)
+## writing the file out:
+def render(page, filename):
+   """
+   render the tree of elements
+   This uses cSstringIO to renderto memory, then dump to console and
+   write to file -- very handy!
+   """
 
-# access the attributes
-print "p.x is:", p.x
-print "p.y is:", p.y
+   f = cStringIO.StringIO()
+   page.render(f)
 
+   f.reset()
 
-class Point2(object):
-    size = 4
-    color = "red"
+   print f.read()
 
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-p2 = Point2(4, 5)
-print p2.size
-print p2.color
+   f.reset()
+   codecs.open(filename, 'w', encoding="utf-8").write( f.read() )
 
 
-class Point3(object):
-    size = 4
-    color = "red"
+## Step 1
+##########
 
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+page = hr.Element()
 
-    def get_color(self):
-        return self.color
+page.append(u"Here is a paragraph of text -- there could be more of them, but this is enough  to show that we can do some text")
+
+page.append(u"And here is another piece of text -- you should be able to add any number")
+
+render(page, u"test_html_output1.html")
+
+# ## Step 2
+# ##########
+
+# page = hr.Html()
+
+# body = hr.Body()
+
+# body.append(hr.P(u"Here is a paragraph of text -- there could be more of them, but this is enough  to show that we can do some text"))
+
+# body.append(hr.P(u"And here is another piece of text -- you should be able to add any number"))
+
+# page.append(body)
+
+# render(page, u"test_html_output2.html")
+
+# # Step 3
+# ##########
+
+# page = hr.Html()
+
+# head = hr.Head()
+# head.append(hr.Title(u"PythonClass = Revision 1087:"))
+
+# page.append(head)
+
+# body = hr.Body()
+
+# body.append(hr.P(u"Here is a paragraph of text -- there could be more of them, but this is enough  to show that we can do some text"))
+# body.append(hr.P(u"And here is another piece of text -- you should be able to add any number"))
+
+# page.append(body)
+
+# render(page, u"test_html_output3.html")
+
+# # Step 4
+# ##########
+
+# page = hr.Html()
+
+# head = hr.Head()
+# head.append(hr.Title(u"PythonClass = Revision 1087:"))
+
+# page.append(head)
+
+# body = hr.Body()
+
+# body.append(hr.P(u"Here is a paragraph of text -- there could be more of them, but this is enough  to show that we can do some text",
+#               style=u"text-align: center; font-style: oblique;"))
+
+# page.append(body)
+
+# render(page, u"test_html_output4.html")
+
+# # Step 5
+# #########
+
+# page = hr.Html()
+
+# head = hr.Head()
+# head.append(hr.Title(u"PythonClass = Revision 1087:"))
+
+# page.append(head)
+
+# body = hr.Body()
+
+# body.append(hr.P(u"Here is a paragraph of text -- there could be more of them, but this is enough  to show that we can do some text",
+#               style=u"text-align: center; font-style: oblique;"))
+
+# body.append(hr.Hr())
+
+# page.append(body)
+
+# render(page, u"test_html_output5.html")
+
+# # Step 6
+# #########
+
+# page = hr.Html()
+
+# head = hr.Head()
+# head.append(hr.Title(u"PythonClass = Revision 1087:"))
+
+# page.append(head)
+
+# body = hr.Body()
+
+# body.append(hr.P(u"Here is a paragraph of text -- there could be more of them, but this is enough  to show that we can do some text",
+#               style=u"text-align: center; font-style: oblique;"))
+
+# body.append(hr.Hr())
+
+# body.append(u"And this is a ")
+# body.append( hr.A(u"http://google.com", "link") )
+# body.append(u"to google")
+
+# page.append(body)
+
+# render(page, u"test_html_output6.html")
+
+# # Step 7
+# #########
+
+# page = hr.Html()
+
+# head = hr.Head()
+# head.append(hr.Title(u"PythonClass = Revision 1087:"))
+
+# page.append(head)
+
+# body = hr.Body()
+
+# body.append( hr.H(2, u"PythonClass - Class 6 example") )
+
+# body.append(hr.P(u"Here is a paragraph of text -- there could be more of them, but this is enough  to show that we can do some text",
+#               style=u"text-align: center; font-style: oblique;"))
+
+# body.append(hr.Hr())
+
+# list = hr.Ul(id=u"TheList", style=u"line-height:200%")
+
+# list.append( hr.Li(u"The first item in a list") )
+# list.append( hr.Li(u"This is the second item", style="color: red") )
+
+# item = hr.Li()
+# item.append(u"And this is a ")
+# item.append( hr.A(u"http://google.com", u"link") )
+# item.append(u"to google")
+
+# list.append(item)
+
+# body.append(list)
+
+# page.append(body)
+
+# render(page, u"test_html_output7.html")
+
+# # Step 8
+# ########
+
+# page = hr.Html()
 
 
-p3 = Point3(4, 5)
-print p3.size
-print p3.get_color()
+# head = hr.Head()
+# head.append( hr.Meta(charset=u"UTF-8") )
+# head.append(hr.Title(u"PythonClass = Revision 1087:"))
 
+# page.append(head)
 
-class Circle(object):
-    color = "red"
-    styles = ['dashed']
+# body = hr.Body()
 
-    def __init__(self, diameter):
-        self.diameter = diameter
+# body.append( hr.H(2, u"PythonClass - Class 6 example") )
 
-    def grow(self, factor=2):
-        """
-        grows the circle's diameter
+# body.append(hr.P(u"Here is a paragraph of text -- there could be more of them, but this is enough  to show that we can do some text",
+#               style=u"text-align: center; font-style: oblique;"))
 
-        :param factor=2: factor by which to grow the circle
-        """
-        self.diameter = self.diameter * factor
+# body.append(hr.Hr())
 
-    def add_style(self, style):
-        self.styles.append(style)
+# list = hr.Ul(id=u"TheList", style=u"line-height:200%")
 
-    def get_area(self):
-        return math.pi * self.diameter / 2.0
+# list.append( hr.Li(u"The first item in a list") )
+# list.append( hr.Li(u"This is the second item", style="color: red") )
 
+# item = hr.Li()
+# item.append(u"And this is a ")
+# item.append( hr.A(u"http://google.com", "link") )
+# item.append(u"to google")
 
-class NewCircle(Circle):
-    color = "blue"
+# list.append(item)
 
-    def grow(self, factor=2):
-        """grows the area by factor..."""
-        self.diameter = self.diameter * math.sqrt(2)
+# body.append(list)
 
-nc = NewCircle
-print nc.color
+# page.append(body)
 
-
-class CircleR(Circle):
-    def __init__(self, radius):
-        diameter = radius * 2
-        Circle.__init__(self, diameter)
-
-
-class CircleR2(Circle):
-    def __init__(self, radius):
-        self.radius = radius
-
-    def get_area(self):
-        return Circle.get_area(self, self.radius * 2)
+# render(page, u"test_html_output8.html")
